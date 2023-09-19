@@ -54,7 +54,7 @@ class CuestionarioViewController: UIViewController {
         }
     }
     
-    @IBAction func buttonNext(_ sender: UIButton) {
+    @IBAction func buttonNext(_ sender: Any) {
         // Save the selected answer and resent buttons
         let radios = [radioButton1, radioButton2, radioButton3, radioButton4, radioButton5]
         var answer: Int = -1
@@ -92,8 +92,13 @@ class CuestionarioViewController: UIViewController {
             }
             
             // Check if the questions have ended.
-            if index == 49 {
-                // Cambiar a vista de resultados
+            if index == 5 {
+                guard let resultados = storyboard?.instantiateViewController(withIdentifier: "ResultadosViewController") as? ResultadosViewController else {
+                    print("Failed")
+                    return
+                }
+                present(resultados, animated: true)
+               
             }
         }else{
             let alertController = UIAlertController(
