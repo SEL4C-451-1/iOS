@@ -1,13 +1,11 @@
 //
-//  QuestionData.swift
+//  JsonReader.swift
 //  SEL4C
 //
-//  Created by Moisés Adame Aguilar on 28/08/23.
+//  Created by Moisés Adame Aguilar on 21/09/23.
 //
 
 import Foundation
-
-var questions: [Question] = load("preguntas.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

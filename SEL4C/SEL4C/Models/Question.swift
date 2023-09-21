@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Question: Hashable, Codable {
+struct Question: Codable {
     var title: String
     var content: String
 }

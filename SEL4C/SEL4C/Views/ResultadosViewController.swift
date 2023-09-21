@@ -8,20 +8,13 @@
 import UIKit
 
 class ResultadosViewController: UIViewController {
+    // MARK: Answers
+    var answers: Answer = Answer()
 
+    @IBOutlet weak var autocontrolProgress: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        autocontrolProgress.transform = CGAffineTransformScale(autocontrolProgress.transform, 1, 1.25)
     }
-    
-    @IBAction func terminar(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") as? ActividadesViewController else {
-            print("Failed")
-            return
-        }
-        present(vc, animated: true)
-    }
-    
-
 }
-

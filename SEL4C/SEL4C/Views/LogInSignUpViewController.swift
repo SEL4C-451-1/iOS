@@ -11,10 +11,11 @@ class LogInSignUpViewController: UIViewController {
     @IBOutlet weak var buttonLogIn: UIButton!
     @IBOutlet weak var buttonSignUp: UIButton!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabBarController?.tabBar.isHidden = true
+        
         buttonLogIn.layer.cornerRadius = 35
         buttonLogIn.clipsToBounds = true
         
