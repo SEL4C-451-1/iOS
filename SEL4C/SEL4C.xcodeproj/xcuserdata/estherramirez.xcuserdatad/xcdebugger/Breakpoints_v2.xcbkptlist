@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "953E5526-DA38-4642-916C-943FD0328656"
+   uuid = "EEC83B59-B9E7-4559-847C-31F3FAD556ED"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B2FCD8A6-D6EA-4DAE-9A94-4C48A5B48EF1"
-            shouldBeEnabled = "No"
+            uuid = "502B678A-5680-4D41-8C2C-A788AD48F2CE"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SEL4C/Views/CuestionarioViewController.swift"
+            filePath = "SEL4C/Views/SignUpEssentialsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "buttonNext(_:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "acceptAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

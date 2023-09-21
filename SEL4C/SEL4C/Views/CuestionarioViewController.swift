@@ -22,7 +22,8 @@ class CuestionarioViewController: UIViewController {
     // MARK: Progress Bar
     @IBOutlet weak var progressBar: UIProgressView!
     
-    var answers: [Int] = []
+    // MARK: Answers
+    var answers: Answer = Answer()
     var index: Int = 0
     
     override func viewDidLoad() {
@@ -39,8 +40,8 @@ class CuestionarioViewController: UIViewController {
         labelQuestionNumber.text = questions[index].title
         labelQuestionContent.text = questions[index].content
         
+        // MARK: Initialization of progress bar
         progressBar.progress = Float(index + 1) / 50
-
     }
     
     @IBAction func radioButtonAction(_ sender: RadioButton) {
@@ -54,7 +55,7 @@ class CuestionarioViewController: UIViewController {
         }
     }
     
-    @IBAction func buttonNext(_ sender: UIButton) {
+    @IBAction func buttonNext(_ sender: Any) {
         // Save the selected answer and resent buttons
         let radios = [radioButton1, radioButton2, radioButton3, radioButton4, radioButton5]
         var answer: Int = -1
@@ -78,22 +79,28 @@ class CuestionarioViewController: UIViewController {
             labelQuestionContent.text = questions[index].content
             
             // Check if it has been answered
-            if index <= answers.count-1 {
+            if index <= answers.answerArray.count-1 {
                 // Negate all aswers except but the selected one.
                 for radio in radios {
-                    if radio?.number == answers[index] {
+                    if radio?.number == answers.answerArray[index] {
                         radio?.isSelected = true
                     }else{
                         radio?.isSelected = false
                     }
                 }
             }else{
-                answers.append(answer)
+                answers.answerArray.append(answer)
             }
             
             // Check if the questions have ended.
-            if index == 49 {
-                // Cambiar a vista de resultados
+            if index == 5 {
+                guard let resultados = storyboard?.instantiateViewController(withIdentifier: "ResultadosViewController") as? ResultadosViewController else {
+                    return
+                }
+                resultados.modalPresentationStyle = .fullScreen
+                resultados.answers = answers
+                present(resultados, animated: true)
+               
             }
         }else{
             let alertController = UIAlertController(
@@ -126,7 +133,7 @@ class CuestionarioViewController: UIViewController {
             
             // Negate all aswers except but the selected one.
             for radioIndex in 0...radios.count-1 {
-                if radioIndex + 1 == answers[index] {
+                if radioIndex + 1 == answers.answerArray[index] {
                     radios[radioIndex]?.isSelected = true
                 }else{
                     radios[radioIndex]?.isSelected = false

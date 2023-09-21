@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct Answer: Hashable, Codable {
+struct Answer: Codable {
     // MARK: Attributes
-    var answer_array: [Int]
+    var answerArray: [Int]
     
     // MARK: Methods
     // Constructor Method
-    init(answer_array: [Int]){
-        self.answer_array = answer_array
+    init(){
+        self.answerArray = []
     }
     
     // Main Evaluation
     func getMarks() -> Int{
         var sum: Int = 0
-        for answer in self.answer_array {
+        for answer in self.answerArray {
             sum += answer
         }
         

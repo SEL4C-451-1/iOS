@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752931BB2AAF9A560074A323 /* ActividadesViewController.swift */; };
 		AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */; };
 		AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */; };
 		AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD32A9C807C004EFCE5 /* Question.swift */; };
-		AF199AD62A9C80D2004EFCE5 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD52A9C80D2004EFCE5 /* QuestionData.swift */; };
+		AF199AD62A9C80D2004EFCE5 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD52A9C80D2004EFCE5 /* JsonData.swift */; };
 		AF199AD82A9C85F2004EFCE5 /* preguntas.json in Resources */ = {isa = PBXBuildFile; fileRef = AF199AD72A9C85F2004EFCE5 /* preguntas.json */; };
+		AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */; };
+		AF486D702ABCB4E00014089D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = AF486D6F2ABCB4E00014089D /* countries.json */; };
+		AF486D722ABCB5590014089D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D712ABCB5590014089D /* Country.swift */; };
+		AF486D742ABCB9560014089D /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D732ABCB9560014089D /* JsonReader.swift */; };
+		AF486D762ABCD8130014089D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D752ABCD8130014089D /* User.swift */; };
+		AF486D782ABCFD3E0014089D /* HeightProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D772ABCFD3E0014089D /* HeightProgressBar.swift */; };
+		AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */; };
+		AF486D7D2ABD00FD0014089D /* DynamicBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */; };
 		AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9292A9BD89800BA5FB1 /* AppDelegate.swift */; };
 		AF6BC92C2A9BD89800BA5FB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC92B2A9BD89800BA5FB1 /* SceneDelegate.swift */; };
-		AF6BC92E2A9BD89800BA5FB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC92D2A9BD89800BA5FB1 /* ViewController.swift */; };
-		AF6BC9312A9BD89800BA5FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6BC92F2A9BD89800BA5FB1 /* Main.storyboard */; };
+		AF6BC92E2A9BD89800BA5FB1 /* ResultadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */; };
+		AF6BC9312A9BD89800BA5FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6BC92F2A9BD89800BA5FB1 /* Main.storyboard */; settings = {ASSET_TAGS = (Resultados, ); }; };
 		AF6BC9332A9BD89900BA5FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6BC9322A9BD89900BA5FB1 /* Assets.xcassets */; };
 		AF6BC9362A9BD89900BA5FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6BC9342A9BD89900BA5FB1 /* LaunchScreen.storyboard */; };
 		AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */; };
@@ -25,15 +34,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		752931BB2AAF9A560074A323 /* ActividadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadesViewController.swift; sourceTree = "<group>"; };
 		AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuestionarioViewController.swift; sourceTree = "<group>"; };
 		AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		AF199AD32A9C807C004EFCE5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		AF199AD52A9C80D2004EFCE5 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		AF199AD52A9C80D2004EFCE5 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		AF199AD72A9C85F2004EFCE5 /* preguntas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preguntas.json; sourceTree = "<group>"; };
+		AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentials2ViewController.swift; sourceTree = "<group>"; };
+		AF486D6F2ABCB4E00014089D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		AF486D712ABCB5590014089D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		AF486D732ABCB9560014089D /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		AF486D752ABCD8130014089D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF486D772ABCFD3E0014089D /* HeightProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightProgressBar.swift; sourceTree = "<group>"; };
+		AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseKeyboardExtension.swift; sourceTree = "<group>"; };
+		AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBorderRadius.swift; sourceTree = "<group>"; };
 		AF6BC9262A9BD89800BA5FB1 /* SEL4C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEL4C.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6BC9292A9BD89800BA5FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF6BC92B2A9BD89800BA5FB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF6BC92D2A9BD89800BA5FB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadosViewController.swift; sourceTree = "<group>"; };
 		AF6BC9302A9BD89800BA5FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF6BC9322A9BD89900BA5FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6BC9352A9BD89900BA5FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */,
+				AF486D772ABCFD3E0014089D /* HeightProgressBar.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -67,8 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				AF199AD32A9C807C004EFCE5 /* Question.swift */,
-				AF199AD52A9C80D2004EFCE5 /* QuestionData.swift */,
+				AF486D712ABCB5590014089D /* Country.swift */,
+				AF199AD52A9C80D2004EFCE5 /* JsonData.swift */,
 				AFA67F0E2A9D5FC000FE69DB /* Answer.swift */,
+				AF486D732ABCB9560014089D /* JsonReader.swift */,
+				AF486D752ABCD8130014089D /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -77,8 +99,18 @@
 			isa = PBXGroup;
 			children = (
 				AF199AD72A9C85F2004EFCE5 /* preguntas.json */,
+				AF486D6F2ABCB4E00014089D /* countries.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF486D792ABD007B0014089D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */,
+				AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AF6BC91D2A9BD89800BA5FB1 = {
@@ -100,6 +132,7 @@
 		AF6BC9282A9BD89800BA5FB1 /* SEL4C */ = {
 			isa = PBXGroup;
 			children = (
+				AF486D792ABD007B0014089D /* Extensions */,
 				AF199AD02A9C8035004EFCE5 /* Resources */,
 				AF199ACF2A9C8029004EFCE5 /* Models */,
 				AF199AC82A9C397D004EFCE5 /* Classes */,
@@ -125,11 +158,13 @@
 		AF6BC93E2A9BE17900BA5FB1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF6BC92D2A9BD89800BA5FB1 /* ViewController.swift */,
+				AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */,
 				AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */,
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
 				AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */,
+				AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */,
 				AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */,
+				752931BB2AAF9A560074A323 /* ActividadesViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +196,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					Resultados,
+				);
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
@@ -195,6 +233,7 @@
 				AF6BC9362A9BD89900BA5FB1 /* LaunchScreen.storyboard in Resources */,
 				AF6BC9332A9BD89900BA5FB1 /* Assets.xcassets in Resources */,
 				AF6BC9312A9BD89800BA5FB1 /* Main.storyboard in Resources */,
+				AF486D702ABCB4E00014089D /* countries.json in Resources */,
 				AF199AD82A9C85F2004EFCE5 /* preguntas.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,17 +245,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF486D722ABCB5590014089D /* Country.swift in Sources */,
+				AF486D742ABCB9560014089D /* JsonReader.swift in Sources */,
 				AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */,
-				AF6BC92E2A9BD89800BA5FB1 /* ViewController.swift in Sources */,
+				AF6BC92E2A9BD89800BA5FB1 /* ResultadosViewController.swift in Sources */,
+				AF486D762ABCD8130014089D /* User.swift in Sources */,
+				752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
 				AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */,
 				AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */,
 				AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */,
 				AF6BC92C2A9BD89800BA5FB1 /* SceneDelegate.swift in Sources */,
-				AF199AD62A9C80D2004EFCE5 /* QuestionData.swift in Sources */,
+				AF199AD62A9C80D2004EFCE5 /* JsonData.swift in Sources */,
 				AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */,
+				AF486D782ABCFD3E0014089D /* HeightProgressBar.swift in Sources */,
+				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,
 				AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */,
+				AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */,
+				AF486D7D2ABD00FD0014089D /* DynamicBorderRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
