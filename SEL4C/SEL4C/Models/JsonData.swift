@@ -11,7 +11,7 @@ var questions: [Question] = load("preguntas.json")
 var countries: [String] = countryToSpanish(jsonFile: "countries.json")
 
 func countryToSpanish(jsonFile: String) -> [String]{
-    var countries: [Country] = load(jsonFile)
+    let countries: [Country] = load(jsonFile)
     var countriesSpanish: [String] = []
     for country in countries{
         countriesSpanish.append(country.es_name)

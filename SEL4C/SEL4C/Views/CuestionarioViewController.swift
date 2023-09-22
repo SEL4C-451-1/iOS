@@ -22,8 +22,10 @@ class CuestionarioViewController: UIViewController {
     // MARK: Progress Bar
     @IBOutlet weak var progressBar: UIProgressView!
     
-    // MARK: Answers
+    // MARK: Answers & User Initialization
     var answers: Answer = Answer()
+    var user: User = User(userName: "", email: "", emailRecover: "", password: "")
+    
     var index: Int = 0
     
     override func viewDidLoad() {
@@ -84,7 +86,9 @@ class CuestionarioViewController: UIViewController {
                 guard let resultados = storyboard?.instantiateViewController(withIdentifier: "ResultadosViewController") as? ResultadosViewController else {
                     return
                 }
+                
                 resultados.modalPresentationStyle = .fullScreen
+                resultados.user = user
                 resultados.answers = answers
                 present(resultados, animated: true)
             }else{

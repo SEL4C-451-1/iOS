@@ -30,6 +30,7 @@
 		AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */; };
 		AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */; };
 		AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */; };
+		AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */; };
 		AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA67F0E2A9D5FC000FE69DB /* Answer.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
 		AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentialsViewController.swift; sourceTree = "<group>"; };
+		AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldProcessingForViewController.swift; sourceTree = "<group>"; };
 		AFA67F0E2A9D5FC000FE69DB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 			children = (
 				AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */,
 				AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */,
+				AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */,
 				AF6BC92C2A9BD89800BA5FB1 /* SceneDelegate.swift in Sources */,
 				AF199AD62A9C80D2004EFCE5 /* JsonData.swift in Sources */,
+				AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */,
 				AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */,
 				AF486D782ABCFD3E0014089D /* HeightProgressBar.swift in Sources */,
 				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,

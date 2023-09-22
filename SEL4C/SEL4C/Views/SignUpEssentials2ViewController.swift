@@ -148,6 +148,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
             guard let cuestionario = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController else {
                 return
             }
+            cuestionario.user = user
             cuestionario.modalPresentationStyle = .fullScreen
             present(cuestionario, animated: true)
         } else {

@@ -343,6 +343,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="logIn:" destination="3A3-39-cGT" eventType="touchUpInside" id="Zpm-Bn-IZS"/>
                                             <segue destination="abP-6K-gW3" kind="presentation" modalPresentationStyle="fullScreen" id="vSU-K0-ch7"/>
                                         </connections>
                                     </button>
@@ -362,6 +363,8 @@
                     <navigationItem key="navigationItem" id="zV5-qg-xOX"/>
                     <connections>
                         <outlet property="buttonLogIn" destination="mpt-i3-lcT" id="Ee8-kn-hsh"/>
+                        <outlet property="emailTextField" destination="Kbt-XN-8to" id="27D-QA-315"/>
+                        <outlet property="passwordTextField" destination="b9U-vC-2zE" id="GKz-H1-r9L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uP-pJ-zPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1307,7 +1310,7 @@
                                         <rect key="frame" x="0.0" y="110" width="430" height="729"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZIY-Ii-aEo">
-                                                <rect key="frame" x="20" y="0.0" width="387" height="936"/>
+                                                <rect key="frame" x="20" y="0.0" width="387" height="1016"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5g-LT-Vbs">
                                                         <rect key="frame" x="0.0" y="0.0" width="387" height="75"/>
@@ -1632,7 +1635,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JLj-Ga-Tqb" userLabel="PensamientoSistemico GradeCard">
                                                         <rect key="frame" x="0.0" y="558" width="387" height="87"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gauge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="74G-Th-e1u" userLabel="Image">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gauge.medium" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="74G-Th-e1u" userLabel="Image">
                                                                 <rect key="frame" x="10" y="11" width="67" height="65.666666666666671"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -1917,6 +1920,33 @@
                                                         </constraints>
                                                         <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="10" bottom="10" trailing="10"/>
                                                     </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XnV-bZ-2aL">
+                                                        <rect key="frame" x="0.0" y="946" width="387" height="70"/>
+                                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="Hqq-Ve-pbO"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Terminar">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="35" name="AndaleMono"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="sendUserInfo:" destination="FdR-wx-Mqo" eventType="touchUpInside" id="p6k-En-axq"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.99999994039535522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </stackView>
@@ -1970,6 +2000,7 @@
                         <outlet property="pensamientoSistemicoPorcentage" destination="wQh-Aq-NI5" id="uYd-Q3-hZi"/>
                         <outlet property="pensamientoSistemicoProgress" destination="ieg-cr-dsb" id="NKT-Bs-bee"/>
                         <outlet property="pensamientoSistemicoStack" destination="JLj-Ga-Tqb" id="QwP-Yp-yGO"/>
+                        <outlet property="terminateButton" destination="XnV-bZ-2aL" id="1Ip-GB-e3l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmr-Ry-4Fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2307,7 +2338,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="khw-Gu-Odb"/>
+        <segue reference="VoD-li-K1u"/>
         <segue reference="H6O-BU-G8t"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2315,7 +2346,7 @@
         <image name="brain.head.profile" catalog="system" width="120" height="128"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="figure.2.and.child.holdinghands" catalog="system" width="128" height="90"/>
-        <image name="gauge" catalog="system" width="128" height="123"/>
+        <image name="gauge.medium" catalog="system" width="128" height="123"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="ipad.and.arrow.forward" catalog="system" width="113" height="128"/>
         <image name="light.beacon.min.fill" catalog="system" width="128" height="106"/>

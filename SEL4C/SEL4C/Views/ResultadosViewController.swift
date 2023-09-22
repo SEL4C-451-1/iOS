@@ -8,8 +8,9 @@
 import UIKit
 
 class ResultadosViewController: UIViewController {
-    // MARK: Answers
+    // MARK: Answers & User Initialization
     var answers: Answer = Answer()
+    var user: User = User(userName: "", email: "", emailRecover: "", password: "")
     
     // MARK: Progress Bar
     @IBOutlet weak var autocontrolProgress: UIProgressView!
@@ -41,6 +42,11 @@ class ResultadosViewController: UIViewController {
     @IBOutlet weak var pensamientoCientificoStack: UIStackView!
     @IBOutlet weak var pensamientoInnovadorStack: UIStackView!
     
+    // MARK: Button terminate
+    @IBOutlet weak var terminateButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,46 +56,62 @@ class ResultadosViewController: UIViewController {
         autocontrolPorcentage.text = "\(String(Int(answers.autocontrolGrade)))%"
         autocontrolProgress.progress = answers.autocontrolGrade / 100
         
-        // Liderazgo Card Border Radius
+        // Liderazgo Card Border Radius and Grade
         liderazgoPorcentage.setCornerRadius()
         liderazgoStack.setCornerRadius(20)
         liderazgoPorcentage.text = "\(String(Int(answers.liderazgolGrade)))%"
         liderazgoProgress.progress = answers.liderazgolGrade / 100
         
-        // Conciencia y Valor Social Card Border Radius
+        // Conciencia y Valor Social Card Border Radius and Grade
         concienciaSocialPorcentage.setCornerRadius()
         concienciaSocialStack.setCornerRadius(20)
         concienciaSocialPorcentage.text = "\(String(Int(answers.concienciaSocialGrade)))%"
         concienciaSocialProgress.progress = answers.concienciaSocialGrade / 100
         
-        // Innovación Social y Estabilidad Financiera Border Radius
+        // Innovación Social y Estabilidad Financiera Border Radius and Grade
         innovacionSocialFinancieraPorcentage.setCornerRadius()
         innovacionSocialFinancieraStack.setCornerRadius(20)
         innovacionSocialFinancieraPorcentage.text = "\(String(Int(answers.innovacionSocialFinancieraGrade)))%"
         innovacionSocialFinancieraProgress.progress = answers.innovacionSocialFinancieraGrade / 100
         
-        // Pensamiento Sistémico Border Radius
+        // Pensamiento Sistémico Border Radius and Grade
         pensamientoSistemicoPorcentage.setCornerRadius()
         pensamientoSistemicoStack.setCornerRadius(20)
         pensamientoSistemicoPorcentage.text = "\(String(Int(answers.pensamientoSistemicoGrade)))%"
         pensamientoSistemicoProgress.progress = answers.pensamientoSistemicoGrade / 100
         
-        // Pensamiento Crítico Border Radius
+        // Pensamiento Crítico Border Radius and Grade
         pensamientoCriticoPorcentage.setCornerRadius()
         pensamientoCriticoStack.setCornerRadius(20)
         pensamientoCriticoPorcentage.text = "\(String(Int(answers.pensamientoCriticoGrade)))%"
         pensamientoCriticoProgress.progress = answers.pensamientoCriticoGrade / 100
         
-        // Pensamiento Científico Border Radius
+        // Pensamiento Científico Border Radius and Grade
         pensamientoCientificoPorcentage.setCornerRadius()
         pensamientoCientificoStack.setCornerRadius(20)
         pensamientoCientificoPorcentage.text = "\(String(Int(answers.pensamientoCientificoGrade)))%"
         pensamientoCientificoProgress.progress = answers.pensamientoCientificoGrade / 100
         
-        // Pensamiento Innovador Border Radius
+        // Pensamiento Innovador Border Radius and Grade
         pensamientoInnovadorPorcentage.setCornerRadius()
         pensamientoInnovadorStack.setCornerRadius(20)
         pensamientoInnovadorPorcentage.text = "\(String(Int(answers.pensamientoInnovadorGrade)))%"
         pensamientoInnovadorProgress.progress = answers.pensamientoInnovadorGrade / 100
+        
+        // Terminate Button Border Radius
+        terminateButton.setCornerRadius(35)
+    }
+    
+    
+    @IBAction func sendUserInfo(_ sender: Any) {
+        // TODO: Enviar a API resultados de cuestionario inicial y datos de usuario
+        
+        // Go to activities menu.
+        guard let main = storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") as? ActividadesViewController else {
+            return
+        }
+        
+        main.modalPresentationStyle = .fullScreen
+        present(main, animated: true)
     }
 }

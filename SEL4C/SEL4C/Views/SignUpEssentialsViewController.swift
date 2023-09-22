@@ -25,47 +25,17 @@ class SignUpEssentialsViewController: UIViewController {
         super.viewDidLoad()
         
         // MARK: Buttons with border radius
-        buttonContinue.layer.cornerRadius = 35
-        buttonContinue.clipsToBounds = true
+        buttonContinue.setCornerRadius(35)
         
     }
     
     // Prepare view for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let resultVC = segue.destination as? SignUpEssentials2ViewController else {
+        guard let signUpEssentisals2 = segue.destination as? SignUpEssentials2ViewController else {
             return
         }
         
-        resultVC.user = user
-    }
-    
-    // Función que checa si email es válido.
-    func isValidEmail(_ email: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailPred.evaluate(with: email)
-    }
-    
-    // Función que checa si Text Field no está vacío
-    func isNotEmpty(_ field: UITextField) -> Bool {
-        return !field.text!.isEmpty
-    }
-    
-    // Función que genera una alerta
-    func showErrorAlert(_ message: String){
-        let alertController = UIAlertController(
-            title: "Error",
-            message: message,
-            preferredStyle: .alert
-        )
-        let ok = UIAlertAction(
-            title: "Salir.",
-            style: .default
-        )
-
-        alertController.addAction(ok)
-        present(alertController, animated: true, completion: nil)
+        signUpEssentisals2.user = user
     }
     
     // Función que checa los campos y determina si poder pasar a la próxima view
