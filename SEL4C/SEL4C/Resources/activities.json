@@ -1,0 +1,152 @@
+[
+    {
+        "activityName": "Identificación",
+        "activityNumber": "1",
+        "subactivities": [
+            {
+                "subactivityName": "Actividad 1.1",
+                "instructions": {
+                    "text": "Haz una lluvia de ideas sobre problemas sociales o ambientales que se dan en tu entorno.",
+                    "bullets": [
+                        "¿Cuáles identificas?",
+                        "Mínimo debes poder identificar 5 problemáticas.",
+                        "¿Cómo te afectan estos problemas? ¿Has escuchado que le afecten a alguien cercano?",
+                        "¿Por qué se consideran un problema?"
+                    ]
+                },
+                "deliverable": "Realiza una conclusión de la reflexión inicial de forma escrita."
+            },
+            {
+                "subactivityName": "Actividad 1.2",
+                "instructions": {
+                    "text": "Ahora, entrevista a una persona respecto a la misma idea:",
+                    "bullets": [
+                        "¿Qué problemas ambientales o sociales identificas en tu casa, colonia o ciudad o país?",
+                        "¿Por qué son un problema?",
+                        "¿Quiénes intervienen en el problema?",
+                        "¿Te has visto afectado por este problema? ¿Cómo?"
+                    ]
+                },
+                "deliverable": "Realiza una conclusión de la entrevista y graba un video en la siguiente pantalla."
+            },
+            {
+                "subactivityName": "Actividad 1.3",
+                "instructions": {
+                    "text": "Por último, haz un recorrido por tu colonia o ciudad y registra lo que ves relacionado con la situación ambiental o social. Busca identificar situaciones que no te agraden o problemas ya identificados.",
+                    "bullets": [
+                        "¿Qué viste?",
+                        "¿Dónde lo viste?",
+                        "¿Había alguien ocasionandolo?"
+                    ]
+                },
+                "deliverable": "Tabla con el registro de lo observado."
+            }
+        ]
+    },
+    {
+        "activityName": "Investigación",
+        "activityNumber": "2",
+        "subactivities": [
+            {
+                "subactivityName": "Actividad 2.1",
+                "instructions": {
+                    "text": "Reflexiona acerca de los problemas que identificaste en la Actividad 1. Teniéndolos en mente, haz una investigación sobre los Objetivos de Desarrollo Sostenible.",
+                    "bullets": []
+                },
+                "deliverable": "Revisa cada uno de los objetivos y sus metas e investiga como es que estos se relacionan con los problemas que identificaste. Con base en ello, responde la siguiente encuesta según la problemática mas importante que hayas identificado."
+            },
+            {
+                "subactivityName": "Actividad 2.2",
+                "instructions": {
+                    "text": "Los ODS nos permiten comprender como es que estas problemáticas son consideradas Retos y Desafíos para todo el Mundo, sin embargo, es importante que podamos conocer cuál es la situación actual.",
+                    "bullets": []
+                },
+                "deliverable": "De las 5 problemáticas identificadas en la actividad 1, elije 3 y realiza una investigación que responda las siguientes preguntas:"
+            },
+            {
+                "subactivityName": "Actividad 2.3",
+                "instructions": {
+                    "text": "Los problemas suelen ser como árboles, con causas que se enraízan en la sociedad y con ramas y hojas que se dividen en múltiples consecuencias que afectan a muchas personas, realidades y entornos.  ",
+                    "bullets": []
+                },
+                "deliverable": "De tu problema seleccionado haz un árbol de causas y consecuencias donde el tronco del árbol es el problema seleccionado; las raíces son las causas; las ramas y hojas son las consecuencias. "
+            }
+        ]
+    },
+    {
+        "activityName": "Ideación",
+        "activityNumber": "3",
+        "subactivities": [
+            {
+                "subactivityName": "Actividad 3.1",
+                "instructions": {
+                    "text": "Antes de arrojarnos a proponer posibles soluciones, es importante que veamos que se hace al respecto en otros lugares. Para ello, te sugerimos que hagas una investigación sobre acciones concretas que se hacen internacional, nacional o localmente para atender el problema que elegiste.",
+                    "bullets": [
+                        "¿Cuáles identificas?",
+                        "Mínimo deben poder identificar 5 problemáticas.",
+                        "¿Cómo te afectan estos problemas? ¿Has escuchado que le afecten a alguien cercano?",
+                        "¿Por qué se consideran un problema?"
+                    ]
+                },
+                "deliverable": "A continuación completaras la siguiente tabla acerca de las posibles soluciones."
+            },
+            {
+                "subactivityName": "Actividad 3.2",
+                "instructions": {
+                    "text": "Reflexiona sobre el hecho de que innovar no siempre es la generación de algo único u original, sino que muchas ocasiones, el innovar puede ser una adaptación a un entorno, momento o grupo poblacional concreto. En ocasiones, lo que se hace en otro contexto puede resultar novedoso en nuestra localidad, lo que lo vuelve innovador. O también, puede haber acciones que se apliquen a cierta población, pero que también pueda ser valioso para otros grupos.\nPor ejemplo: Acciones para reducir la basura en las empresas que puedan adaptarse para las escuelas; o acciones que se lleven a cabo en Colombia que podrían adoptarse para la propia ciudad o colonia.\nUna vez reflexionado esto, analiza las acciones que identificaste en el punto anterior, cuestionando:",
+                    "bullets": [
+                        "Si la solución que identificaste no es del lugar donde vives, ¿Se podría llevar a cabo en este?",
+                        "Si la solución que identificaste es del lugar donde vives, ¿Se podría aplicar en otra ciudad o país?",
+                        "¿Quiénes más podrían adoptar la solución que identificaste? ¿Podría realizarse por tus profesores, tu familia o tus vecinos?",
+                        "¿Cómo podrías sumarte? ¿Qué necesitarías?",
+                        "¿Qué harías diferente? ¿Podrías mejorar algo?",
+                        "¿Por qué sería una propuesta innovadora?",
+                        "¿Qué nombre le pondrías a su propuesta de solución?"
+                    ]
+                },
+                "deliverable": "Como cierre de este proceso de ideación deberías poder identificar una acción concreta que pudieras adaptar, mejorar y proponer para resolver el problema elegido.\nGraba tu reflexión y responde a las preguntas, concentrate en una sola propuesta de solución."
+            }
+        ]
+    },
+    {
+        "activityName": "Socialización",
+        "activityNumber": "4",
+        "subactivities": [
+            {
+                "subactivityName": "Actividad 4.1.1",
+                "instructions": {
+                    "text": "Una habilidad relevante de cualquier emprendedor social es que pueda comunicar su propuesta para sumar a más personas a la acción. Por ende, esta actividad tiene el objetivo de recibir retroalimentación de otras personas sobre la propuesta.\nDebes de preparar un guión para una entrevista teniendo en cuenta siguientes puntos:",
+                    "bullets": [
+                        "Nombre de la propuesta de solución.",
+                        "Problema que atiende.",
+                        "Lugar o personas que se ven actualmente afectadas por el problema en lo local.",
+                        "Acción concreta que se propone.",
+                        "¿Por qué es innovadora?"
+                    ]
+                },
+                "deliverable": "Responde estas preguntas en el siguiente formulario."
+            },
+            {
+                "subactivityName": "Actividad 4.1.2",
+                "instructions": {
+                    "text": "Realiza una entrevista, empezando por la presentación de tu propuesta con base en los puntos anteriormente desarrollados.\nDespués, será necesario detonar algunas preguntas para recibir retroalimentación, la cual en caso de ser valiosa, utilízala para hacer adecuaciones a tu propuesta:",
+                    "bullets": [
+                        "¿Consideras que es una propuesta viable, es decir, que si puede realizarse?",
+                        "¿Consideras que es una propuesta valiosa, es decir, que puede impactar positivamente en donde vivimos?",
+                        "¿Te podrías sumar a la propuesta? ¿Cómo lo harías?",
+                        "¿Qué sugerirías para que la propuesta fuera más viable, aplicable o tuviera un mayor impacto?"
+                    ]
+                },
+                "deliverable": "Audio de la presentación de tu entrevista a la otra persona."
+            },
+            {
+                "subactivityName": "Actividad 4.2",
+                "instructions": {
+                    "text": "Ahora graba un video tuyo reflexionando acerca de la retroalimentación recibida.",
+                    "bullets": []
+                },
+                "deliverable": "Video tuyo reflexionando  en la retroalimentación."
+            }
+        ]
+    }
+]

@@ -30,7 +30,10 @@
 		AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */; };
 		AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */; };
 		AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */; };
+		AF7986B12ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7986B02ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift */; };
 		AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */; };
+		AF944E682ABE46F000D532DE /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = AF944E672ABE46F000D532DE /* activities.json */; };
+		AF944E6A2ABE472600D532DE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E692ABE472600D532DE /* Activity.swift */; };
 		AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA67F0E2A9D5FC000FE69DB /* Answer.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +63,10 @@
 		AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
 		AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentialsViewController.swift; sourceTree = "<group>"; };
+		AF7986B02ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activiti1-1ContextViewController.swift"; sourceTree = "<group>"; };
 		AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldProcessingForViewController.swift; sourceTree = "<group>"; };
+		AF944E672ABE46F000D532DE /* activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
+		AF944E692ABE472600D532DE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		AFA67F0E2A9D5FC000FE69DB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,7 @@
 				AFA67F0E2A9D5FC000FE69DB /* Answer.swift */,
 				AF486D732ABCB9560014089D /* JsonReader.swift */,
 				AF486D752ABCD8130014089D /* User.swift */,
+				AF944E692ABE472600D532DE /* Activity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				AF199AD72A9C85F2004EFCE5 /* preguntas.json */,
+				AF944E672ABE46F000D532DE /* activities.json */,
 				AF486D6F2ABCB4E00014089D /* countries.json */,
 			);
 			path = Resources;
@@ -135,16 +143,13 @@
 		AF6BC9282A9BD89800BA5FB1 /* SEL4C */ = {
 			isa = PBXGroup;
 			children = (
+				AF7986B22ABE4CD5000FAB96 /* Storyboards */,
 				AF486D792ABD007B0014089D /* Extensions */,
 				AF199AD02A9C8035004EFCE5 /* Resources */,
 				AF199ACF2A9C8029004EFCE5 /* Models */,
 				AF199AC82A9C397D004EFCE5 /* Classes */,
 				AF6BC93E2A9BE17900BA5FB1 /* Views */,
 				AF6BC93D2A9BE15800BA5FB1 /* Natives */,
-				AF6BC9322A9BD89900BA5FB1 /* Assets.xcassets */,
-				AF6BC9342A9BD89900BA5FB1 /* LaunchScreen.storyboard */,
-				AF6BC92F2A9BD89800BA5FB1 /* Main.storyboard */,
-				AF6BC9372A9BD89900BA5FB1 /* Info.plist */,
 			);
 			path = SEL4C;
 			sourceTree = "<group>";
@@ -154,6 +159,8 @@
 			children = (
 				AF6BC92B2A9BD89800BA5FB1 /* SceneDelegate.swift */,
 				AF6BC9292A9BD89800BA5FB1 /* AppDelegate.swift */,
+				AF6BC9322A9BD89900BA5FB1 /* Assets.xcassets */,
+				AF6BC9372A9BD89900BA5FB1 /* Info.plist */,
 			);
 			path = Natives;
 			sourceTree = "<group>";
@@ -161,6 +168,11 @@
 		AF6BC93E2A9BE17900BA5FB1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF944E6B2ABE499100D532DE /* Activity1Views */,
+				AF944E6C2ABE49A500D532DE /* Activity2Views */,
+				AF944E6D2ABE49AC00D532DE /* Activity3Views */,
+				AF944E6E2ABE49B500D532DE /* Activity4Views */,
+				AF944E6F2ABE49BD00D532DE /* Activity5Views */,
 				AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */,
 				AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */,
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
@@ -170,6 +182,51 @@
 				752931BB2AAF9A560074A323 /* ActividadesViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AF7986B22ABE4CD5000FAB96 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AF6BC9342A9BD89900BA5FB1 /* LaunchScreen.storyboard */,
+				AF6BC92F2A9BD89800BA5FB1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AF944E6B2ABE499100D532DE /* Activity1Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF7986B02ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift */,
+			);
+			path = Activity1Views;
+			sourceTree = "<group>";
+		};
+		AF944E6C2ABE49A500D532DE /* Activity2Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity2Views;
+			sourceTree = "<group>";
+		};
+		AF944E6D2ABE49AC00D532DE /* Activity3Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity3Views;
+			sourceTree = "<group>";
+		};
+		AF944E6E2ABE49B500D532DE /* Activity4Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity4Views;
+			sourceTree = "<group>";
+		};
+		AF944E6F2ABE49BD00D532DE /* Activity5Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity5Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +292,7 @@
 			files = (
 				AF6BC9362A9BD89900BA5FB1 /* LaunchScreen.storyboard in Resources */,
 				AF6BC9332A9BD89900BA5FB1 /* Assets.xcassets in Resources */,
+				AF944E682ABE46F000D532DE /* activities.json in Resources */,
 				AF6BC9312A9BD89800BA5FB1 /* Main.storyboard in Resources */,
 				AF486D702ABCB4E00014089D /* countries.json in Resources */,
 				AF199AD82A9C85F2004EFCE5 /* preguntas.json in Resources */,
@@ -253,10 +311,12 @@
 				AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */,
 				AF6BC92E2A9BD89800BA5FB1 /* ResultadosViewController.swift in Sources */,
 				AF486D762ABCD8130014089D /* User.swift in Sources */,
+				AF7986B12ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift in Sources */,
 				752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
 				AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */,
+				AF944E6A2ABE472600D532DE /* Activity.swift in Sources */,
 				AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */,
 				AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */,
 				AF6BC92C2A9BD89800BA5FB1 /* SceneDelegate.swift in Sources */,

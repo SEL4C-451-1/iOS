@@ -7,9 +7,11 @@
 
 import Foundation
 
+// Reading JSON of Questions
 var questions: [Question] = load("preguntas.json")
-var countries: [String] = countryToSpanish(jsonFile: "countries.json")
 
+// Reading JSON of Countries (in Spanish)
+var countries: [String] = countryToSpanish(jsonFile: "countries.json")
 func countryToSpanish(jsonFile: String) -> [String]{
     let countries: [Country] = load(jsonFile)
     var countriesSpanish: [String] = []
@@ -19,3 +21,6 @@ func countryToSpanish(jsonFile: String) -> [String]{
     
     return countriesSpanish
 }
+
+// Reading JSON of Activities
+var activities: [Activity] = load("activities.json")
