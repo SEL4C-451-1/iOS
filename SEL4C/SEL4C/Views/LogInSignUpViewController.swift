@@ -22,6 +22,5 @@ class LogInSignUpViewController: UIViewController {
         buttonSignUp.layer.cornerRadius = 35
         buttonSignUp.clipsToBounds = true
         
-        // Do any additional setup after loading the view.
     }
 }

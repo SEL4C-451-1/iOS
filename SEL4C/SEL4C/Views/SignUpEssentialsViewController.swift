@@ -70,26 +70,26 @@ class SignUpEssentialsViewController: UIViewController {
     
     // Función que checa los campos y determina si poder pasar a la próxima view
     @IBAction func continueButton(_ sender: Any) {
-        if isNotEmpty(usuarioTextField) && isNotEmpty(correoTextField) && isNotEmpty( correoRecuperacionTextField) && isNotEmpty(contrasenaTextField) && isNotEmpty( contrasenaRecuperacionTextField) || true {
+        if isNotEmpty(usuarioTextField) && isNotEmpty(correoTextField) && isNotEmpty( correoRecuperacionTextField) && isNotEmpty(contrasenaTextField) && isNotEmpty( contrasenaRecuperacionTextField){
             
             // Preparamos el mensaje de error por si alguno de los campos no es correcto
             var textUserErrors: String = ""
             var errorExists: Bool = false
             
             // El correo no cumple con el regex
-            if(!isValidEmail(correoTextField.text!) && false){
+            if(!isValidEmail(correoTextField.text!)){
                 textUserErrors += "Correo inválido. \n"
                 errorExists = true
             }
             
             // El correo de recuperación no cumple con el regex
-            if(!isValidEmail(correoRecuperacionTextField.text!) && false){
+            if(!isValidEmail(correoRecuperacionTextField.text!)){
                 textUserErrors += "Correo de recuperación inválido. \n"
                 errorExists = true
             }
             
             // Las contraseñas no ciionciden
-            if(contrasenaTextField.text! != contrasenaRecuperacionTextField.text! && false){
+            if(contrasenaTextField.text! != contrasenaRecuperacionTextField.text!){
                 textUserErrors += "Las contraseñas no coinciden. \n"
                 errorExists = true
             }

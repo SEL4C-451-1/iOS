@@ -41,7 +41,7 @@ class CuestionarioViewController: UIViewController {
         labelQuestionContent.text = questions[index].content
         
         // MARK: Initialization of progress bar
-        progressBar.progress = Float(index + 1) / 50
+        progressBar.progress = Float(index + 1) / Float(questions.count)
     }
     
     @IBAction func radioButtonAction(_ sender: RadioButton) {
@@ -67,6 +67,8 @@ class CuestionarioViewController: UIViewController {
         }
         
         if answer != -1 {
+            
+            
             // Negate all the radios
             for radio in radios{
                 radio?.isSelected = false
@@ -74,9 +76,22 @@ class CuestionarioViewController: UIViewController {
             
             // Change to next question
             index += 1
-            progressBar.progress = Float(index + 1) / 50
-            labelQuestionNumber.text = questions[index].title
-            labelQuestionContent.text = questions[index].content
+            
+            // Check if the questions have ended.
+            if index == questions.count {
+                answers.calculateSubevaluations()
+                
+                guard let resultados = storyboard?.instantiateViewController(withIdentifier: "ResultadosViewController") as? ResultadosViewController else {
+                    return
+                }
+                resultados.modalPresentationStyle = .fullScreen
+                resultados.answers = answers
+                present(resultados, animated: true)
+            }else{
+                progressBar.progress = Float(index + 1) / Float(questions.count)
+                labelQuestionNumber.text = questions[index].title
+                labelQuestionContent.text = questions[index].content
+            }
             
             // Check if it has been answered
             if index <= answers.answerArray.count-1 {
@@ -90,17 +105,6 @@ class CuestionarioViewController: UIViewController {
                 }
             }else{
                 answers.answerArray.append(answer)
-            }
-            
-            // Check if the questions have ended.
-            if index == 5 {
-                guard let resultados = storyboard?.instantiateViewController(withIdentifier: "ResultadosViewController") as? ResultadosViewController else {
-                    return
-                }
-                resultados.modalPresentationStyle = .fullScreen
-                resultados.answers = answers
-                present(resultados, animated: true)
-               
             }
         }else{
             let alertController = UIAlertController(
