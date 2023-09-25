@@ -2075,7 +2075,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Un9-s2-L8x" kind="show" id="aew-TK-Xbd"/>
+                                    <segue destination="Un9-s2-L8x" kind="presentation" modalPresentationStyle="fullScreen" id="aew-TK-Xbd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtg-JA-gJE">
@@ -2123,7 +2123,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="J9c-aI-3Y1" kind="show" id="p33-qz-H8t"/>
+                                    <segue destination="J9c-aI-3Y1" kind="modal" modalPresentationStyle="fullScreen" id="p33-qz-H8t"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWW-Ij-Xg2">
@@ -2249,7 +2249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGn-Lc-4eG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4722" y="-1163"/>
+            <point key="canvasLocation" x="2216" y="-1935"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wpS-FO-Ck7">
@@ -2272,37 +2272,1520 @@
             </objects>
             <point key="canvasLocation" x="1313" y="-1934"/>
         </scene>
-        <!--Activity1-->
+        <!--Activity1.1Main-->
         <scene sceneID="SAp-QX-5Hb">
             <objects>
-                <viewController title="Activity1" id="J9c-aI-3Y1" sceneMemberID="viewController">
+                <viewController title="Activity1.1Main" id="J9c-aI-3Y1" customClass="Activity1_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q9p-bq-yXB">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GZV-Zq-dsH">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2M-PM-bXh" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="4hF-Rd-zTQ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 1">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33300000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-sX-Bak">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4G-Gm-ZdM">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-pi-KFV">
+                                                <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-PJ-JK5" userLabel="Instrucciones">
+                                                        <rect key="frame" x="0.0" y="0.0" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="Jy6-Wa-3OU"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Instrucciones:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLF-TC-Ped">
+                                                        <rect key="frame" x="0.0" y="120" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X44-3f-Xxn" userLabel="Instrucciones Bullets Label">
+                                                        <rect key="frame" x="0.0" y="168" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiF-Bg-rDH" userLabel="Entrega">
+                                                        <rect key="frame" x="0.0" y="216" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="Ypb-DB-QwE"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="¿Qué debes entregar?">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-8N-e4Y" userLabel="Entrega Label">
+                                                        <rect key="frame" x="0.0" y="336" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vr6-zq-kso" userLabel="Form Buttons Stack View">
+                                                        <rect key="frame" x="0.0" y="384" width="387" height="43.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7sf-xn-dNS" userLabel="Button Back">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Atrás">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="wdN-ax-25g"/>
+                                                                    <segue destination="p1d-Ie-2HI" kind="presentation" modalPresentationStyle="fullScreen" id="7bn-cH-r9O"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrF-F3-55V" userLabel="Button Next">
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="178.33333333333337" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Siguiente">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="juU-Tj-3iu"/>
+                                                                    <segue destination="AoK-TE-oDL" kind="presentation" modalPresentationStyle="fullScreen" id="QtM-5y-Quv"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="5fw-WO-Jrz"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="BtF-pi-KFV" firstAttribute="trailing" secondItem="n4G-UF-ceF" secondAttribute="trailing" id="5V5-uD-gn1"/>
+                                            <constraint firstItem="BtF-pi-KFV" firstAttribute="top" secondItem="n4G-UF-ceF" secondAttribute="top" id="6gk-q5-PXj"/>
+                                            <constraint firstItem="BtF-pi-KFV" firstAttribute="width" secondItem="SaK-TD-f6F" secondAttribute="width" multiplier="0.9" id="P1K-V8-M3c"/>
+                                            <constraint firstItem="BtF-pi-KFV" firstAttribute="bottom" secondItem="n4G-UF-ceF" secondAttribute="bottom" id="irm-7j-mRm"/>
+                                            <constraint firstItem="BtF-pi-KFV" firstAttribute="leading" secondItem="n4G-UF-ceF" secondAttribute="leading" constant="20" id="qfu-Bw-8Kw"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="n4G-UF-ceF"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="SaK-TD-f6F"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="b4r-zn-S65"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="GZV-Zq-dsH" firstAttribute="top" secondItem="b4r-zn-S65" secondAttribute="top" id="OUV-zM-ez4"/>
+                            <constraint firstItem="GZV-Zq-dsH" firstAttribute="leading" secondItem="b4r-zn-S65" secondAttribute="leading" id="fdT-gI-XBX"/>
+                            <constraint firstItem="b4r-zn-S65" firstAttribute="trailing" secondItem="GZV-Zq-dsH" secondAttribute="trailing" id="lWu-Ox-Bht"/>
+                            <constraint firstAttribute="bottom" secondItem="GZV-Zq-dsH" secondAttribute="bottom" id="zQa-Bc-gRx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q1s-C5-rSa"/>
+                    <connections>
+                        <outlet property="bulletsLabel" destination="X44-3f-Xxn" id="rpp-S6-jhT"/>
+                        <outlet property="entregaLabel" destination="OYv-8N-e4Y" id="fC0-va-Xus"/>
+                        <outlet property="instruccionesLabel" destination="SLF-TC-Ped" id="nIZ-Yo-niz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEa-qC-rbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="-261"/>
+            <point key="canvasLocation" x="3419" y="-1060"/>
         </scene>
-        <!--Activity2-->
+        <!--Activity1.1Upload-->
+        <scene sceneID="9kn-ig-xEO">
+            <objects>
+                <viewController title="Activity1.1Upload" id="AoK-TE-oDL" customClass="Activity1_1UploadViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vkh-3B-vYV">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="soS-mJ-eqh">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zss-Rg-BQC" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="f2V-lc-NjO"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 1">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33300000429153442" translatesAutoresizingMaskIntoConstraints="NO" id="YDx-DT-ja4">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="604-ju-s8x">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S9T-7y-I5o">
+                                                <rect key="frame" x="20" y="0.0" width="387" height="756"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU9-wp-POc" userLabel="Instrucciones">
+                                                        <rect key="frame" x="0.0" y="0.0" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="p9I-lC-ZTv"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Instrucciones:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlX-rC-aNi">
+                                                        <rect key="frame" x="0.0" y="120" width="387" height="56"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Realiza una conclusión de la reflexión inicial de forma escrita:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjk-ga-HRT">
+                                                        <rect key="frame" x="0.0" y="196.00000000000003" width="387" height="496.66666666666674"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sD0-91-uT1" userLabel="Form Buttons Stack View">
+                                                        <rect key="frame" x="0.0" y="712.66666666666663" width="387" height="43.333333333333371"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-tZ-Smu" userLabel="Button Back">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Atrás">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="Fkm-rf-UPu"/>
+                                                                    <segue destination="J9c-aI-3Y1" kind="presentation" modalPresentationStyle="fullScreen" id="rEd-Bq-sf3"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-kF-R2c" userLabel="Button Next">
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="178.33333333333337" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Siguiente">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="1SL-oa-6Ic"/>
+                                                                    <segue destination="32k-ZR-qy7" kind="presentation" modalPresentationStyle="fullScreen" id="FvT-nR-992"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="w86-RM-JL9"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="S9T-7y-I5o" firstAttribute="trailing" secondItem="oV2-x7-H7Q" secondAttribute="trailing" id="EU6-2r-Bgi"/>
+                                            <constraint firstItem="S9T-7y-I5o" firstAttribute="leading" secondItem="oV2-x7-H7Q" secondAttribute="leading" constant="20" id="Fwq-B4-nxJ"/>
+                                            <constraint firstItem="S9T-7y-I5o" firstAttribute="bottom" secondItem="oV2-x7-H7Q" secondAttribute="bottom" id="JKT-TE-XVB"/>
+                                            <constraint firstItem="rjk-ga-HRT" firstAttribute="height" secondItem="aUR-vt-IjC" secondAttribute="height" multiplier="0.6" id="JuA-kx-gqX"/>
+                                            <constraint firstItem="S9T-7y-I5o" firstAttribute="width" secondItem="aUR-vt-IjC" secondAttribute="width" multiplier="0.9" id="SX5-6C-Zmx"/>
+                                            <constraint firstItem="S9T-7y-I5o" firstAttribute="top" secondItem="oV2-x7-H7Q" secondAttribute="top" id="b7D-EK-ZKZ"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="oV2-x7-H7Q"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="aUR-vt-IjC"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T6V-wI-CHL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="soS-mJ-eqh" firstAttribute="trailing" secondItem="T6V-wI-CHL" secondAttribute="trailing" id="1sJ-q5-IKe"/>
+                            <constraint firstItem="soS-mJ-eqh" firstAttribute="leading" secondItem="T6V-wI-CHL" secondAttribute="leading" id="Edg-lR-GgX"/>
+                            <constraint firstItem="soS-mJ-eqh" firstAttribute="top" secondItem="Vkh-3B-vYV" secondAttribute="top" id="Idr-ik-Zhd"/>
+                            <constraint firstItem="T6V-wI-CHL" firstAttribute="bottom" secondItem="soS-mJ-eqh" secondAttribute="bottom" id="bjR-gf-sLe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="conclusionTextField" destination="rjk-ga-HRT" id="l2E-NT-GLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oh-4p-6ln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4740" y="-1060"/>
+        </scene>
+        <!--Activity1.1Retro-->
+        <scene sceneID="8Nq-jX-cxe">
+            <objects>
+                <viewController storyboardIdentifier="Activity1.1Retro" title="Activity1.1Retro" id="32k-ZR-qy7" customClass="Activity1_1RetroViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOy-Vm-ozT">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MFi-Lu-X2q">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfG-sY-yI2" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="TpP-r8-zjv"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 1">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33300000429153442" translatesAutoresizingMaskIntoConstraints="NO" id="h7h-96-Z3m">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cXP-6O-8P8">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="704.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoNegro" translatesAutoresizingMaskIntoConstraints="NO" id="I6f-g7-zVn">
+                                                <rect key="frame" x="25" y="252.33333333333331" width="365" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="Mvu-lH-JLZ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="25" bottom="8" trailing="40"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SF0-qO-tSW" userLabel="Form Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="808.66666666666663" width="430" height="123.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51z-NS-vp5" userLabel="Button Back">
+                                                <rect key="frame" x="20" y="40" width="180" height="43.333333333333343"/>
+                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Atrás">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="backButton:" destination="32k-ZR-qy7" eventType="touchUpInside" id="DgW-Kt-CUt"/>
+                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="Lwn-7u-wxc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-E0-U3S" userLabel="Button Next">
+                                                <rect key="frame" x="230" y="40" width="180" height="43.333333333333343"/>
+                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Siguiente">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="zc2-HP-oY1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="40" leading="20" bottom="40" trailing="20"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97645097970962524" green="0.98871570825576782" blue="0.96899312734603882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MAC-DK-bRT"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MFi-Lu-X2q" firstAttribute="top" secondItem="MAC-DK-bRT" secondAttribute="top" id="FPa-Pf-HUg"/>
+                            <constraint firstItem="MFi-Lu-X2q" firstAttribute="leading" secondItem="MAC-DK-bRT" secondAttribute="leading" id="HiV-2K-0KZ"/>
+                            <constraint firstItem="MAC-DK-bRT" firstAttribute="trailing" secondItem="MFi-Lu-X2q" secondAttribute="trailing" id="O4v-BC-H6f"/>
+                            <constraint firstItem="MFi-Lu-X2q" firstAttribute="bottom" secondItem="MAC-DK-bRT" secondAttribute="bottom" id="lLN-D0-SD4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiO-IB-Ee2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6031" y="-1060"/>
+        </scene>
+        <!--Activity1.2Main-->
+        <scene sceneID="KGP-0h-6pn">
+            <objects>
+                <viewController title="Activity1.2Main" id="zNP-IE-GRe" customClass="Activity1_2MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nmj-on-13n">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QcB-Ap-l3o">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1O-3N-54j" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="ip1-dd-KZZ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 1">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.66600000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="doI-T6-CJI">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-g8-5D4">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g9U-6L-irQ">
+                                                <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiP-sm-0NM" userLabel="Instrucciones">
+                                                        <rect key="frame" x="0.0" y="0.0" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="Xcf-Bv-Yct"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Instrucciones:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1y-UY-YzZ">
+                                                        <rect key="frame" x="0.0" y="120" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lC-si-44d" userLabel="Instrucciones Bullets Label">
+                                                        <rect key="frame" x="0.0" y="168" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqY-8i-An2" userLabel="Entrega">
+                                                        <rect key="frame" x="0.0" y="216" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="pUg-Tf-vtA"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="¿Qué debes entregar?">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcm-6b-PG3" userLabel="Entrega Label">
+                                                        <rect key="frame" x="0.0" y="336" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="r38-VI-Ntv" userLabel="Form Buttons Stack View">
+                                                        <rect key="frame" x="0.0" y="384" width="387" height="43.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SK3-SM-GON" userLabel="Button Back">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Atrás">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="S98-FZ-fp3"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rqq-uo-oeF" userLabel="Button Next">
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="178.33333333333337" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Siguiente">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="ySW-Jh-be8"/>
+                                                                    <segue destination="RGx-zr-fsN" kind="presentation" modalPresentationStyle="fullScreen" id="Ah9-xs-xcZ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="n7o-Lb-mXB"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="g9U-6L-irQ" firstAttribute="bottom" secondItem="iT3-Q8-qrE" secondAttribute="bottom" id="2TT-eH-Ghv"/>
+                                            <constraint firstItem="g9U-6L-irQ" firstAttribute="width" secondItem="HoT-lJ-QHl" secondAttribute="width" multiplier="0.9" id="Fjt-dU-OGD"/>
+                                            <constraint firstItem="g9U-6L-irQ" firstAttribute="trailing" secondItem="iT3-Q8-qrE" secondAttribute="trailing" id="IAK-9U-4Dr"/>
+                                            <constraint firstItem="g9U-6L-irQ" firstAttribute="top" secondItem="iT3-Q8-qrE" secondAttribute="top" id="PVP-Pc-F0E"/>
+                                            <constraint firstItem="g9U-6L-irQ" firstAttribute="leading" secondItem="iT3-Q8-qrE" secondAttribute="leading" constant="20" id="Vv4-CZ-iea"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="iT3-Q8-qrE"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="HoT-lJ-QHl"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hsy-5A-g4c"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QcB-Ap-l3o" secondAttribute="bottom" id="BY6-CR-bpX"/>
+                            <constraint firstItem="QcB-Ap-l3o" firstAttribute="trailing" secondItem="hsy-5A-g4c" secondAttribute="trailing" id="cKh-hE-lll"/>
+                            <constraint firstItem="QcB-Ap-l3o" firstAttribute="top" secondItem="nmj-on-13n" secondAttribute="top" id="vEI-J9-QTe"/>
+                            <constraint firstItem="QcB-Ap-l3o" firstAttribute="leading" secondItem="hsy-5A-g4c" secondAttribute="leading" id="zfr-rm-jfb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bulletsLabel" destination="4lC-si-44d" id="zlD-bV-8LR"/>
+                        <outlet property="entregaLabel" destination="kcm-6b-PG3" id="vtY-iL-Po9"/>
+                        <outlet property="instruccionesLabel" destination="e1y-UY-YzZ" id="h4e-Io-99Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLx-TN-mKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7107" y="-1060"/>
+        </scene>
+        <!--Activity1.3Main-->
+        <scene sceneID="caQ-bU-eyU">
+            <objects>
+                <viewController title="Activity1.3Main" id="RGx-zr-fsN" customClass="Activity1_3MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aj5-n0-xET">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rtK-HK-xgd">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiF-dF-MZV" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="xzg-2s-P0P"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 1">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="mLC-Bu-C3U">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J80-O5-Dh5">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iLg-g2-zDj">
+                                                <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO1-i2-dsI" userLabel="Instrucciones">
+                                                        <rect key="frame" x="0.0" y="0.0" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="3hB-gp-Fqr"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Instrucciones:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpJ-Bu-0Ik">
+                                                        <rect key="frame" x="0.0" y="120" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gn-5S-OcA" userLabel="Instrucciones Bullets Label">
+                                                        <rect key="frame" x="0.0" y="168" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBf-1h-b9I" userLabel="Entrega">
+                                                        <rect key="frame" x="0.0" y="216" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="X8O-yH-3BY"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="¿Qué debes entregar?">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIZ-1P-Ha2" userLabel="Entrega Label">
+                                                        <rect key="frame" x="0.0" y="336" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ggh-rK-QTX" userLabel="Form Buttons Stack View">
+                                                        <rect key="frame" x="0.0" y="384" width="387" height="43.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLc-zy-VIe" userLabel="Button Back">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Atrás">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="tYs-au-GxC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWP-cc-wpz" userLabel="Button Next">
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="178.33333333333337" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Siguiente">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="SKb-zi-Q77"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="lNP-Lk-IWF"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="iLg-g2-zDj" firstAttribute="trailing" secondItem="eCG-R7-gOY" secondAttribute="trailing" id="Ax3-jM-bK9"/>
+                                            <constraint firstItem="iLg-g2-zDj" firstAttribute="leading" secondItem="eCG-R7-gOY" secondAttribute="leading" constant="20" id="KUa-sY-8Eo"/>
+                                            <constraint firstItem="iLg-g2-zDj" firstAttribute="bottom" secondItem="eCG-R7-gOY" secondAttribute="bottom" id="m1n-J8-D4r"/>
+                                            <constraint firstItem="iLg-g2-zDj" firstAttribute="top" secondItem="eCG-R7-gOY" secondAttribute="top" id="od8-QE-QrM"/>
+                                            <constraint firstItem="iLg-g2-zDj" firstAttribute="width" secondItem="pNz-Vg-Oht" secondAttribute="width" multiplier="0.9" id="tpH-Gc-FcT"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="eCG-R7-gOY"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="pNz-Vg-Oht"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nza-MQ-xFn"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rtK-HK-xgd" firstAttribute="trailing" secondItem="nza-MQ-xFn" secondAttribute="trailing" id="4QD-p5-VQz"/>
+                            <constraint firstItem="rtK-HK-xgd" firstAttribute="leading" secondItem="nza-MQ-xFn" secondAttribute="leading" id="BGI-FS-jjn"/>
+                            <constraint firstItem="rtK-HK-xgd" firstAttribute="bottom" secondItem="aj5-n0-xET" secondAttribute="bottom" id="SEM-vN-TiE"/>
+                            <constraint firstItem="rtK-HK-xgd" firstAttribute="top" secondItem="nza-MQ-xFn" secondAttribute="top" id="W3g-Lb-T8T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bulletsLabel" destination="7Gn-5S-OcA" id="IW9-7c-cmA"/>
+                        <outlet property="entregaLabel" destination="gIZ-1P-Ha2" id="uxA-YJ-2Js"/>
+                        <outlet property="instruccionesLabel" destination="YpJ-Bu-0Ik" id="zCj-8w-gQS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVZ-KW-c7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8399" y="-1060"/>
+        </scene>
+        <!--Activity2.1Main-->
         <scene sceneID="Dhq-FH-oj9">
             <objects>
-                <viewController title="Activity2" id="Un9-s2-L8x" sceneMemberID="viewController">
+                <viewController title="Activity2.1Main" id="Un9-s2-L8x" customClass="Activity2_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OIK-yN-Ij6">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gEV-SE-QoJ">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsl-b4-LxZ" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="qjA-pS-sDt"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 2">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33300000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="0qP-Bz-Iow">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MU3-OW-2y5">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t0K-Pw-j0S">
+                                                <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IA-WT-V8Z" userLabel="Instrucciones">
+                                                        <rect key="frame" x="0.0" y="0.0" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="hLL-hj-Ax1"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Instrucciones:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2k-ml-fiB">
+                                                        <rect key="frame" x="0.0" y="120" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBd-qO-Qhh" userLabel="Instrucciones Bullets Label">
+                                                        <rect key="frame" x="0.0" y="168" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZw-xM-7hY" userLabel="Entrega">
+                                                        <rect key="frame" x="0.0" y="216" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="ypD-pu-cQT"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="¿Qué debes entregar?">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oW0-v6-iIW" userLabel="Entrega Label">
+                                                        <rect key="frame" x="0.0" y="336" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-86-yls" userLabel="Form Buttons Stack View">
+                                                        <rect key="frame" x="0.0" y="384" width="387" height="43.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMH-kv-0M1" userLabel="Button Back">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Atrás">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="OZK-I3-Kc4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjR-eK-Dz5" userLabel="Button Next">
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="178.33333333333337" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Siguiente">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="R4P-PF-88W"/>
+                                                                    <segue destination="y7b-CR-eMb" kind="presentation" modalPresentationStyle="fullScreen" id="Vs4-ZL-88A"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="8X5-Ay-hjC"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="t0K-Pw-j0S" firstAttribute="width" secondItem="6ug-RB-Tgd" secondAttribute="width" multiplier="0.9" id="8rg-Nl-SQY"/>
+                                            <constraint firstItem="t0K-Pw-j0S" firstAttribute="top" secondItem="WaO-Gh-qwh" secondAttribute="top" id="cc1-QP-qGP"/>
+                                            <constraint firstItem="t0K-Pw-j0S" firstAttribute="trailing" secondItem="WaO-Gh-qwh" secondAttribute="trailing" id="gZk-Jy-LS5"/>
+                                            <constraint firstItem="t0K-Pw-j0S" firstAttribute="bottom" secondItem="WaO-Gh-qwh" secondAttribute="bottom" id="qBt-Jd-8ab"/>
+                                            <constraint firstItem="t0K-Pw-j0S" firstAttribute="leading" secondItem="WaO-Gh-qwh" secondAttribute="leading" constant="20" id="xgb-dz-lXQ"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="WaO-Gh-qwh"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="6ug-RB-Tgd"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qUY-Gr-ioW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gEV-SE-QoJ" firstAttribute="trailing" secondItem="qUY-Gr-ioW" secondAttribute="trailing" id="FCl-8f-VlY"/>
+                            <constraint firstItem="gEV-SE-QoJ" firstAttribute="bottom" secondItem="OIK-yN-Ij6" secondAttribute="bottom" id="oCN-Ew-ra9"/>
+                            <constraint firstItem="gEV-SE-QoJ" firstAttribute="top" secondItem="qUY-Gr-ioW" secondAttribute="top" id="xTb-u4-Uds"/>
+                            <constraint firstItem="gEV-SE-QoJ" firstAttribute="leading" secondItem="qUY-Gr-ioW" secondAttribute="leading" id="zGb-ar-Acf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e2S-Mz-kzR"/>
+                    <connections>
+                        <outlet property="bulletsLabel" destination="gBd-qO-Qhh" id="s1d-P7-Xw2"/>
+                        <outlet property="entregaLabel" destination="oW0-v6-iIW" id="aXL-d2-Gy9"/>
+                        <outlet property="instruccionesLabel" destination="I2k-ml-fiB" id="y9u-H8-f1H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQr-No-VXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2802" y="-261"/>
+            <point key="canvasLocation" x="3419" y="-317"/>
+        </scene>
+        <!--Activity2.2Main-->
+        <scene sceneID="76M-JG-NIx">
+            <objects>
+                <viewController title="Activity2.2Main" id="y7b-CR-eMb" customClass="Activity2_2MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wGp-rk-hiI">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-ck-hlc">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx8-Fv-dI1" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="NPe-Ek-U3A"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 2">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.66600000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="udI-pU-wkt">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-DE-umd">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-P2-VVk">
+                                                <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvZ-Yw-PWp" userLabel="Instrucciones">
+                                                        <rect key="frame" x="0.0" y="0.0" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="pE2-dV-HC0"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Instrucciones:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRn-Ud-Gm1">
+                                                        <rect key="frame" x="0.0" y="120" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUY-vh-kVb" userLabel="Instrucciones Bullets Label">
+                                                        <rect key="frame" x="0.0" y="168" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-NJ-Chi" userLabel="Entrega">
+                                                        <rect key="frame" x="0.0" y="216" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="bkd-14-qxW"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="¿Qué debes entregar?">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-vu-ldG" userLabel="Entrega Label">
+                                                        <rect key="frame" x="0.0" y="336" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6zi-x4-JmN" userLabel="Form Buttons Stack View">
+                                                        <rect key="frame" x="0.0" y="384" width="387" height="43.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlF-Pa-vVG" userLabel="Button Back">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Atrás">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="udv-6G-jsC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0E-gG-HU5" userLabel="Button Next">
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="178.33333333333337" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Siguiente">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="cgg-70-zHR"/>
+                                                                    <segue destination="16V-89-R7P" kind="presentation" modalPresentationStyle="fullScreen" id="lQR-O6-qe7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="EMA-nh-8dA"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="DE8-P2-VVk" firstAttribute="bottom" secondItem="yPV-Hf-Sjs" secondAttribute="bottom" id="3xe-Zu-TDQ"/>
+                                            <constraint firstItem="DE8-P2-VVk" firstAttribute="width" secondItem="ir1-SR-VZ4" secondAttribute="width" multiplier="0.9" id="Jx1-nq-X0T"/>
+                                            <constraint firstItem="DE8-P2-VVk" firstAttribute="trailing" secondItem="yPV-Hf-Sjs" secondAttribute="trailing" id="Q6u-pj-Kgg"/>
+                                            <constraint firstItem="DE8-P2-VVk" firstAttribute="leading" secondItem="yPV-Hf-Sjs" secondAttribute="leading" constant="20" id="f13-BO-JrW"/>
+                                            <constraint firstItem="DE8-P2-VVk" firstAttribute="top" secondItem="yPV-Hf-Sjs" secondAttribute="top" id="le5-MK-3Hk"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="yPV-Hf-Sjs"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="ir1-SR-VZ4"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wFg-SQ-iCg"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qhM-ck-hlc" secondAttribute="bottom" id="T6M-EC-LDh"/>
+                            <constraint firstItem="qhM-ck-hlc" firstAttribute="trailing" secondItem="wFg-SQ-iCg" secondAttribute="trailing" id="W1U-vK-7vf"/>
+                            <constraint firstItem="qhM-ck-hlc" firstAttribute="leading" secondItem="wFg-SQ-iCg" secondAttribute="leading" id="Zun-7e-Ix2"/>
+                            <constraint firstItem="qhM-ck-hlc" firstAttribute="top" secondItem="wGp-rk-hiI" secondAttribute="top" id="vR5-Sg-2zi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bulletsLabel" destination="MUY-vh-kVb" id="Roe-JB-brV"/>
+                        <outlet property="entregaLabel" destination="0ih-vu-ldG" id="QhN-2F-bo9"/>
+                        <outlet property="instruccionesLabel" destination="RRn-Ud-Gm1" id="QW8-0X-Igm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMC-wC-D6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4740" y="-317"/>
+        </scene>
+        <!--Activity2.3Main-->
+        <scene sceneID="D7T-f0-9uc">
+            <objects>
+                <viewController title="Activity2.3Main" id="16V-89-R7P" customClass="Activity2_3MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mm1-Yb-KQD">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eO8-6F-lXm">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg1-WF-WDF" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="3cp-yh-Oi3"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Actividad 2">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ed3-tH-nhN">
+                                        <rect key="frame" x="0.0" y="100" width="430" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIk-3B-rXk">
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="49A-wL-6S3">
+                                                <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V5-ei-5cF" userLabel="Instrucciones">
+                                                        <rect key="frame" x="0.0" y="0.0" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="XjF-fq-UWp"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Instrucciones:">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZP8-BM-ue8">
+                                                        <rect key="frame" x="0.0" y="120" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxI-u2-NZx" userLabel="Instrucciones Bullets Label">
+                                                        <rect key="frame" x="0.0" y="168" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FJ-Vc-bNx" userLabel="Entrega">
+                                                        <rect key="frame" x="0.0" y="216" width="387" height="100"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="d9e-Vf-RJg"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="¿Qué debes entregar?">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf5-NQ-GrK" userLabel="Entrega Label">
+                                                        <rect key="frame" x="0.0" y="336" width="387" height="28"/>
+                                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Label">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="24" name="AndaleMono"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pHe-Nz-hfp" userLabel="Form Buttons Stack View">
+                                                        <rect key="frame" x="0.0" y="384" width="387" height="43.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D1K-X5-uiZ" userLabel="Button Back">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Atrás">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="i2k-xf-QFH"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSn-2x-8ZN" userLabel="Button Next">
+                                                                <rect key="frame" x="208.66666666666663" y="0.0" width="178.33333333333337" height="43.333333333333336"/>
+                                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Siguiente">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="wq6-D7-egn"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="lzG-Sv-GL1"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99747389549999999" green="0.99747389549999999" blue="0.99747389549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="49A-wL-6S3" firstAttribute="trailing" secondItem="9Fo-xc-OBy" secondAttribute="trailing" id="3Xk-z4-sfd"/>
+                                            <constraint firstItem="49A-wL-6S3" firstAttribute="width" secondItem="Jdy-Ne-Ix0" secondAttribute="width" multiplier="0.9" id="7Yh-bw-G8t"/>
+                                            <constraint firstItem="49A-wL-6S3" firstAttribute="leading" secondItem="9Fo-xc-OBy" secondAttribute="leading" constant="20" id="J6f-Py-2D4"/>
+                                            <constraint firstItem="49A-wL-6S3" firstAttribute="top" secondItem="9Fo-xc-OBy" secondAttribute="top" id="JXx-jy-dSk"/>
+                                            <constraint firstItem="49A-wL-6S3" firstAttribute="bottom" secondItem="9Fo-xc-OBy" secondAttribute="bottom" id="mXB-w7-fT3"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="9Fo-xc-OBy"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Jdy-Ne-Ix0"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lhg-Sa-uMp"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eO8-6F-lXm" secondAttribute="bottom" id="Heq-vH-q1v"/>
+                            <constraint firstItem="eO8-6F-lXm" firstAttribute="trailing" secondItem="Lhg-Sa-uMp" secondAttribute="trailing" id="Vdn-6f-mOh"/>
+                            <constraint firstItem="eO8-6F-lXm" firstAttribute="top" secondItem="Mm1-Yb-KQD" secondAttribute="top" id="gjx-sS-LN4"/>
+                            <constraint firstItem="eO8-6F-lXm" firstAttribute="leading" secondItem="Lhg-Sa-uMp" secondAttribute="leading" id="l7v-8y-OSf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bulletsLabel" destination="rxI-u2-NZx" id="9gO-Ba-RSM"/>
+                        <outlet property="entregaLabel" destination="lf5-NQ-GrK" id="APK-Cv-1nv"/>
+                        <outlet property="instruccionesLabel" destination="ZP8-BM-ue8" id="3to-1U-gAe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSc-rL-GQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6032" y="-317"/>
         </scene>
         <!--Activity3-->
         <scene sceneID="uhI-Xs-fGz">
@@ -2318,7 +3801,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sej-Za-PNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1472" y="492"/>
+            <point key="canvasLocation" x="3419" y="431"/>
         </scene>
         <!--Activity4-->
         <scene sceneID="Jfm-Yh-m0A">
@@ -2334,12 +3817,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TI-sh-z7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2802" y="492"/>
+            <point key="canvasLocation" x="3419" y="1177"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="rEd-Bq-sf3"/>
+        <segue reference="7bn-cH-r9O"/>
         <segue reference="VoD-li-K1u"/>
-        <segue reference="H6O-BU-G8t"/>
+        <segue reference="xN3-2t-wsm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="95"/>
@@ -2351,6 +3836,7 @@
         <image name="ipad.and.arrow.forward" catalog="system" width="113" height="128"/>
         <image name="light.beacon.min.fill" catalog="system" width="128" height="106"/>
         <image name="logoBlanco" width="1167" height="403"/>
+        <image name="logoNegro" width="1167" height="403"/>
         <image name="person.and.arrow.left.and.arrow.right" catalog="system" width="128" height="89"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="rays" catalog="system" width="128" height="123"/>

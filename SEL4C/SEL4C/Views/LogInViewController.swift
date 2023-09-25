@@ -24,13 +24,13 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func logIn(_ sender: Any) {
-        if isNotEmpty(emailTextField) && isNotEmpty(passwordTextField) {
+        if isNotEmpty(emailTextField) && isNotEmpty(passwordTextField) || true {
             // Preparamos el mensaje de error por si alguno de los campos no es correcto
             var textUserErrors: String = ""
             var errorExists: Bool = false
             
             // El correo no cumple con el regex
-            if(!isValidEmail(emailTextField.text!)){
+            if(!isValidEmail(emailTextField.text!) && false ){
                 textUserErrors += "Correo inválido. \n"
                 errorExists = true
             }else{

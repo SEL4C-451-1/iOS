@@ -13,6 +13,12 @@
 		AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD32A9C807C004EFCE5 /* Question.swift */; };
 		AF199AD62A9C80D2004EFCE5 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD52A9C80D2004EFCE5 /* JsonData.swift */; };
 		AF199AD82A9C85F2004EFCE5 /* preguntas.json in Resources */ = {isa = PBXBuildFile; fileRef = AF199AD72A9C85F2004EFCE5 /* preguntas.json */; };
+		AF1D41C62AC1397F009D026F /* Activity1_3MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41C52AC1397F009D026F /* Activity1_3MainViewController.swift */; };
+		AF1D41C82AC13BDD009D026F /* Activity2_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41C72AC13BDD009D026F /* Activity2_1MainViewController.swift */; };
+		AF1D41CA2AC13BE5009D026F /* Activity2_2MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41C92AC13BE5009D026F /* Activity2_2MainViewController.swift */; };
+		AF1D41CC2AC13BED009D026F /* Activity2_3MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */; };
+		AF1D41CE2AC14EB8009D026F /* Activity1_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */; };
+		AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */; };
 		AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */; };
 		AF486D702ABCB4E00014089D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = AF486D6F2ABCB4E00014089D /* countries.json */; };
 		AF486D722ABCB5590014089D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D712ABCB5590014089D /* Country.swift */; };
@@ -30,11 +36,12 @@
 		AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */; };
 		AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */; };
 		AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */; };
-		AF7986B12ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7986B02ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift */; };
+		AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */; };
 		AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */; };
 		AF944E682ABE46F000D532DE /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = AF944E672ABE46F000D532DE /* activities.json */; };
 		AF944E6A2ABE472600D532DE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E692ABE472600D532DE /* Activity.swift */; };
 		AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA67F0E2A9D5FC000FE69DB /* Answer.swift */; };
+		AFCA95352AC1325500E0B755 /* Activity1_2MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95342AC1325500E0B755 /* Activity1_2MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,12 @@
 		AF199AD32A9C807C004EFCE5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		AF199AD52A9C80D2004EFCE5 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		AF199AD72A9C85F2004EFCE5 /* preguntas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preguntas.json; sourceTree = "<group>"; };
+		AF1D41C52AC1397F009D026F /* Activity1_3MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_3MainViewController.swift; sourceTree = "<group>"; };
+		AF1D41C72AC13BDD009D026F /* Activity2_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_1MainViewController.swift; sourceTree = "<group>"; };
+		AF1D41C92AC13BE5009D026F /* Activity2_2MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_2MainViewController.swift; sourceTree = "<group>"; };
+		AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_3MainViewController.swift; sourceTree = "<group>"; };
+		AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1UploadViewController.swift; sourceTree = "<group>"; };
+		AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1RetroViewController.swift; sourceTree = "<group>"; };
 		AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentials2ViewController.swift; sourceTree = "<group>"; };
 		AF486D6F2ABCB4E00014089D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		AF486D712ABCB5590014089D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -63,11 +76,12 @@
 		AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
 		AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentialsViewController.swift; sourceTree = "<group>"; };
-		AF7986B02ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activiti1-1ContextViewController.swift"; sourceTree = "<group>"; };
+		AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1MainViewController.swift; sourceTree = "<group>"; };
 		AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldProcessingForViewController.swift; sourceTree = "<group>"; };
 		AF944E672ABE46F000D532DE /* activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
 		AF944E692ABE472600D532DE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		AFA67F0E2A9D5FC000FE69DB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		AFCA95342AC1325500E0B755 /* Activity1_2MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_2MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +157,7 @@
 		AF6BC9282A9BD89800BA5FB1 /* SEL4C */ = {
 			isa = PBXGroup;
 			children = (
+				AF6BC9372A9BD89900BA5FB1 /* Info.plist */,
 				AF7986B22ABE4CD5000FAB96 /* Storyboards */,
 				AF486D792ABD007B0014089D /* Extensions */,
 				AF199AD02A9C8035004EFCE5 /* Resources */,
@@ -160,7 +175,6 @@
 				AF6BC92B2A9BD89800BA5FB1 /* SceneDelegate.swift */,
 				AF6BC9292A9BD89800BA5FB1 /* AppDelegate.swift */,
 				AF6BC9322A9BD89900BA5FB1 /* Assets.xcassets */,
-				AF6BC9372A9BD89900BA5FB1 /* Info.plist */,
 			);
 			path = Natives;
 			sourceTree = "<group>";
@@ -196,7 +210,11 @@
 		AF944E6B2ABE499100D532DE /* Activity1Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF7986B02ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift */,
+				AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */,
+				AFCA95342AC1325500E0B755 /* Activity1_2MainViewController.swift */,
+				AF1D41C52AC1397F009D026F /* Activity1_3MainViewController.swift */,
+				AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */,
+				AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */,
 			);
 			path = Activity1Views;
 			sourceTree = "<group>";
@@ -204,6 +222,9 @@
 		AF944E6C2ABE49A500D532DE /* Activity2Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF1D41C72AC13BDD009D026F /* Activity2_1MainViewController.swift */,
+				AF1D41C92AC13BE5009D026F /* Activity2_2MainViewController.swift */,
+				AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */,
 			);
 			path = Activity2Views;
 			sourceTree = "<group>";
@@ -306,12 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1D41CC2AC13BED009D026F /* Activity2_3MainViewController.swift in Sources */,
 				AF486D722ABCB5590014089D /* Country.swift in Sources */,
 				AF486D742ABCB9560014089D /* JsonReader.swift in Sources */,
 				AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */,
 				AF6BC92E2A9BD89800BA5FB1 /* ResultadosViewController.swift in Sources */,
+				AF1D41CA2AC13BE5009D026F /* Activity2_2MainViewController.swift in Sources */,
 				AF486D762ABCD8130014089D /* User.swift in Sources */,
-				AF7986B12ABE4B02000FAB96 /* Activiti1-1ContextViewController.swift in Sources */,
+				AF1D41C82AC13BDD009D026F /* Activity2_1MainViewController.swift in Sources */,
+				AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */,
 				752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
@@ -324,10 +348,14 @@
 				AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */,
 				AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */,
 				AF486D782ABCFD3E0014089D /* HeightProgressBar.swift in Sources */,
+				AF1D41C62AC1397F009D026F /* Activity1_3MainViewController.swift in Sources */,
+				AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */,
 				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,
 				AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */,
 				AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */,
 				AF486D7D2ABD00FD0014089D /* DynamicBorderRadius.swift in Sources */,
+				AF1D41CE2AC14EB8009D026F /* Activity1_1UploadViewController.swift in Sources */,
+				AFCA95352AC1325500E0B755 /* Activity1_2MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

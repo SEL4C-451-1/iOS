@@ -21,5 +21,5 @@ struct Subactivity: Codable {
 
 struct Instructions: Codable {
     var text: String
-    var bulltes: [String]
+    var bullets: [String]
 }
