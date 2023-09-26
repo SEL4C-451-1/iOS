@@ -9,6 +9,7 @@ import UIKit
 
 class Activity1_1UploadViewController: UIViewController, UITextViewDelegate {
     // MARK: Text Field
+   
     @IBOutlet weak var conclusionTextField: UITextView!
     
     // MARK: Data Persistance
@@ -30,11 +31,9 @@ class Activity1_1UploadViewController: UIViewController, UITextViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let retroWordCloud = segue.destination.storyboard?.instantiateViewController(withIdentifier: "Activity1.1Retro") as? Activity1_1RetroViewController else {
-            return
-        }
-        retroWordCloud.defaults = defaults
+        if let retroViewController = segue.destination as? Activity1_1RetroViewController {
+                retroViewController.retroText = conclusionTextField.text
+            }
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
