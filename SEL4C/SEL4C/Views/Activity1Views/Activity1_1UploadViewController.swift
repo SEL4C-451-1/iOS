@@ -17,7 +17,7 @@ class Activity1_1UploadViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hideKeyboardWhenTappedAround()
         // Adding shadow to UITextView
         conclusionTextField.clipsToBounds = false
         conclusionTextField.layer.shadowOpacity = 0.4
