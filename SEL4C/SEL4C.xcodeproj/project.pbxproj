@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752931BB2AAF9A560074A323 /* ActividadesViewController.swift */; };
+		753636D52AC5DF800042F7C1 /* Activity1_3UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636D42AC5DF800042F7C1 /* Activity1_3UploadViewController.swift */; };
+		753636D72AC5E3380042F7C1 /* Activity2_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636D62AC5E3380042F7C1 /* Activity2_1UploadViewController.swift */; };
+		753636D92AC5E64A0042F7C1 /* Activity2_3UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636D82AC5E64A0042F7C1 /* Activity2_3UploadViewController.swift */; };
+		753636DB2AC5E7D60042F7C1 /* Activity2_2UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636DA2AC5E7D60042F7C1 /* Activity2_2UploadViewController.swift */; };
+		753636DD2AC5E82C0042F7C1 /* Activity1_2UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636DC2AC5E82C0042F7C1 /* Activity1_2UploadViewController.swift */; };
+		753636E72AC5EB470042F7C1 /* Activity3_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636E62AC5EB470042F7C1 /* Activity3_1MainViewController.swift */; };
+		753636E92AC5EB630042F7C1 /* Activity3_2MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636E82AC5EB630042F7C1 /* Activity3_2MainViewController.swift */; };
+		753636EB2AC5EB740042F7C1 /* Activity4_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636EA2AC5EB740042F7C1 /* Activity4_1MainViewController.swift */; };
+		753636ED2AC5EB810042F7C1 /* Activity4_2MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636EC2AC5EB810042F7C1 /* Activity4_2MainViewController.swift */; };
+		753636EF2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636EE2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift */; };
+		753636F12AC5EE660042F7C1 /* Activity3_2UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F02AC5EE660042F7C1 /* Activity3_2UploadViewController.swift */; };
+		753636F32AC5EE760042F7C1 /* Activity4_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F22AC5EE760042F7C1 /* Activity4_1UploadViewController.swift */; };
+		753636F52AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F42AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift */; };
 		AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */; };
 		AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */; };
 		AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD32A9C807C004EFCE5 /* Question.swift */; };
@@ -46,6 +59,19 @@
 
 /* Begin PBXFileReference section */
 		752931BB2AAF9A560074A323 /* ActividadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadesViewController.swift; sourceTree = "<group>"; };
+		753636D42AC5DF800042F7C1 /* Activity1_3UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_3UploadViewController.swift; sourceTree = "<group>"; };
+		753636D62AC5E3380042F7C1 /* Activity2_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_1UploadViewController.swift; sourceTree = "<group>"; };
+		753636D82AC5E64A0042F7C1 /* Activity2_3UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_3UploadViewController.swift; sourceTree = "<group>"; };
+		753636DA2AC5E7D60042F7C1 /* Activity2_2UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_2UploadViewController.swift; sourceTree = "<group>"; };
+		753636DC2AC5E82C0042F7C1 /* Activity1_2UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_2UploadViewController.swift; sourceTree = "<group>"; };
+		753636E62AC5EB470042F7C1 /* Activity3_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3_1MainViewController.swift; sourceTree = "<group>"; };
+		753636E82AC5EB630042F7C1 /* Activity3_2MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3_2MainViewController.swift; sourceTree = "<group>"; };
+		753636EA2AC5EB740042F7C1 /* Activity4_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_1MainViewController.swift; sourceTree = "<group>"; };
+		753636EC2AC5EB810042F7C1 /* Activity4_2MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_2MainViewController.swift; sourceTree = "<group>"; };
+		753636EE2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3_1UploadViewController.swift; sourceTree = "<group>"; };
+		753636F02AC5EE660042F7C1 /* Activity3_2UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3_2UploadViewController.swift; sourceTree = "<group>"; };
+		753636F22AC5EE760042F7C1 /* Activity4_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_1UploadViewController.swift; sourceTree = "<group>"; };
+		753636F42AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_2UploadViewController.swift; sourceTree = "<group>"; };
 		AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuestionarioViewController.swift; sourceTree = "<group>"; };
 		AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		AF199AD32A9C807C004EFCE5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -95,6 +121,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		753636DE2AC5E8360042F7C1 /* Mains */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA95342AC1325500E0B755 /* Activity1_2MainViewController.swift */,
+				AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */,
+				AF1D41C52AC1397F009D026F /* Activity1_3MainViewController.swift */,
+			);
+			path = Mains;
+			sourceTree = "<group>";
+		};
+		753636DF2AC5E8450042F7C1 /* Uploads */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */,
+				753636D42AC5DF800042F7C1 /* Activity1_3UploadViewController.swift */,
+				753636DC2AC5E82C0042F7C1 /* Activity1_2UploadViewController.swift */,
+			);
+			path = Uploads;
+			sourceTree = "<group>";
+		};
+		753636E02AC5E8810042F7C1 /* Mains */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D41C72AC13BDD009D026F /* Activity2_1MainViewController.swift */,
+				AF1D41C92AC13BE5009D026F /* Activity2_2MainViewController.swift */,
+				AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */,
+			);
+			path = Mains;
+			sourceTree = "<group>";
+		};
+		753636E12AC5E8930042F7C1 /* Uploads */ = {
+			isa = PBXGroup;
+			children = (
+				753636D62AC5E3380042F7C1 /* Activity2_1UploadViewController.swift */,
+				753636DA2AC5E7D60042F7C1 /* Activity2_2UploadViewController.swift */,
+				753636D82AC5E64A0042F7C1 /* Activity2_3UploadViewController.swift */,
+			);
+			path = Uploads;
+			sourceTree = "<group>";
+		};
+		753636E22AC5E8B80042F7C1 /* Mains */ = {
+			isa = PBXGroup;
+			children = (
+				753636E62AC5EB470042F7C1 /* Activity3_1MainViewController.swift */,
+				753636E82AC5EB630042F7C1 /* Activity3_2MainViewController.swift */,
+			);
+			path = Mains;
+			sourceTree = "<group>";
+		};
+		753636E32AC5E8BF0042F7C1 /* Uploads */ = {
+			isa = PBXGroup;
+			children = (
+				753636EE2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift */,
+				753636F02AC5EE660042F7C1 /* Activity3_2UploadViewController.swift */,
+			);
+			path = Uploads;
+			sourceTree = "<group>";
+		};
+		753636E42AC5E8C70042F7C1 /* Mains */ = {
+			isa = PBXGroup;
+			children = (
+				753636EA2AC5EB740042F7C1 /* Activity4_1MainViewController.swift */,
+				753636EC2AC5EB810042F7C1 /* Activity4_2MainViewController.swift */,
+			);
+			path = Mains;
+			sourceTree = "<group>";
+		};
+		753636E52AC5E8DB0042F7C1 /* Uploads */ = {
+			isa = PBXGroup;
+			children = (
+				753636F22AC5EE760042F7C1 /* Activity4_1UploadViewController.swift */,
+				753636F42AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift */,
+			);
+			path = Uploads;
+			sourceTree = "<group>";
+		};
 		AF199AC82A9C397D004EFCE5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,11 +312,9 @@
 		AF944E6B2ABE499100D532DE /* Activity1Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */,
-				AFCA95342AC1325500E0B755 /* Activity1_2MainViewController.swift */,
-				AF1D41C52AC1397F009D026F /* Activity1_3MainViewController.swift */,
-				AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */,
 				AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */,
+				753636DF2AC5E8450042F7C1 /* Uploads */,
+				753636DE2AC5E8360042F7C1 /* Mains */,
 			);
 			path = Activity1Views;
 			sourceTree = "<group>";
@@ -222,9 +322,8 @@
 		AF944E6C2ABE49A500D532DE /* Activity2Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF1D41C72AC13BDD009D026F /* Activity2_1MainViewController.swift */,
-				AF1D41C92AC13BE5009D026F /* Activity2_2MainViewController.swift */,
-				AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */,
+				753636E12AC5E8930042F7C1 /* Uploads */,
+				753636E02AC5E8810042F7C1 /* Mains */,
 			);
 			path = Activity2Views;
 			sourceTree = "<group>";
@@ -232,6 +331,8 @@
 		AF944E6D2ABE49AC00D532DE /* Activity3Views */ = {
 			isa = PBXGroup;
 			children = (
+				753636E32AC5E8BF0042F7C1 /* Uploads */,
+				753636E22AC5E8B80042F7C1 /* Mains */,
 			);
 			path = Activity3Views;
 			sourceTree = "<group>";
@@ -239,6 +340,8 @@
 		AF944E6E2ABE49B500D532DE /* Activity4Views */ = {
 			isa = PBXGroup;
 			children = (
+				753636E52AC5E8DB0042F7C1 /* Uploads */,
+				753636E42AC5E8C70042F7C1 /* Mains */,
 			);
 			path = Activity4Views;
 			sourceTree = "<group>";
@@ -330,31 +433,44 @@
 				AF1D41CC2AC13BED009D026F /* Activity2_3MainViewController.swift in Sources */,
 				AF486D722ABCB5590014089D /* Country.swift in Sources */,
 				AF486D742ABCB9560014089D /* JsonReader.swift in Sources */,
+				753636EF2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift in Sources */,
+				753636D72AC5E3380042F7C1 /* Activity2_1UploadViewController.swift in Sources */,
 				AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */,
 				AF6BC92E2A9BD89800BA5FB1 /* ResultadosViewController.swift in Sources */,
 				AF1D41CA2AC13BE5009D026F /* Activity2_2MainViewController.swift in Sources */,
 				AF486D762ABCD8130014089D /* User.swift in Sources */,
+				753636EB2AC5EB740042F7C1 /* Activity4_1MainViewController.swift in Sources */,
 				AF1D41C82AC13BDD009D026F /* Activity2_1MainViewController.swift in Sources */,
 				AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */,
 				752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */,
+				753636F12AC5EE660042F7C1 /* Activity3_2UploadViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
 				AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */,
 				AF944E6A2ABE472600D532DE /* Activity.swift in Sources */,
 				AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */,
 				AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */,
+				753636F52AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift in Sources */,
+				753636E72AC5EB470042F7C1 /* Activity3_1MainViewController.swift in Sources */,
 				AF6BC92C2A9BD89800BA5FB1 /* SceneDelegate.swift in Sources */,
 				AF199AD62A9C80D2004EFCE5 /* JsonData.swift in Sources */,
 				AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */,
 				AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */,
+				753636F32AC5EE760042F7C1 /* Activity4_1UploadViewController.swift in Sources */,
+				753636D92AC5E64A0042F7C1 /* Activity2_3UploadViewController.swift in Sources */,
 				AF486D782ABCFD3E0014089D /* HeightProgressBar.swift in Sources */,
 				AF1D41C62AC1397F009D026F /* Activity1_3MainViewController.swift in Sources */,
 				AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */,
 				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,
+				753636DB2AC5E7D60042F7C1 /* Activity2_2UploadViewController.swift in Sources */,
 				AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */,
 				AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */,
 				AF486D7D2ABD00FD0014089D /* DynamicBorderRadius.swift in Sources */,
+				753636E92AC5EB630042F7C1 /* Activity3_2MainViewController.swift in Sources */,
 				AF1D41CE2AC14EB8009D026F /* Activity1_1UploadViewController.swift in Sources */,
+				753636ED2AC5EB810042F7C1 /* Activity4_2MainViewController.swift in Sources */,
+				753636DD2AC5E82C0042F7C1 /* Activity1_2UploadViewController.swift in Sources */,
+				753636D52AC5DF800042F7C1 /* Activity1_3UploadViewController.swift in Sources */,
 				AFCA95352AC1325500E0B755 /* Activity1_2MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
