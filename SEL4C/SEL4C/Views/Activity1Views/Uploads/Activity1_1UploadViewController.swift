@@ -31,9 +31,12 @@ class Activity1_1UploadViewController: UIViewController, UITextViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let retroViewController = segue.destination as? Activity1_1RetroViewController {
-                retroViewController.retroText = conclusionTextField.text
-            }
+        if segue.identifier == "siguiente"{
+            if let retroViewController = segue.destination as? Activity1_1RetroViewController {
+                    retroViewController.retroText = conclusionTextField.text
+                }
+        }
+        
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {

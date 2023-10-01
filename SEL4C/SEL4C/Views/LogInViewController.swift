@@ -44,7 +44,7 @@ class LogInViewController: UIViewController {
                 
                 showErrorAlert(textUserErrors)
             }else{
-                guard let main = storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") as? ActividadesViewController else {
+                guard storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") is ActividadesViewController else {
                     return
                 }
             }

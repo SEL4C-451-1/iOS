@@ -21,6 +21,7 @@
 		753636F12AC5EE660042F7C1 /* Activity3_2UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F02AC5EE660042F7C1 /* Activity3_2UploadViewController.swift */; };
 		753636F32AC5EE760042F7C1 /* Activity4_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F22AC5EE760042F7C1 /* Activity4_1UploadViewController.swift */; };
 		753636F52AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F42AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift */; };
+		753636FB2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636FA2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift */; };
 		AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */; };
 		AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */; };
 		AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD32A9C807C004EFCE5 /* Question.swift */; };
@@ -72,6 +73,7 @@
 		753636F02AC5EE660042F7C1 /* Activity3_2UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3_2UploadViewController.swift; sourceTree = "<group>"; };
 		753636F22AC5EE760042F7C1 /* Activity4_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_1UploadViewController.swift; sourceTree = "<group>"; };
 		753636F42AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_2UploadViewController.swift; sourceTree = "<group>"; };
+		753636FA2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_3EntryViewController.swift; sourceTree = "<group>"; };
 		AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuestionarioViewController.swift; sourceTree = "<group>"; };
 		AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		AF199AD32A9C807C004EFCE5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */,
 				753636DF2AC5E8450042F7C1 /* Uploads */,
 				753636DE2AC5E8360042F7C1 /* Mains */,
+				753636FA2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift */,
 			);
 			path = Activity1Views;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				AF1D41C62AC1397F009D026F /* Activity1_3MainViewController.swift in Sources */,
 				AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */,
 				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,
+				753636FB2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift in Sources */,
 				753636DB2AC5E7D60042F7C1 /* Activity2_2UploadViewController.swift in Sources */,
 				AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */,
 				AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */,

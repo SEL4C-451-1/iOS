@@ -1,29 +1,39 @@
-//
-//  Activity1_3UploadViewController.swift
-//  SEL4C
-//
-//  Created by Esther Ramírez on 28/09/23.
-//
-
 import UIKit
 
-class Activity1_3UploadViewController: UIViewController {
-
+class Activity1_3UploadViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var didTapAdd: UIButton!
+    public var observations = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Configure the table view
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        // Register the cell for reuse
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - UITableViewDataSource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return observations.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = observations[indexPath.row] // Use 'observations' array, not 'tasks'
+        return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        // Add any additional actions you want to perform when a row is selected.
+    }
 }
