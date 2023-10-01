@@ -9,21 +9,47 @@ import UIKit
 
 class Activity2_2ProblemViewController: UIViewController {
 
+    @IBOutlet weak var tituloLabel: UILabel!
+    
+    @IBOutlet weak var situacionLabel: UITextView!
+    
+    @IBOutlet weak var afectacionesLabel: UITextView!
+    
+    @IBOutlet weak var localidadLabel: UITextView!
+    
+    
+    var selectedObservationIndex: Int = 0
+    
+    var selectedProblemTitulo: String?
+    var selectedProblemSituacion: String?
+    var selectedProblemAfectaciones: String?
+    var selectedProblemLocalidad: String?
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let selectedIndex2 = UserDefaults().integer(forKey: "selectedProblemIndex")
+        
+        
+        
+        let problemaTitulo = UserDefaults().string(forKey: "ProblemasTitle_\(selectedIndex2)")
+        let problemaSituacion = UserDefaults().string(forKey: "ProblemasSituacion_\(selectedIndex2)")
+        let problemaAfectaciones = UserDefaults().string(forKey: "ProblemasAfectacion_\(selectedIndex2)")
+        let problemaLocalidad = UserDefaults().string(forKey: "ProblemasLocalidad_\(selectedIndex2)")
+        // Configura la interfaz de usuario con los datos recuperados
+        if let titulo = problemaTitulo {
+            tituloLabel.text = titulo
+        }
+        if let situacion = problemaSituacion {
+            situacionLabel.text = situacion
+        }
+        if let afectaciones = problemaAfectaciones {
+            afectacionesLabel.text = afectaciones
+        }
+        if let localidad = problemaLocalidad {
+            localidadLabel.text = localidad
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
 
 }
