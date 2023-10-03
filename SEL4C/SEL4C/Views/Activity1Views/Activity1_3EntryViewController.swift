@@ -11,6 +11,7 @@ class Activity1_3EntryViewController: UIViewController, UINavigationControllerDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         imagePickerController.delegate = self
     }
     

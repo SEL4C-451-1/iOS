@@ -11,6 +11,7 @@ class Activity2_2EntryViewController: UIViewController, UINavigationControllerDe
     @IBOutlet weak var localidad: UITextField!
     
     override func viewDidLoad() {
+        self.hideKeyboardWhenTappedAround()
         super.viewDidLoad()
     }
     

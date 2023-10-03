@@ -19,6 +19,8 @@ class Activity1_3ObservationViewController: UIViewController {
     var selectedObservationImage: UIImage?
     override func viewDidLoad() {
         
+        self.hideKeyboardWhenTappedAround()
+        
         let selectedIndex = UserDefaults().integer(forKey: "selectedObservationIndex")
         
         

@@ -19,6 +19,7 @@ class Activity3_1EntryViewController: UIViewController, UINavigationControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
     
     var update: (() -> Void)?
