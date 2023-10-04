@@ -57,6 +57,8 @@
 		AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */; };
 		AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */; };
 		AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */; };
+		AF8D47582ACDE48600C900C7 /* ODS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D47572ACDE48600C900C7 /* ODS.swift */; };
+		AF8D475A2ACDED9700C900C7 /* ods.json in Resources */ = {isa = PBXBuildFile; fileRef = AF8D47592ACDED9600C900C7 /* ods.json */; };
 		AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */; };
 		AF944E682ABE46F000D532DE /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = AF944E672ABE46F000D532DE /* activities.json */; };
 		AF944E6A2ABE472600D532DE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E692ABE472600D532DE /* Activity.swift */; };
@@ -117,6 +119,8 @@
 		AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentialsViewController.swift; sourceTree = "<group>"; };
 		AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1MainViewController.swift; sourceTree = "<group>"; };
+		AF8D47572ACDE48600C900C7 /* ODS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODS.swift; sourceTree = "<group>"; };
+		AF8D47592ACDED9600C900C7 /* ods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ods.json; sourceTree = "<group>"; };
 		AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldProcessingForViewController.swift; sourceTree = "<group>"; };
 		AF944E672ABE46F000D532DE /* activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
 		AF944E692ABE472600D532DE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 				AF486D732ABCB9560014089D /* JsonReader.swift */,
 				AF486D752ABCD8130014089D /* User.swift */,
 				AF944E692ABE472600D532DE /* Activity.swift */,
+				AF8D47572ACDE48600C900C7 /* ODS.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 		AF199AD02A9C8035004EFCE5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AF8D47592ACDED9600C900C7 /* ods.json */,
 				AF199AD72A9C85F2004EFCE5 /* preguntas.json */,
 				AF944E672ABE46F000D532DE /* activities.json */,
 				AF486D6F2ABCB4E00014089D /* countries.json */,
@@ -436,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF6BC9362A9BD89900BA5FB1 /* LaunchScreen.storyboard in Resources */,
+				AF8D475A2ACDED9700C900C7 /* ods.json in Resources */,
 				AF6BC9332A9BD89900BA5FB1 /* Assets.xcassets in Resources */,
 				AF944E682ABE46F000D532DE /* activities.json in Resources */,
 				AF6BC9312A9BD89800BA5FB1 /* Main.storyboard in Resources */,
@@ -475,6 +482,7 @@
 				753636E72AC5EB470042F7C1 /* Activity3_1MainViewController.swift in Sources */,
 				AF6BC92C2A9BD89800BA5FB1 /* SceneDelegate.swift in Sources */,
 				AF199AD62A9C80D2004EFCE5 /* JsonData.swift in Sources */,
+				AF8D47582ACDE48600C900C7 /* ODS.swift in Sources */,
 				75D08B502AC8D76A005BAA9F /* Activity1_3ObservationViewController.swift in Sources */,
 				AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */,
 				75D08B5A2AC91417005BAA9F /* Activity3_1ProblemViewController.swift in Sources */,
@@ -647,7 +655,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W73UCA9D55;
+				DEVELOPMENT_TEAM = AK54YPU54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SEL4C/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -681,7 +689,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W73UCA9D55;
+				DEVELOPMENT_TEAM = AK54YPU54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SEL4C/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

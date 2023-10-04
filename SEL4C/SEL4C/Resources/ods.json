@@ -1,0 +1,273 @@
+[
+    {
+        "name":"Fin de la Pobreza",
+        "imageName": "ods1",
+        "goals": [
+            "Erradicación de la pobreza extrema.",
+            "Reducción de la pobreza relativa en todas sus dimensiones",
+            "Implantación de sistemas de protección social.",
+            "Garantía de acceso a servicios básicos y recursos financieros.",
+            "Resiliencia a desastres ambientales, económicos y sociales.",
+            "Fomentar la resiliencia a los desastres ambientales, económicos y sociales.",
+            "Creación de marcos normativos para erradicar la pobreza."
+        ]
+    },
+    {
+        "name":"Hambre Cero",
+        "imageName": "ods2",
+        "goals": [
+            "Poner fin al hambre.",
+            "Poner fin a todas las formas de malnutrición.",
+            "Duplicación de productividad e ingresos agrícolas a pequeña escala.",
+            "Prácticas agrícolas sostenibles y resilientes.",
+            "Mantenimiento de la diversidad genética de semillas.",
+            "Aumento de inversiones en agricultura.",
+            "Estabilidad mercados agropecuarios mundiales.",
+            "Control de la volatilidad de precios de los alimentos."
+        ]
+    },
+    {
+        "name":"Salud y Bienestar",
+        "imageName": "ods3",
+        "goals": [
+            "Reducción de la tase de mortalidad materna.",
+            "Eliminar la mortalidad infantil.",
+            "Poner fin a las enfermedades transmisibles.",
+            "Reducción de las enfermedades no transmisibles y salud mental.",
+            "Prevención y tratamiento de abusos de drogas y alcohol.",
+            "Reducción de accidentes de tráfico.",
+            "Garantía de acceso a la salud Sexual y reproductiva, y a la planificación familiar.",
+            "Lograr la cobertura universal y acceso medicamentos.",
+            "Reducción de muertes por contaminación química y polución.",
+            "Control del tabaco.",
+            "Apoyo a la I+D de vacunas y medicamentos esenciales.",
+            "Aumento de la financiación del sistema sanitario.",
+            "Refuerzo en la gestión de riesgos sanitarios."
+        ]
+    },
+    {
+        "name":"Educación de Calidad",
+        "imageName": "ods4",
+        "goals": [
+            "Asegurar la calidad de la educación primaria y secundaria.",
+            "Asegurar el acceso y calidad de la educación Pre-escolar.",
+            "Asegurar el acceso igualitario a la formación superior.",
+            "Aumento de las competencias para acceder al empleo.",
+            "Eliminación Disparidad de género y colectivos vulnerables.",
+            "Asegurar la alfabetización y conocimiento de aritmética.",
+            "Fomentar la educación Global para el Desarrollo Sostenible.", 
+            "Mejora de instalaciones educativas inclusivas y seguras.",
+            "Aumento de becas para enseñanza superior.",
+            "Mejorar la cualificación de docentes."
+        ]
+    },
+    {
+        "name":"Igualdad de Género",
+        "imageName": "ods5",
+        "goals": [
+            "Poner fin a la discriminación.",
+            "Eliminar todas las formas de violencia de género.",
+            "Eliminar matrimonio infantil y mutilación genital femenina.",
+            "Reconocer el trabajo de cuidados y doméstico.",
+            "Asegurar la participación plena de la mujer e igualdad oportunidades.",
+            "Asegurar el acceso salud sexual y reproductiva y derechos reproductivos.",
+            "Asegurar la igualdad de derechos a los recursos económicos.",
+            "Mejorar el uso de tecnología y TIC.",
+            "Aprobar políticas y leyes para la igualdad y el empoderamiento."
+        ]
+    },
+    {
+        "name":"Agua Limpia y Saneamiento",
+        "imageName": "ods6",
+        "goals": [
+            "Lograr el acceso a agua potable.",
+            "Lograr el acceso a servicios de saneamiento e higiene.",
+            "Mejorar la calidad de agua. Reducir la contaminación y aguas residuales.",
+            "Aumentar el uso eficiente de recursos hídricos (extracción de agua dulce).",
+            "Implementar la gestión integral de recursos hídricos.",
+            "Protección de los ecosistemas relacionados con agua.",
+            "Fomentar la creación de capacidades de gestión.",
+            "Apoyar la participación de las comunidades locales."
+        ]
+    },
+    {
+        "name":"Energía Asequible y No Contaminante",
+        "imageName": "ods7",
+        "goals": [
+            "Garantizar acceso universal a energía.",
+            "Aumento de las energías renovables.",
+            "Duplicar la tasa de eficiencia energética.",
+            "Aumento de la investigación e inversión en energías limpias.",
+            "Ampliar la infraestructura y tecnología en países en desarrollo."
+        ]
+    },
+    {
+        "name":"Trabajo Decente y Crecimiento Económico",
+        "imageName": "ods8",
+        "goals": [
+            "Mantenimiento del crecimiento económico.",
+            "Elevar la productividad a través de la diversificación, tecnología e innovación.",
+            "Fomento de pequeña y mediana empresa.",
+            "Mejora de la producción y consumo eficiente y respetuoso.",
+            "Lograr el pleno empleo y trabajo decente.",
+            "Reducción de los jóvenes sin trabajo ni estudios.",
+            "Erradicación la esclavitud, trata y trabajo infantil.",
+            "Protección de los derechos laborales y trabajo seguro.",
+            "Promoción el turismo sostenible.",
+            "Fortalecimiento la capacidad de las instituciones financieras.",
+            "Aumento ayuda para el comercio en países en desarrollo.",
+            "Desarrollo de la estrategia mundial para empleo juvenil."
+        ]
+    },
+    {
+        "name":"Industria, Innovación e Infraestructura",
+        "imageName": "ods9",
+        "goals": [
+            "Desarrollo de Infraestructura sostenible.",
+            "Promoción de industria inclusiva y sostenible.",
+            "Aumento del acceso PYMES a servicios financieros y cadenas de valor.",
+            "Modernización de la infraestructura, tecnología limpia.",
+            "Aumento de la investigación científica, capacidad tecnológica.",
+            "Apoyo a infraestructuras sostenibles y resilientes.",
+            "Desarrollo de la tecnología, investigación e innovación.",
+            "Aumento del acceso a TIC e Internet."
+        ]
+    },
+    {
+        "name":"Reducción de las Desigualdades",
+        "imageName": "ods10",
+        "goals": [
+            "Crecimiento de Ingresos del 40% población pobre.",
+            "Promoción de la Inclusión social, económica y política.",
+            "Garantizar la igualdad de oportunidades.",
+            "Adopción de políticas fiscales, salariales y de protección social.",
+            "Mejorar de la regulación de los mercados financieros mundiales.",
+            "Participación de países en desarrollo en IFIs y OOII.",
+            "Facilitar la migración y políticas migratorias ordenadas.",
+            "Aplicación del principio del trato especial y diferenciado (OMC).",
+            "Fomento de corrientes financieras para países en desarrollo.",
+            "Reducción de costes de Remesas."
+        ]
+    },
+    {
+        "name":"Ciudades y Comunidades Sostenibles",
+        "imageName": "ods11",
+        "goals": [
+            "Asegurar el acceso a la vivienda.",
+            "Proporcionar el acceso a transporte público.",
+            "Aumento de la urbanización inclusiva y sostenible.",
+            "Protección del patrimonio cultural y natural.",
+            "Reducción del número de muertes por desastres y reducción de vulnerabilidad.",
+            "Reducción del impacto ambiental en ciudades.",
+            "Proporcionar el acceso a zonas verdes y espacios públicos seguros.",
+            "Apoyo a vínculos zonas urbanas, periurbanas y rurales.",
+            "Aumento de la reducción de riesgos de desastres en ciudades.",
+            "Apoyo a la construcción de edificios sostenibles y resilientes en PMAs."
+        ]
+    },
+    {
+        "name":"Producción y Consumo Responsables",
+        "imageName": "ods12",
+        "goals": [
+            "Aplicación marco de consumo y producción sostenibles.",
+            "Lograr el uso eficiente de recursos naturales.",
+            "Reducción del desperdicio de alimentos.",
+            "Gestión de deshechos y productos químicos.",
+            "Prevención, reducción, reciclado y reutilización de desechos.",
+            "Adopción de prácticas sostenibles en empresas.",
+            "Adquisiciones públicas sostenibles.",
+            "Asegurar la educación para el Desarrollo Sostenible.",
+            "Fortalecimiento de ciencia y tecnología para sostenibilidad.",
+            "Lograr turismo sostenible.",
+            "Regulación de subsidios a combustibles fósiles."
+        ]
+    },
+    {
+        "name":"Acción por el Clima",
+        "imageName": "ods13",
+        "goals": [
+            "Fortalecimiento de la resiliencia y adaptación.",
+            "Incorporación del cambio climático en políticas, estrategias y planes nacionales.",
+            "Mejora de la Educación y sensibilización medioambiental.",
+            "Movilización de recursos económicos.",
+            "Gestión cambio climático en los países menos avanzados."
+        ]
+    },
+    {
+        "name":"Vida Submarina",
+        "imageName": "ods14",
+        "goals": [
+            "Prevención y reducción de la contaminación marina.",
+            "Gestión ecosistemas marinos y costeros.",
+            "Minimización de la acidificación de océanos.",
+            "Regulación de la explotación pesquera sostenible.",
+            "Conservación zonas costeras y marinas.",
+            "Combatir la pesca ilegal y excesiva.",
+            "Aumento de los beneficios económicos de la pesca sostenible.",
+            "Apoyo a la investigación y tecnología marina.",
+            "Fomento de la pesca a pequeña escala y artesanal.",
+            "Aplicación Convención de NNUU sobre el Derecho del Mar."
+        ]
+    },
+    {
+        "name":"Vida y Ecosistemas Terrestres",
+        "imageName": "ods15",
+        "goals": [
+            "Asegurar la Conservación y uso sostenibles de los ecosistemas.",
+            "Gestión sostenibles de bosques.",
+            "Lucha contra la desertificación.",
+            "Asegurar la conservación ecosistemas montañosos.",
+            "Medidas contra la degradación y pérdida de biodiversidad.",
+            "Acceso y uso adecuado de los recursos genéticos.",
+            "Combatir la caza furtiva y especies protegidas.",
+            "Prevención de especies invasoras.",
+            "Integración de planes sensibles a medioambiente.",
+            "Movilización y aumento de los recursos financieros.",
+            "Aumento de recursos para gestión forestal.",
+            "Apoyar la lucha contra caza furtiva."
+        ]
+    },
+    {
+        "name":"Paz, Justicia e Instituciones Sólidas",
+        "imageName": "ods16",
+        "goals": [
+            "Reducción de todas las formas de violencia.",
+            "Erradicación del maltrato, trata y explotación infantil.",
+            "Promoción del Estado de Derecho, acceso a justicia.",
+            "Reducción de las Corrientes financieras y de armas ilícitas.",
+            "Reducción de la corrupción y soborno.",
+            "Creación de instituciones eficaces y transparentes.",
+            "Fomento de la participación ciudadana.",
+            "Fortalecimiento de la participación países en desarrollo en OOII.",
+            "Proporción de identidad jurídica y registro de nacimientos.",
+            "Acceso a información y libertades fundamentales.",
+            "Fortalecimiento instituciones en prevención de la violencia.",
+            "Promoción y aplicación de leyes y políticas (DDHH)."
+        ]
+    },
+    {
+        "name":"Alianzas para Lograr los Objetivos",
+        "imageName": "ods17",
+        "goals": [
+            "Movilización de recursos domésticos para recaudación fiscal.",
+            "Cumplimiento del 0,7% AOD.",
+            "Movilización de recursos financieros adicionales.",
+            "Reestructuración de la Deuda.",
+            "Promoción de inversiones en países menos adelantados.",
+            "Mejora del traspaso de tecnología.",
+            "Promoción de tecnologías ecológicamente racionales.",
+            "Creación de banco de tecnología.",
+            "Refuerzo de capacidades de implementación ODS.",
+            "Promoción de comercio multilateral universal.",
+            "Aumento de las exportaciones de países en desarrollo.",
+            "Acceso a mercado para países en desarrollo.",
+            "Aumento de la estabilidad macroeconómica mundial.",
+            "Mejora de la coherencia de políticas.",
+            "Respeto a la Soberanía nacional",
+            "Mejorar la Alianza Mundial para el desarrollo sostenible.",
+            "Fomento de alianzas público-privadas.",
+            "Creación de capacidad estadística.",
+            "Promoción de indicadores que vayan más allá del PIB."
+        ]
+    }
+]

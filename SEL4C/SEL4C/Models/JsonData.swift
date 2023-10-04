@@ -24,3 +24,5 @@ func countryToSpanish(jsonFile: String) -> [String]{
 
 // Reading JSON of Activities
 var activities: [Activity] = load("activities.json")
+
+var ods: [ODS] = load("ods.json")

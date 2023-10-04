@@ -36,5 +36,85 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E84CD85-7086-491C-BD2C-3C692D3E5638"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SEL4C/Views/Activity2Views/Uploads/Activity2_1UploadViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "pickerView(_:numberOfRowsInComponent:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5E84CD85-7086-491C-BD2C-3C692D3E5638 - 7b955ad6e4955826"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEL4C.Activity2_1UploadViewController.pickerView(_: __C.UIPickerView, numberOfRowsInComponent: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "SEL4C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moymac/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC5/movil/modulo2/semana8/swift/iOS/SEL4C/SEL4C/Views/Activity2Views/Uploads/Activity2_1UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "5E84CD85-7086-491C-BD2C-3C692D3E5638 - 7b955ad6e4955879"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEL4C.Activity2_1UploadViewController.pickerView(_: __C.UIPickerView, numberOfRowsInComponent: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "SEL4C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moymac/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC5/movil/modulo2/semana8/swift/iOS/SEL4C/SEL4C/Views/Activity2Views/Uploads/Activity2_1UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "464">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E9CFC2E-CA98-4B25-91DF-48F5DF7A9D3D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SEL4C/Views/Activity2Views/Uploads/Activity2_1UploadViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "pickerView(_:numberOfRowsInComponent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3EBD887-152D-4A69-8A43-2643053707C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SEL4C/Views/Activity2Views/Uploads/Activity2_1UploadViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "pickerView(_:numberOfRowsInComponent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

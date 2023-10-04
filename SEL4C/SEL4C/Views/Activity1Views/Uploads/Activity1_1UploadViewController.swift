@@ -9,7 +9,6 @@ import UIKit
 
 class Activity1_1UploadViewController: UIViewController, UITextViewDelegate {
     // MARK: Text Field
-   
     @IBOutlet weak var conclusionTextField: UITextView!
     
     // MARK: Data Persistance
@@ -18,16 +17,17 @@ class Activity1_1UploadViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        
         // Adding shadow to UITextView
         conclusionTextField.clipsToBounds = false
         conclusionTextField.layer.shadowOpacity = 0.4
         conclusionTextField.layer.shadowOffset = CGSizeMake(3, 3)
         
-        // Chechk if there is any persisted data, if there is, write it up.
+        // Check if there is any persisted data, if there is, write it up.
         conclusionTextField.text = defaults.string(forKey: "conclusion")
         
         // Use UITextView's delegate.
-        conclusionTextField.delegate = self;
+        conclusionTextField.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
