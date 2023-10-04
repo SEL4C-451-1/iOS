@@ -8,22 +8,40 @@
 import UIKit
 
 class Activity2_3UploadViewController: UIViewController {
-
+    // MARK: Scroll inside View
+    @IBOutlet weak var scrollableBorderView: UIView!
+    
+    // MARK: Scrollable View
+    private let myView: UIView = {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        view.backgroundColor = .link
+        return view
+    }()
+    
+    // MARK: Scrollable
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        scrollableBorderView.addSubview(myView)
+    }
+}
+
+extension Activity2_3UploadViewController {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+        }
+        
+        let location = touch.location(in: scrollableBorderView)
+        
+        if myView.bounds.contains(location){
+            print("Touched at: \(location.x), \(location.y)")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        <#code#>
     }
-    */
-
 }

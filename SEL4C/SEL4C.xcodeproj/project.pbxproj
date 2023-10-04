@@ -57,6 +57,7 @@
 		AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */; };
 		AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */; };
 		AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */; };
+		AF8276822ACE228C0013DF28 /* ScrollableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */; };
 		AF8D47582ACDE48600C900C7 /* ODS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D47572ACDE48600C900C7 /* ODS.swift */; };
 		AF8D475A2ACDED9700C900C7 /* ods.json in Resources */ = {isa = PBXBuildFile; fileRef = AF8D47592ACDED9600C900C7 /* ods.json */; };
 		AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */; };
@@ -119,6 +120,7 @@
 		AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentialsViewController.swift; sourceTree = "<group>"; };
 		AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1MainViewController.swift; sourceTree = "<group>"; };
+		AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableExtension.swift; sourceTree = "<group>"; };
 		AF8D47572ACDE48600C900C7 /* ODS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODS.swift; sourceTree = "<group>"; };
 		AF8D47592ACDED9600C900C7 /* ods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ods.json; sourceTree = "<group>"; };
 		AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldProcessingForViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */,
 				AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */,
 				AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */,
+				AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				753636F12AC5EE660042F7C1 /* Activity3_2UploadViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
+				AF8276822ACE228C0013DF28 /* ScrollableExtension.swift in Sources */,
 				AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */,
 				AF944E6A2ABE472600D532DE /* Activity.swift in Sources */,
 				AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */,
