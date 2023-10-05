@@ -135,17 +135,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4419796A-5731-49B5-BC63-6A7461B65F80"
+            uuid = "064A8D26-9B38-4282-A540-AB955EB5308D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SEL4C/Views/SignUpEssentials2ViewController.swift"
+            filePath = "SEL4C/Models/User.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "continueButton(_:)"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "getToken()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "064A8D26-9B38-4282-A540-AB955EB5308D - 7c63e436be9059f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SEL4C.User.getToken() async throws -&gt; Swift.String"
+                  moduleName = "SEL4C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moymac/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC5/movil/modulo2/semana8/swift/iOS/SEL4C/SEL4C/Models/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "064A8D26-9B38-4282-A540-AB955EB5308D - 7c63e436be90591a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SEL4C.User.getToken() async throws -&gt; Swift.String"
+                  moduleName = "SEL4C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moymac/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC5/movil/modulo2/semana8/swift/iOS/SEL4C/SEL4C/Models/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  uuid = "064A8D26-9B38-4282-A540-AB955EB5308D - 7c63e436be90591a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SEL4C.User.getToken() async throws -&gt; Swift.String"
+                  moduleName = "SEL4C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moymac/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC5/movil/modulo2/semana8/swift/iOS/SEL4C/SEL4C/Models/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "588">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D6F34E1-BBA3-4738-BFBF-F16A389762E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SEL4C/Models/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "getToken()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D6F34E1-BBA3-4738-BFBF-F16A389762E7 - 7c63e436be9059d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SEL4C.User.getToken() async throws -&gt; Swift.String"
+                  moduleName = "SEL4C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moymac/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC5/movil/modulo2/semana8/swift/iOS/SEL4C/SEL4C/Models/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  uuid = "5D6F34E1-BBA3-4738-BFBF-F16A389762E7 - 7c63e436be9059d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SEL4C.User.getToken() async throws -&gt; Swift.String"
+                  moduleName = "SEL4C"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/moymac/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/TEC(CLOUD)/ITC5/movil/modulo2/semana8/swift/iOS/SEL4C/SEL4C/Models/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "940">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

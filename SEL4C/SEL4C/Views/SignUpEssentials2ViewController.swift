@@ -41,6 +41,8 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
     // MARK: User Initialization
     var user: User = User(userName: "", email: "", password: "")
     var token: String = ""
+    var tokenIsObtained: Bool = false
+
     
     
     override func viewDidLoad() {
@@ -60,14 +62,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
         edadPicker.delegate = self
         paisPicker.delegate = self
         
-        Task {
-            do {
-                self.token = try await user.getToken()
-                print(self.token)
-            }catch{
-                self.token = ""
-            }
-        }
+        
         
     }
     
@@ -160,18 +155,28 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
     @IBAction func continueButton(_ sender: Any) {
         // If terms and conditions are accepted, we go to the next view.
         if acceptButton.isSelected {
+            
+            Task {
+                do {
+                    self.token = try await user.getToken()
 
-            if(self.token == "") {
-                showErrorAlert("Token no obtenido")
-            }else{
-                guard let cuestionario = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController else {
-                    return
+                    if(self.token == "") {
+                        showErrorAlert("Token no obtenido")
+                    }else{
+                        guard let cuestionario = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController else {
+                            return
+                        }
+                        
+                        cuestionario.user = user
+                        cuestionario.modalPresentationStyle = .fullScreen
+                        present(cuestionario, animated: true)
+                    }
+                    
+                }catch{
+                    self.token = ""
                 }
-                
-                cuestionario.user = user
-                cuestionario.modalPresentationStyle = .fullScreen
-                present(cuestionario, animated: true)
             }
+
         } else {
             showErrorAlert("Es necesario aceptar el aviso de privacidad.")
         }

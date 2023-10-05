@@ -92,8 +92,7 @@ struct User: Codable {
         // HTTP Request Parameters which will be sent in HTTP Request Body
         let jsonEncoder = JSONEncoder()
 
-        let userCreate = UserCreate(email: email, password: password, name: userName)
-        //let userCreate = UserCreate(email: "test2@tec.mx", password: "Test2", name: "Test2")
+        let userCreate = UserCreate(email: self.email, password: "\(self.password)", name: self.userName)
         let jsonData = try? jsonEncoder.encode(userCreate)
 
         // Set HTTP Request Body
@@ -112,6 +111,7 @@ struct User: Codable {
         
         return jsonResponse["token"]! as! String
     }
+    
 }
 
 enum UserError: Error, LocalizedError {
