@@ -24,7 +24,7 @@ class CuestionarioViewController: UIViewController {
     
     // MARK: Answers & User Initialization
     var answers: Answer = Answer()
-    var user: User = User(userName: "", email: "", emailRecover: "", password: "")
+    var user: User = User(userName: "", email: "", password: "")
     
     var index: Int = 0
     

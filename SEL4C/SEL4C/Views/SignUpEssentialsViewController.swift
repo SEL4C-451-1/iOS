@@ -14,12 +14,11 @@ class SignUpEssentialsViewController: UIViewController {
     // MARK: Text Fields
     @IBOutlet weak var usuarioTextField: UITextField!
     @IBOutlet weak var correoTextField: UITextField!
-    @IBOutlet weak var correoRecuperacionTextField: UITextField!
     @IBOutlet weak var contrasenaTextField: UITextField!
     @IBOutlet weak var contrasenaRecuperacionTextField: UITextField!
     
     // MARK: User Initialization
-    var user: User = User(userName: "", email: "", emailRecover: "", password: "")
+    var user: User = User(userName: "", email: "", password: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +39,7 @@ class SignUpEssentialsViewController: UIViewController {
     
     // Función que checa los campos y determina si poder pasar a la próxima view
     @IBAction func continueButton(_ sender: Any) {
-        if isNotEmpty(usuarioTextField) && isNotEmpty(correoTextField) && isNotEmpty( correoRecuperacionTextField) && isNotEmpty(contrasenaTextField) && isNotEmpty( contrasenaRecuperacionTextField){
+        if isNotEmpty(usuarioTextField) && isNotEmpty(correoTextField) && isNotEmpty(contrasenaTextField) && isNotEmpty(contrasenaRecuperacionTextField){
             
             // Preparamos el mensaje de error por si alguno de los campos no es correcto
             var textUserErrors: String = ""
@@ -49,12 +48,6 @@ class SignUpEssentialsViewController: UIViewController {
             // El correo no cumple con el regex
             if(!isValidEmail(correoTextField.text!)){
                 textUserErrors += "Correo inválido. \n"
-                errorExists = true
-            }
-            
-            // El correo de recuperación no cumple con el regex
-            if(!isValidEmail(correoRecuperacionTextField.text!)){
-                textUserErrors += "Correo de recuperación inválido. \n"
                 errorExists = true
             }
             
@@ -68,13 +61,25 @@ class SignUpEssentialsViewController: UIViewController {
             if(errorExists){
                 // Formatemamos texto eliminando el último \n
                 textUserErrors = String(textUserErrors.dropLast(2))
-                
                 showErrorAlert(textUserErrors)
+                
             }else{
                 user.userName = usuarioTextField.text!
                 user.email = correoTextField.text!
-                user.emailRecover = correoRecuperacionTextField.text!
                 user.password = contrasenaTextField.text!
+                var showAlert: Bool = false
+                
+                Task {
+                    do {
+                        try await showAlert = user.create()
+                    }catch{
+                        showAlert = true
+                    }
+                }
+                
+                if(showAlert) {
+                    showErrorAlert("Error al crear usuario")
+                }
             }
             
         } else {

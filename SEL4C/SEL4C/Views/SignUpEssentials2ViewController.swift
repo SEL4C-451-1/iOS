@@ -17,24 +17,30 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
     // Grado académico
     let academicoPickerData: [String] = ["Pregrado", "Posgrado", "Educación Continua"]
     @IBOutlet weak var academicoPicker: UIPickerView!
+    
     // Institución
     let institucionPickerData: [String] = ["Tecnológico de Monterrey", "Otros"]
     @IBOutlet weak var institucionPicker: UIPickerView!
+    
     // Disciplina
     let disciplinaPickerData: [String] = ["Ingeniería y Ciencias", "Humanidades y Educación", "Ciencias Sociales", "Ciencias de la Salud", "Arquitectura, Arte y Diseño", "Negocios"]
     @IBOutlet weak var disciplinaPicker: UIPickerView!
+    
     // Género
     let generoPickerData: [String] = ["Masculino", "Femenino", "No binario", "Prefiero no decir"]
     @IBOutlet weak var generoPicker: UIPickerView!
+    
     // Edad
     let edadPickerData: [Int] = Array(1...120)
     @IBOutlet weak var edadPicker: UIPickerView!
+    
     // País
     let paisPickerData: [String] = countries
     @IBOutlet weak var paisPicker: UIPickerView!
     
     // MARK: User Initialization
-    var user: User = User(userName: "", email: "", emailRecover: "", password: "")
+    var user: User = User(userName: "", email: "", password: "")
+    var token: String = ""
     
     
     override func viewDidLoad() {
@@ -44,8 +50,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
         acceptButton.initButton(number: 0)
         
         // MARK: Buttons with border radius
-        buttonContinue.layer.cornerRadius = 35
-        buttonContinue.clipsToBounds = true
+        buttonContinue.setCornerRadius(35)
         
         // MARK: Delegation for Picker View
         academicoPicker.delegate = self
@@ -54,6 +59,16 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
         generoPicker.delegate = self
         edadPicker.delegate = self
         paisPicker.delegate = self
+        
+        Task {
+            do {
+                self.token = try await user.getToken()
+                print(self.token)
+            }catch{
+                self.token = ""
+            }
+        }
+        
     }
     
     // Function that changes the state of the radial button.
@@ -145,25 +160,20 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
     @IBAction func continueButton(_ sender: Any) {
         // If terms and conditions are accepted, we go to the next view.
         if acceptButton.isSelected {
-            guard let cuestionario = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController else {
-                return
-            }
-            cuestionario.user = user
-            cuestionario.modalPresentationStyle = .fullScreen
-            present(cuestionario, animated: true)
-        } else {
-            let alertController = UIAlertController(
-                title: "Error",
-                message: "Es necesario aceptar el aviso de privacidad.",
-                preferredStyle: .alert
-            )
-            let ok = UIAlertAction(
-                title: "Salir.",
-                style: .default
-            )
 
-            alertController.addAction(ok)
-            present(alertController, animated: true, completion: nil)
+            if(self.token == "") {
+                showErrorAlert("Token no obtenido")
+            }else{
+                guard let cuestionario = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController else {
+                    return
+                }
+                
+                cuestionario.user = user
+                cuestionario.modalPresentationStyle = .fullScreen
+                present(cuestionario, animated: true)
+            }
+        } else {
+            showErrorAlert("Es necesario aceptar el aviso de privacidad.")
         }
     }
 }

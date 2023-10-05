@@ -58,6 +58,7 @@
 		AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */; };
 		AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */; };
 		AF8276822ACE228C0013DF28 /* ScrollableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */; };
+		AF8276952ACE49BD0013DF28 /* SEL4CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8276942ACE49BD0013DF28 /* SEL4CTests.swift */; };
 		AF8D47582ACDE48600C900C7 /* ODS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D47572ACDE48600C900C7 /* ODS.swift */; };
 		AF8D475A2ACDED9700C900C7 /* ods.json in Resources */ = {isa = PBXBuildFile; fileRef = AF8D47592ACDED9600C900C7 /* ods.json */; };
 		AF944E662ABE035700D532DE /* TextFieldProcessingForViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */; };
@@ -66,6 +67,16 @@
 		AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA67F0E2A9D5FC000FE69DB /* Answer.swift */; };
 		AFCA95352AC1325500E0B755 /* Activity1_2MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95342AC1325500E0B755 /* Activity1_2MainViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF8276962ACE49BD0013DF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6BC91E2A9BD89800BA5FB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6BC9252A9BD89800BA5FB1;
+			remoteInfo = SEL4C;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		752931BB2AAF9A560074A323 /* ActividadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadesViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +132,8 @@
 		AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentialsViewController.swift; sourceTree = "<group>"; };
 		AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1MainViewController.swift; sourceTree = "<group>"; };
 		AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableExtension.swift; sourceTree = "<group>"; };
+		AF8276922ACE49BD0013DF28 /* SEL4CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEL4CTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8276942ACE49BD0013DF28 /* SEL4CTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEL4CTests.swift; sourceTree = "<group>"; };
 		AF8D47572ACDE48600C900C7 /* ODS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODS.swift; sourceTree = "<group>"; };
 		AF8D47592ACDED9600C900C7 /* ods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ods.json; sourceTree = "<group>"; };
 		AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldProcessingForViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +145,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF6BC9232A9BD89800BA5FB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF82768F2ACE49BD0013DF28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +249,7 @@
 		AF199ACF2A9C8029004EFCE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AF199AC82A9C397D004EFCE5 /* Classes */,
 				AF199AD32A9C807C004EFCE5 /* Question.swift */,
 				AF486D712ABCB5590014089D /* Country.swift */,
 				AF199AD52A9C80D2004EFCE5 /* JsonData.swift */,
@@ -267,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				AF6BC9282A9BD89800BA5FB1 /* SEL4C */,
+				AF8276932ACE49BD0013DF28 /* SEL4CTests */,
 				AF6BC9272A9BD89800BA5FB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -275,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				AF6BC9262A9BD89800BA5FB1 /* SEL4C.app */,
+				AF8276922ACE49BD0013DF28 /* SEL4CTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,7 +310,6 @@
 				AF486D792ABD007B0014089D /* Extensions */,
 				AF199AD02A9C8035004EFCE5 /* Resources */,
 				AF199ACF2A9C8029004EFCE5 /* Models */,
-				AF199AC82A9C397D004EFCE5 /* Classes */,
 				AF6BC93E2A9BE17900BA5FB1 /* Views */,
 				AF6BC93D2A9BE15800BA5FB1 /* Natives */,
 			);
@@ -331,6 +353,14 @@
 				AF6BC92F2A9BD89800BA5FB1 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AF8276932ACE49BD0013DF28 /* SEL4CTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF8276942ACE49BD0013DF28 /* SEL4CTests.swift */,
+			);
+			path = SEL4CTests;
 			sourceTree = "<group>";
 		};
 		AF944E6B2ABE499100D532DE /* Activity1Views */ = {
@@ -403,6 +433,24 @@
 			productReference = AF6BC9262A9BD89800BA5FB1 /* SEL4C.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AF8276912ACE49BD0013DF28 /* SEL4CTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8276982ACE49BD0013DF28 /* Build configuration list for PBXNativeTarget "SEL4CTests" */;
+			buildPhases = (
+				AF82768E2ACE49BD0013DF28 /* Sources */,
+				AF82768F2ACE49BD0013DF28 /* Frameworks */,
+				AF8276902ACE49BD0013DF28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF8276972ACE49BD0013DF28 /* PBXTargetDependency */,
+			);
+			name = SEL4CTests;
+			productName = SEL4CTests;
+			productReference = AF8276922ACE49BD0013DF28 /* SEL4CTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -418,6 +466,10 @@
 				TargetAttributes = {
 					AF6BC9252A9BD89800BA5FB1 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					AF8276912ACE49BD0013DF28 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AF6BC9252A9BD89800BA5FB1;
 					};
 				};
 			};
@@ -435,6 +487,7 @@
 			projectRoot = "";
 			targets = (
 				AF6BC9252A9BD89800BA5FB1 /* SEL4C */,
+				AF8276912ACE49BD0013DF28 /* SEL4CTests */,
 			);
 		};
 /* End PBXProject section */
@@ -451,6 +504,13 @@
 				AF6BC9312A9BD89800BA5FB1 /* Main.storyboard in Resources */,
 				AF486D702ABCB4E00014089D /* countries.json in Resources */,
 				AF199AD82A9C85F2004EFCE5 /* preguntas.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8276902ACE49BD0013DF28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +575,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF82768E2ACE49BD0013DF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8276952ACE49BD0013DF28 /* SEL4CTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF8276972ACE49BD0013DF28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6BC9252A9BD89800BA5FB1 /* SEL4C */;
+			targetProxy = AF8276962ACE49BD0013DF28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF6BC92F2A9BD89800BA5FB1 /* Main.storyboard */ = {
@@ -719,6 +795,42 @@
 			};
 			name = Release;
 		};
+		AF8276992ACE49BD0013DF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK54YPU54V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4CTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEL4C.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SEL4C";
+			};
+			name = Debug;
+		};
+		AF82769A2ACE49BD0013DF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK54YPU54V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4CTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEL4C.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SEL4C";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -736,6 +848,15 @@
 			buildConfigurations = (
 				AF6BC93B2A9BD89900BA5FB1 /* Debug */,
 				AF6BC93C2A9BD89900BA5FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8276982ACE49BD0013DF28 /* Build configuration list for PBXNativeTarget "SEL4CTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8276992ACE49BD0013DF28 /* Debug */,
+				AF82769A2ACE49BD0013DF28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
