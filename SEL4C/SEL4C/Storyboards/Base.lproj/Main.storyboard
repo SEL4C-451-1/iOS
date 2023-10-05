@@ -7138,7 +7138,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7k-0M-WE1">
                                                 <rect key="frame" x="0.0" y="0.0" width="430" height="698"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="¡Felicidades! Completaste la actividad.">
+                                                    <fragment content="¡Felicidades! Completaste la actividad.;)">
                                                         <attributes>
                                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" size="61" name="AndaleMono"/>
@@ -8814,7 +8814,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="wdY-bJ-cZV"/>
         <segue reference="Sze-Er-X9M"/>
-        <segue reference="fHL-TT-HCd"/>
+        <segue reference="gWO-SD-zCB"/>
         <segue reference="1hB-ah-Kzp"/>
         <segue reference="qDf-Oo-dYH"/>
         <segue reference="kXK-xe-rdS"/>
