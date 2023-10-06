@@ -11,16 +11,22 @@ class LogInSignUpViewController: UIViewController {
     @IBOutlet weak var buttonLogIn: UIButton!
     @IBOutlet weak var buttonSignUp: UIButton!
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // Delete user defaults if there was already a token.
+        if(UserDefaults.standard.string(forKey: "token") != nil){
+            UserDefaults.standard.reset()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Hide Tab Bar
         tabBarController?.tabBar.isHidden = true
         
-        buttonLogIn.layer.cornerRadius = 35
-        buttonLogIn.clipsToBounds = true
-        
-        buttonSignUp.layer.cornerRadius = 35
-        buttonSignUp.clipsToBounds = true
-        
+        // Buttons Border Radius
+        buttonLogIn.setCornerRadius(35)
+        buttonSignUp.setCornerRadius(35)
     }
 }

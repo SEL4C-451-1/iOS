@@ -31,6 +31,7 @@
 		75D08B562AC90B81005BAA9F /* Activity2_2ProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D08B552AC90B81005BAA9F /* Activity2_2ProblemViewController.swift */; };
 		75D08B582AC913DD005BAA9F /* Activity3_1EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D08B572AC913DD005BAA9F /* Activity3_1EntryViewController.swift */; };
 		75D08B5A2AC91417005BAA9F /* Activity3_1ProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D08B592AC91417005BAA9F /* Activity3_1ProblemViewController.swift */; };
+		AF15349A2AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1534992AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift */; };
 		AF199AC72A9C34CD004EFCE5 /* CuestionarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */; };
 		AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */; };
 		AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF199AD32A9C807C004EFCE5 /* Question.swift */; };
@@ -106,6 +107,7 @@
 		75D08B552AC90B81005BAA9F /* Activity2_2ProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_2ProblemViewController.swift; sourceTree = "<group>"; };
 		75D08B572AC913DD005BAA9F /* Activity3_1EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3_1EntryViewController.swift; sourceTree = "<group>"; };
 		75D08B592AC91417005BAA9F /* Activity3_1ProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3_1ProblemViewController.swift; sourceTree = "<group>"; };
+		AF1534992AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetUserDefaultsExtension.swift; sourceTree = "<group>"; };
 		AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuestionarioViewController.swift; sourceTree = "<group>"; };
 		AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		AF199AD32A9C807C004EFCE5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */,
+				AF1534992AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift */,
 				AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */,
 				AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */,
 				AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */,
@@ -345,11 +348,11 @@
 		AF6BC93E2A9BE17900BA5FB1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				751E85A32ACFD58500DDCF7A /* Activity5views */,
 				AF944E6B2ABE499100D532DE /* Activity1Views */,
 				AF944E6C2ABE49A500D532DE /* Activity2Views */,
 				AF944E6D2ABE49AC00D532DE /* Activity3Views */,
 				AF944E6E2ABE49B500D532DE /* Activity4Views */,
+				751E85A32ACFD58500DDCF7A /* Activity5views */,
 				AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */,
 				AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */,
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
@@ -382,10 +385,10 @@
 		AF944E6B2ABE499100D532DE /* Activity1Views */ = {
 			isa = PBXGroup;
 			children = (
-				AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */,
 				753636DF2AC5E8450042F7C1 /* Uploads */,
 				753636DE2AC5E8360042F7C1 /* Mains */,
 				753636FA2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift */,
+				AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */,
 				75D08B4F2AC8D76A005BAA9F /* Activity1_3ObservationViewController.swift */,
 			);
 			path = Activity1Views;
@@ -570,6 +573,7 @@
 				75D08B582AC913DD005BAA9F /* Activity3_1EntryViewController.swift in Sources */,
 				AF1D41C62AC1397F009D026F /* Activity1_3MainViewController.swift in Sources */,
 				AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */,
+				AF15349A2AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift in Sources */,
 				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,
 				75D08B562AC90B81005BAA9F /* Activity2_2ProblemViewController.swift in Sources */,
 				751E85A72ACFD5B700DDCF7A /* Activity5UploadViewController.swift in Sources */,

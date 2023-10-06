@@ -2074,7 +2074,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ff2-JK-hPh" kind="show" id="gJ6-HX-IPd"/>
+                                    <segue destination="Ff2-JK-hPh" kind="presentation" modalPresentationStyle="fullScreen" id="gJ6-HX-IPd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-Jw-au6">
@@ -2122,7 +2122,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="si8-L9-7kD" kind="show" id="J5l-O1-WAB"/>
+                                    <segue destination="si8-L9-7kD" kind="presentation" modalPresentationStyle="fullScreen" id="J5l-O1-WAB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK2-0g-fUF">
@@ -2652,7 +2652,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <segue destination="abP-6K-gW3" kind="show" id="vUg-FB-gDN"/>
+                                                                    <segue destination="abP-6K-gW3" kind="presentation" modalPresentationStyle="fullScreen" id="vUg-FB-gDN"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrF-F3-55V" userLabel="Button Next">
@@ -4884,11 +4884,11 @@
             <objects>
                 <viewController title="Activity3.1Main" id="si8-L9-7kD" customClass="Activity3_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f7c-op-yNM">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxs-P7-WBZ">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vh-pi-F62" userLabel="ActividadLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
@@ -4912,7 +4912,7 @@
                                         <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoS-YP-7Wp">
-                                        <rect key="frame" x="0.0" y="104" width="430" height="818"/>
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jds-9b-s9M">
                                                 <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
@@ -5090,11 +5090,11 @@
             <objects>
                 <viewController title="Activity4.1Main" id="Ff2-JK-hPh" customClass="Activity4_1MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYc-aR-D4r">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-3d-RXK">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d5-LR-cQt" userLabel="ActividadLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="100"/>
@@ -5118,7 +5118,7 @@
                                         <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="If5-uM-wiq">
-                                        <rect key="frame" x="0.0" y="104" width="430" height="818"/>
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-5A-IQj">
                                                 <rect key="frame" x="20" y="0.0" width="387" height="427.33333333333331"/>
@@ -9385,7 +9385,7 @@
         <segue reference="lE1-68-Oza"/>
         <segue reference="Sze-Er-X9M"/>
         <segue reference="0YU-xb-w83"/>
-        <segue reference="124-Uv-2ab"/>
+        <segue reference="gJ6-HX-IPd"/>
         <segue reference="J5l-O1-WAB"/>
         <segue reference="8zs-oa-lLl"/>
         <segue reference="xr4-pm-TGf"/>
@@ -9396,10 +9396,10 @@
         <segue reference="rcY-RH-cs5"/>
         <segue reference="FvT-nR-992"/>
         <segue reference="QtM-5y-Quv"/>
-        <segue reference="rEd-Bq-sf3"/>
-        <segue reference="9vs-F4-lQP"/>
-        <segue reference="VoD-li-K1u"/>
-        <segue reference="xN3-2t-wsm"/>
+        <segue reference="p33-qz-H8t"/>
+        <segue reference="Wk6-dY-AoY"/>
+        <segue reference="khw-Gu-Odb"/>
+        <segue reference="H6O-BU-G8t"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arbol" width="322" height="419"/>
