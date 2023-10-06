@@ -161,15 +161,32 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
                     self.token = try await user.getToken()
 
                     if(self.token == "") {
-                        showErrorAlert("Token no obtenido")
+                        showErrorAlert("Token no obtenido.")
                     }else{
-                        guard let cuestionario = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController else {
-                            return
-                        }
                         
-                        cuestionario.user = user
-                        cuestionario.modalPresentationStyle = .fullScreen
-                        present(cuestionario, animated: true)
+                        UserDefaults.standard.set(self.token, forKey: "token")
+                        
+                        Task {
+                            do{
+                                let presentAlert = try await user.setInfo()
+                                
+                                user.printUser()
+                                
+                                if(presentAlert){
+                                    showErrorAlert("Información no enviada")
+                                }else{
+                                    guard let cuestionario = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController else {
+                                        return
+                                    }
+                                    
+                                    cuestionario.user = user
+                                    cuestionario.modalPresentationStyle = .fullScreen
+                                    present(cuestionario, animated: true)
+                                }
+                            }catch{
+                                print("[*] ERROR SENDING INFO!!!!!!!!")
+                            }
+                        }
                     }
                     
                 }catch{

@@ -50,7 +50,7 @@ struct User: Codable {
         var prsentAlert: Bool = true
         
         // Prepare URL
-        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/create")
+        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/create/")
         guard let requestUrl = url else { fatalError() }
 
         // Prepare URL Request Object
@@ -69,7 +69,7 @@ struct User: Codable {
         // Perform HTTP Request
         let (data, response) = try await URLSession.shared.data(for: request)
         
-        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode != 400 else {
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode != 201 else {
             throw UserError.itemNotFound
         }
         
@@ -112,6 +112,43 @@ struct User: Codable {
         return jsonResponse["token"]! as! String
     }
     
+    // Method that sends user information to DB.
+    func setInfo() async throws -> Bool {
+        var prsentAlert: Bool = false
+        
+        // Prepare URL
+        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/add/")
+        guard let requestUrl = url else { fatalError() }
+
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token \(UserDefaults.standard.string(forKey: "token")!)", forHTTPHeaderField: "Authorization")
+         
+        // HTTP Request Parameters which will be sent in HTTP Request Body
+        let jsonEncoder = JSONEncoder()
+        let userInfo = UserInfo(full_name: self.userName, academic_degree: self.academicDegree, institution: self.institution, gender: self.gender, age: self.age, country: self.country, discipline: self.discipline)
+        let jsonData = try? jsonEncoder.encode(userInfo)
+
+        // Set HTTP Request Body
+        request.httpBody = jsonData
+        // Perform HTTP Request
+        let (data, response) = try await URLSession.shared.data(for: request)
+    
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 201 else {
+            prsentAlert = true
+            throw UserError.itemNotFound
+        }
+        
+        guard let jsonResponse = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            prsentAlert = true
+            throw UserError.itemNotFound
+        }
+        
+        return prsentAlert
+    }
 }
 
 enum UserError: Error, LocalizedError {
@@ -127,5 +164,25 @@ struct UserCreate: Codable{
         self.email = email
         self.password = password
         self.name = name
+    }
+}
+
+struct UserInfo: Codable {
+    var full_name: String
+    var academic_degree: String
+    var institution: String
+    var gender: String
+    var age: Int
+    var country: String
+    var discipline: String
+    
+    init(full_name: String, academic_degree: String, institution: String, gender: String, age: Int, country: String, discipline: String) {
+        self.full_name = full_name
+        self.academic_degree = academic_degree
+        self.institution = institution
+        self.gender = gender
+        self.age = age
+        self.country = country
+        self.discipline = discipline
     }
 }
