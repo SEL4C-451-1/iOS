@@ -1,5 +1,5 @@
 //
-//  Activity4_2MainViewController.swift
+//  Activity4_1MainViewController.swift
 //  SEL4C
 //
 //  Created by Esther Ramírez on 28/09/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Activity4_2MainViewController: UIViewController {
+class Activity4_1Main2ViewController: UIViewController {
 
     @IBOutlet weak var instruccionesLabel: UILabel!
     @IBOutlet weak var bulletsLabel: UILabel!
@@ -17,12 +17,12 @@ class Activity4_2MainViewController: UIViewController {
         super.viewDidLoad()
         
         // Assign instructions to it's label
-        instruccionesLabel.text = activities[3].subactivities[2].instructions.text
+        instruccionesLabel.text = activities[3].subactivities[1].instructions.text
         instruccionesLabel.numberOfLines = 0
         
         // Format bullets
         var bulletsText: String = ""
-        for bullet in activities[3].subactivities[2].instructions.bullets {
+        for bullet in activities[3].subactivities[1].instructions.bullets {
             bulletsText += "• " + bullet + "\n"
         }
         
@@ -31,9 +31,8 @@ class Activity4_2MainViewController: UIViewController {
         bulletsLabel.numberOfLines = 0
         
         // Assign deliverable to it's label
-        entregaLabel.text = activities[3].subactivities[2].deliverable
+        entregaLabel.text = activities[3].subactivities[1].deliverable
         entregaLabel.numberOfLines = 0
         
     }
-
 }

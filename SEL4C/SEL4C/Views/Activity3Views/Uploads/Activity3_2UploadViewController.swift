@@ -1,97 +1,103 @@
 //
-//  Activity3_2UploadViewController.swift
+//  Activity1_2UploadViewController.swift
 //  SEL4C
 //
 //  Created by Esther Ramírez on 28/09/23.
 //
 
 import UIKit
-import AVFoundation
-import Foundation
+import AVKit
+import MobileCoreServices
 
-class Activity3_2UploadViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
-
-    @IBOutlet weak var reproducirBTN: UIButton!
+class Activity3_2UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var grabarBTN: UIButton!
-    
-    var soundRecorder = AVAudioRecorder()
-    var soundPlayer = AVAudioPlayer()
-    var audioFileURL: URL!
+    var imagePickerController = UIImagePickerController()
+    var videoURL: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRecorder()
 
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    @IBAction func onRecordVideo(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+            
+             print("Camera Available")
+
+            let videoPicker = UIImagePickerController()
+            videoPicker.delegate = self
+            videoPicker.sourceType = .camera
+            videoPicker.mediaTypes = [kUTTypeMovie as String] // MobileCoreServices
+            videoPicker.allowsEditing = false
+
+             self.present(videoPicker, animated: true, completion: nil)
+            
+         }else{
+             
+             print("Camera UnAvaialable")
+         }
     }
     
-    func setupRecorder() {
-            let audioFilename = getDocumentsDirectory().appendingPathComponent("audioRecording.m4a")
-                
-            let recordSettings: [String: Any] = [
-                AVEncoderAudioQualityKey: AVAudioQuality.max.rawValue,
-                AVEncoderBitRateKey: 320000,
-                AVNumberOfChannelsKey: 2,
-                AVSampleRateKey: 44100.0,
-                AVFormatIDKey: kAudioFormatMPEG4AAC // Utiliza el formato AAC para mayor compatibilidad
-            ]
+    //MARK:- UINavigationControllerDelegate
+    
+    var myPickedVideo:NSURL! = NSURL()
+    
+    var VideoToPass:Data!
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        // Close
+        dismiss(animated: true, completion: nil)
+
+        guard
+            let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String,
+            mediaType == (kUTTypeMovie as String),
+            let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL,
+            UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
+            
+            else {
+                return
+            }
+        
+        
+        if let pickedVideo:NSURL = (info[UIImagePickerController.InfoKey.mediaURL] as? NSURL) {
+
+            // Get Video URL
+            self.myPickedVideo = pickedVideo
             
             do {
-                soundRecorder = try AVAudioRecorder(url: audioFilename, settings: recordSettings)
-                soundRecorder.delegate = self
-                soundRecorder.prepareToRecord()
-            } catch {
-                print("Error al configurar el grabador de audio: \(error.localizedDescription)")
+                try? VideoToPass = Data(contentsOf: pickedVideo as URL)
+                let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+                let documentsDirectory = paths[0]
+                let tempPath = documentsDirectory.appendingFormat("/vid.mp4")
+                let url = URL(fileURLWithPath: tempPath)
+                do {
+                    try? VideoToPass.write(to: url, options: [])
+                }
+
+                // If you want display Video here 1
             }
         }
-    
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        if flag {
-            // La reproducción ha finalizado exitosamente
-            print("Reproducción exitosa")
-        } else {
-            // Hubo un error en la reproducción
-            print("Error en la reproducción")
-        }
+        // Handle a movie capture
+         UISaveVideoAtPathToSavedPhotosAlbum(
+             url.path,
+             self,
+            #selector(video(_:didFinishSavingWithError:contextInfo:)),
+             nil)
     }
     
-    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        if flag {
-            // La grabación ha finalizado exitosamente
-            print("Grabación exitosa")
-        } else {
-            // Hubo un error en la grabación
-            print("Error en la grabación")
-        }
-    }
-    
-    @IBAction func grabar(_ sender: Any) {
-        if !soundRecorder.isRecording {
-               soundRecorder.record()
-               grabarBTN.setTitle("Detener", for: .normal)
-           } else {
-               soundRecorder.stop()
-               grabarBTN.setTitle("Grabar", for: .normal)
-           }
-       }
- 
-    
-    @IBAction func reproducir(_ sender: Any) {
-        do {
-            soundPlayer = try AVAudioPlayer(contentsOf: soundRecorder.url)
-            soundPlayer.delegate = self
-            soundPlayer.play()
-        } catch {
-            print("Error al reproducir el audio: \(error.localizedDescription)")
-        }
-    }
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-}
+    @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
+        
+        let title = (error == nil) ? "Bien" : "Error"
+        let message = (error == nil) ? "El video fue guardado" : "El video no se guardó"
 
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+}

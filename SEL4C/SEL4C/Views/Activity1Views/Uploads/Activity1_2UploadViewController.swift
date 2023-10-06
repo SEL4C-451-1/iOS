@@ -6,64 +6,98 @@
 //
 
 import UIKit
-import AVFoundation
+import AVKit
 import MobileCoreServices
 
-class Activity1_2UploadViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class Activity1_2UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var playerView: UIView!
-    let imagePickerController = UIImagePickerController()
+    var imagePickerController = UIImagePickerController()
     var videoURL: URL?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagePickerController.delegate = self
-    }
 
-    // MARK: - Capture Video
-    @IBAction func onCaptureVideo(_ sender: UIButton) {
-        imagePickerController.sourceType = .camera
-        imagePickerController.mediaTypes = [kUTTypeMovie as String]
-        present(imagePickerController, animated: true, completion: nil)
     }
+    
+    @IBAction func onRecordVideo(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+            
+             print("Camera Available")
 
-    // MARK: - Save Video
-    @IBAction func onSaveVideo(_ sender: Any) {
-        if let videoURL = videoURL {
-            saveVideo(videoURL: videoURL, videoName: "test.mp4")
-        } else {
-            print("No hay video para guardar.")
-        }
+            let videoPicker = UIImagePickerController()
+            videoPicker.delegate = self
+            videoPicker.sourceType = .camera
+            videoPicker.mediaTypes = [kUTTypeMovie as String] // MobileCoreServices
+            videoPicker.allowsEditing = false
+
+             self.present(videoPicker, animated: true, completion: nil)
+            
+         }else{
+             
+             print("Camera UnAvaialable")
+         }
     }
+    
+    //MARK:- UINavigationControllerDelegate
+    
+    var myPickedVideo:NSURL! = NSURL()
+    
+    var VideoToPass:Data!
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        imagePickerController.dismiss(animated: true, completion: nil)
-        if let videoURL = info[.mediaURL] as? URL {
-            playVideo(videoURL: videoURL)
-            self.videoURL = videoURL
+        
+        // Close
+        dismiss(animated: true, completion: nil)
+
+        guard
+            let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String,
+            mediaType == (kUTTypeMovie as String),
+            let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL,
+            UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
+            
+            else {
+                return
+            }
+        
+        
+        if let pickedVideo:NSURL = (info[UIImagePickerController.InfoKey.mediaURL] as? NSURL) {
+
+            // Get Video URL
+            self.myPickedVideo = pickedVideo
+            
+            do {
+                try? VideoToPass = Data(contentsOf: pickedVideo as URL)
+                let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+                let documentsDirectory = paths[0]
+                let tempPath = documentsDirectory.appendingFormat("/vid.mp4")
+                let url = URL(fileURLWithPath: tempPath)
+                do {
+                    try? VideoToPass.write(to: url, options: [])
+                }
+
+                // If you want display Video here 1
+            }
         }
+        // Handle a movie capture
+         UISaveVideoAtPathToSavedPhotosAlbum(
+             url.path,
+             self,
+            #selector(video(_:didFinishSavingWithError:contextInfo:)),
+             nil)
     }
+    
+    @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
+        
+        let title = (error == nil) ? "Bien" : "Error"
+        let message = (error == nil) ? "El video fue guardado" : "El video no se guardó"
 
-    // MARK: - Save video method
-    func saveVideo(videoURL: URL, videoName: String) {
-        let fileManager = FileManager.default
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let destinationURL = documentsDirectory.appendingPathComponent(videoName)
-
-        do {
-            try fileManager.moveItem(at: videoURL, to: destinationURL)
-            print("Video guardado en: \(destinationURL.path)")
-        } catch {
-            print("Error al guardar el video: \(error.localizedDescription)")
-        }
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
-
-    // MARK: - Play video method
-    func playVideo(videoURL: URL) {
-        let player = AVPlayer(url: videoURL)
-            let playerLayer = AVPlayerLayer(player: player)
-            playerLayer.frame = playerView.bounds
-            playerView.layer.addSublayer(playerLayer)
-            player.play()
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
     }
+    
 }
