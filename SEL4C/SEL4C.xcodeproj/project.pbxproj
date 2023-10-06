@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751E85A52ACFD59600DDCF7A /* Activity5MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751E85A42ACFD59600DDCF7A /* Activity5MainViewController.swift */; };
+		751E85A72ACFD5B700DDCF7A /* Activity5UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751E85A62ACFD5B700DDCF7A /* Activity5UploadViewController.swift */; };
+		751E85A92ACFDC8800DDCF7A /* Activity4_1Main2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751E85A82ACFDC8800DDCF7A /* Activity4_1Main2ViewController.swift */; };
 		752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752931BB2AAF9A560074A323 /* ActividadesViewController.swift */; };
 		753636D52AC5DF800042F7C1 /* Activity1_3UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636D42AC5DF800042F7C1 /* Activity1_3UploadViewController.swift */; };
 		753636D72AC5E3380042F7C1 /* Activity2_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636D62AC5E3380042F7C1 /* Activity2_1UploadViewController.swift */; };
@@ -79,6 +82,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751E85A42ACFD59600DDCF7A /* Activity5MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity5MainViewController.swift; sourceTree = "<group>"; };
+		751E85A62ACFD5B700DDCF7A /* Activity5UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity5UploadViewController.swift; sourceTree = "<group>"; };
+		751E85A82ACFDC8800DDCF7A /* Activity4_1Main2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_1Main2ViewController.swift; sourceTree = "<group>"; };
 		752931BB2AAF9A560074A323 /* ActividadesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadesViewController.swift; sourceTree = "<group>"; };
 		753636D42AC5DF800042F7C1 /* Activity1_3UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_3UploadViewController.swift; sourceTree = "<group>"; };
 		753636D62AC5E3380042F7C1 /* Activity2_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_1UploadViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +167,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		751E85A32ACFD58500DDCF7A /* Activity5views */ = {
+			isa = PBXGroup;
+			children = (
+				751E85A42ACFD59600DDCF7A /* Activity5MainViewController.swift */,
+				751E85A62ACFD5B700DDCF7A /* Activity5UploadViewController.swift */,
+			);
+			path = Activity5views;
+			sourceTree = "<group>";
+		};
 		753636DE2AC5E8360042F7C1 /* Mains */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +237,7 @@
 		753636E42AC5E8C70042F7C1 /* Mains */ = {
 			isa = PBXGroup;
 			children = (
+				751E85A82ACFDC8800DDCF7A /* Activity4_1Main2ViewController.swift */,
 				753636EA2AC5EB740042F7C1 /* Activity4_1MainViewController.swift */,
 				753636EC2AC5EB810042F7C1 /* Activity4_2MainViewController.swift */,
 			);
@@ -329,11 +345,11 @@
 		AF6BC93E2A9BE17900BA5FB1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				751E85A32ACFD58500DDCF7A /* Activity5views */,
 				AF944E6B2ABE499100D532DE /* Activity1Views */,
 				AF944E6C2ABE49A500D532DE /* Activity2Views */,
 				AF944E6D2ABE49AC00D532DE /* Activity3Views */,
 				AF944E6E2ABE49B500D532DE /* Activity4Views */,
-				AF944E6F2ABE49BD00D532DE /* Activity5Views */,
 				AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */,
 				AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */,
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
@@ -404,13 +420,6 @@
 				753636E42AC5E8C70042F7C1 /* Mains */,
 			);
 			path = Activity4Views;
-			sourceTree = "<group>";
-		};
-		AF944E6F2ABE49BD00D532DE /* Activity5Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Activity5Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +536,7 @@
 				753636EF2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift in Sources */,
 				753636D72AC5E3380042F7C1 /* Activity2_1UploadViewController.swift in Sources */,
 				AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */,
+				751E85A92ACFDC8800DDCF7A /* Activity4_1Main2ViewController.swift in Sources */,
 				AF6BC92E2A9BD89800BA5FB1 /* ResultadosViewController.swift in Sources */,
 				AF1D41CA2AC13BE5009D026F /* Activity2_2MainViewController.swift in Sources */,
 				AF486D762ABCD8130014089D /* User.swift in Sources */,
@@ -535,6 +545,7 @@
 				AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */,
 				752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */,
 				753636F12AC5EE660042F7C1 /* Activity3_2UploadViewController.swift in Sources */,
+				751E85A52ACFD59600DDCF7A /* Activity5MainViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
 				AF8276822ACE228C0013DF28 /* ScrollableExtension.swift in Sources */,
@@ -561,6 +572,7 @@
 				AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */,
 				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,
 				75D08B562AC90B81005BAA9F /* Activity2_2ProblemViewController.swift in Sources */,
+				751E85A72ACFD5B700DDCF7A /* Activity5UploadViewController.swift in Sources */,
 				753636FB2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift in Sources */,
 				753636DB2AC5E7D60042F7C1 /* Activity2_2UploadViewController.swift in Sources */,
 				AF199ACC2A9C39D8004EFCE5 /* RadioButton.swift in Sources */,
@@ -735,9 +747,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AK54YPU54V;
+				DEVELOPMENT_TEAM = W73UCA9D55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SEL4C/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uso de camara para fotos y videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uso de microfono para audio y video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -749,7 +763,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C.t1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -769,9 +783,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AK54YPU54V;
+				DEVELOPMENT_TEAM = W73UCA9D55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SEL4C/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uso de camara para fotos y videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uso de microfono para audio y video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -783,7 +799,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C.t1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

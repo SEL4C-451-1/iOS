@@ -9,7 +9,7 @@ import UIKit
 import AVKit
 import MobileCoreServices
 
-class Activity4_2UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class Activity5UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var imagePickerController = UIImagePickerController()
     var videoURL: URL?
