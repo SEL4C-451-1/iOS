@@ -80,7 +80,7 @@ class CuestionarioViewController: UIViewController {
             index += 1
             
             // Check if the questions have ended.
-            if index == questions.count {
+            if index >= questions.count {
                 answers.calculateSubevaluations()
                 
                 guard let resultados = storyboard?.instantiateViewController(withIdentifier: "ResultadosViewController") as? ResultadosViewController else {
@@ -91,14 +91,16 @@ class CuestionarioViewController: UIViewController {
                 resultados.user = user
                 resultados.answers = answers
                 present(resultados, animated: true)
+                
             }else{
                 progressBar.progress = Float(index + 1) / Float(questions.count)
                 labelQuestionNumber.text = questions[index].title
                 labelQuestionContent.text = questions[index].content
+                
             }
             
             // Check if it has been answered
-            if index <= answers.answerArray.count-1 {
+            if index <= answers.answerArray.count - 1 {
                 // Negate all aswers except but the selected one.
                 for radio in radios {
                     if radio?.number == answers.answerArray[index] {

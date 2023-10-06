@@ -104,14 +104,23 @@ class ResultadosViewController: UIViewController {
     
     
     @IBAction func sendUserInfo(_ sender: Any) {
-        // TODO: Enviar a API resultados de cuestionario inicial y datos de usuario
-        
-        // Go to activities menu.
-        guard let main = storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") as? ActividadesViewController else {
-            return
+        // Enviar a API resultados de cuestionario inicial.
+        Task {
+            do {
+                var showAlert = true
+                showAlert = try await answers.setAnswers()
+                if(showAlert){
+                    showErrorAlert("Error al enviar cuestionario")
+                }else{
+                    // Go to activities menu.
+                    guard let main = storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") as? ActividadesViewController else {
+                        return
+                    }
+                    
+                    main.modalPresentationStyle = .fullScreen
+                    present(main, animated: true)
+                }
+            }
         }
-        
-        main.modalPresentationStyle = .fullScreen
-        present(main, animated: true)
     }
 }

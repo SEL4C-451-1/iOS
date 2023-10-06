@@ -170,8 +170,6 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
                             do{
                                 let presentAlert = try await user.setInfo()
                                 
-                                user.printUser()
-                                
                                 if(presentAlert){
                                     showErrorAlert("Información no enviada")
                                 }else{
@@ -184,7 +182,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
                                     present(cuestionario, animated: true)
                                 }
                             }catch{
-                                print("[*] ERROR SENDING INFO!!!!!!!!")
+                                print("[*] ERROR SENDING INFO!")
                             }
                         }
                     }

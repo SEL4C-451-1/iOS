@@ -4285,7 +4285,7 @@
                                         <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYH-Z3-Z6t">
-                                        <rect key="frame" x="0.0" y="104" width="430" height="828.00000000000023"/>
+                                        <rect key="frame" x="0.0" y="104" width="430" height="828"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tDg-Zy-cBN">
                                                 <rect key="frame" x="20" y="0.0" width="387" height="1382.3333333333333"/>

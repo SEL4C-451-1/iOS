@@ -63,4 +63,59 @@ struct Answer: Codable {
         
     }
     
+    // Method that sends user information to DB.
+    func setAnswers() async throws -> Bool {
+        var prsentAlert: Bool = false
+        
+        // Prepare URL
+        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/")
+        guard let requestUrl = url else { fatalError() }
+
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token \(UserDefaults.standard.string(forKey: "token")!)", forHTTPHeaderField: "Authorization")
+         
+        // HTTP Request Parameters which will be sent in HTTP Request Body
+        let jsonEncoder = JSONEncoder()
+        let answerInfo = AnswerInfo(answer: self)
+        let jsonData = try? jsonEncoder.encode(answerInfo)
+
+        // Set HTTP Request Body
+        request.httpBody = jsonData
+        // Perform HTTP Request
+        let (data, response) = try await URLSession.shared.data(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 201 else {
+            prsentAlert = true
+            throw UserError.itemNotFound
+        }
+        
+        return prsentAlert
+    }
 }
+
+struct AnswerInfo: Codable {
+    var self_control_score: Int
+    var leadership_score: Int
+    var consciousness_and_social_value_score: Int
+    var social_innovation_and_financial_sustainability_score: Int
+    var systemic_thinking_score: Int
+    var scientific_thinking_score: Int
+    var critical_thinking_score: Int
+    var innovative_thinking_score: Int
+    
+    init(answer: Answer) {
+        self.self_control_score = Int(answer.autocontrolGrade)
+        self.leadership_score = Int(answer.liderazgolGrade)
+        self.consciousness_and_social_value_score = Int(answer.concienciaSocialGrade)
+        self.social_innovation_and_financial_sustainability_score = Int(answer.innovacionSocialFinancieraGrade)
+        self.systemic_thinking_score = Int(answer.pensamientoSistemicoGrade)
+        self.scientific_thinking_score = Int(answer.pensamientoCientificoGrade)
+        self.critical_thinking_score = Int(answer.pensamientoCriticoGrade)
+        self.innovative_thinking_score = Int(answer.pensamientoInnovadorGrade)
+    }
+}
+
