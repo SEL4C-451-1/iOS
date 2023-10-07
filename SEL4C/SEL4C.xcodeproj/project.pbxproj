@@ -63,7 +63,6 @@
 		AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */; };
 		AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */; };
 		AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */; };
-		AF8276822ACE228C0013DF28 /* ScrollableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */; };
 		AF8276952ACE49BD0013DF28 /* SEL4CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8276942ACE49BD0013DF28 /* SEL4CTests.swift */; };
 		AF8D47582ACDE48600C900C7 /* ODS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D47572ACDE48600C900C7 /* ODS.swift */; };
 		AF8D475A2ACDED9700C900C7 /* ods.json in Resources */ = {isa = PBXBuildFile; fileRef = AF8D47592ACDED9600C900C7 /* ods.json */; };
@@ -143,7 +142,6 @@
 		AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentialsViewController.swift; sourceTree = "<group>"; };
 		AF7986B02ABE4B02000FAB96 /* Activity1_1MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1MainViewController.swift; sourceTree = "<group>"; };
-		AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableExtension.swift; sourceTree = "<group>"; };
 		AF8276922ACE49BD0013DF28 /* SEL4CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEL4CTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8276942ACE49BD0013DF28 /* SEL4CTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEL4CTests.swift; sourceTree = "<group>"; };
 		AF8D47572ACDE48600C900C7 /* ODS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODS.swift; sourceTree = "<group>"; };
@@ -295,15 +293,38 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AF435EFC2AD13F8700B20D76 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */,
+				AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */,
+				AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		AF435EFD2AD13FB900B20D76 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				AF1534992AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		AF435EFE2AD13FD100B20D76 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		AF486D792ABD007B0014089D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */,
-				AF1534992AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift */,
-				AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */,
-				AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */,
-				AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */,
-				AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */,
+				AF435EFE2AD13FD100B20D76 /* UIView */,
+				AF435EFD2AD13FB900B20D76 /* UserDefaults */,
+				AF435EFC2AD13F8700B20D76 /* UIViewController */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -558,7 +579,6 @@
 				751E85A52ACFD59600DDCF7A /* Activity5MainViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
-				AF8276822ACE228C0013DF28 /* ScrollableExtension.swift in Sources */,
 				AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */,
 				AF944E6A2ABE472600D532DE /* Activity.swift in Sources */,
 				AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */,
