@@ -19,8 +19,6 @@ struct Answer: Codable {
     var pensamientoCientificoGrade: Float
     var pensamientoInnovadorGrade: Float
     
-    
-    
     // MARK: Methods
     // Constructor Method
     init(){

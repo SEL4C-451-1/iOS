@@ -12,10 +12,8 @@ class MainUITabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if(item.title! == "Log Out"){
             UserDefaults.standard.reset()
