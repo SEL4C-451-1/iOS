@@ -113,7 +113,7 @@ class ResultadosViewController: UIViewController {
                     showErrorAlert("Error al enviar cuestionario")
                 }else{
                     // Go to activities menu.
-                    guard let main = storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") as? ActividadesViewController else {
+                    guard let main = storyboard?.instantiateViewController(withIdentifier: "MainUITabBarViewController") as? MainUITabBarViewController else {
                         return
                     }
                     

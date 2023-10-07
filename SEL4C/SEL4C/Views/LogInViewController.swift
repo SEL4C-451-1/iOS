@@ -15,6 +15,10 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    // MARK: Login credentials
+    var token: String = ""
+    var tokenIsObtained: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,18 +28,40 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func logIn(_ sender: Any) {
-        if isNotEmpty(emailTextField) && isNotEmpty(passwordTextField) || true {
+        if isNotEmpty(emailTextField) && isNotEmpty(passwordTextField){
             // Preparamos el mensaje de error por si alguno de los campos no es correcto
             var textUserErrors: String = ""
             var errorExists: Bool = false
             
             // El correo no cumple con el regex
-            if(!isValidEmail(emailTextField.text!) && false ){
+            if(!isValidEmail(emailTextField.text!)){
                 textUserErrors += "Correo inválido. \n"
                 errorExists = true
             }else{
-                // TODO: Mandar credenciales a API y autenticar usuario
-                print("Proceso de Autenticación")
+                // Mandar credenciales a API y autenticar usuario
+                // Create a centila user for login
+                let user = User(userName: "", email: emailTextField.text!, password: passwordTextField.text!)
+
+                Task {
+                    do{
+                        self.token = try await user.getToken()
+                        
+                        if(self.token == "") {
+                            showErrorAlert("Credenciales inválidas.")
+                        }else{
+                            UserDefaults.standard.set(self.token, forKey: "token")
+                            
+                            guard let actividades = storyboard?.instantiateViewController(withIdentifier: "MainTabBar") as? UITabBarController else {
+                                return
+                            }
+                            
+                            actividades.modalPresentationStyle = .fullScreen
+                            present(actividades, animated: true)
+                        }
+                    }catch{
+                        showErrorAlert("Credenciales inválidas.")
+                    }
+                }
             }
             
             if(errorExists){
@@ -43,14 +69,6 @@ class LogInViewController: UIViewController {
                 textUserErrors = String(textUserErrors.dropLast(2))
                 
                 showErrorAlert(textUserErrors)
-            }else{
-                
-                
-                
-                guard storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") is ActividadesViewController else {
-                    return
-                }
-                
             }
             
         }else{

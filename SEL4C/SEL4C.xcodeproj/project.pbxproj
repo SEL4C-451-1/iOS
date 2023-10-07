@@ -43,6 +43,8 @@
 		AF1D41CC2AC13BED009D026F /* Activity2_3MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */; };
 		AF1D41CE2AC14EB8009D026F /* Activity1_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */; };
 		AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */; };
+		AF435EF72AD1308000B20D76 /* PreviousViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */; };
+		AF435EFB2AD1353B00B20D76 /* MainUITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */; };
 		AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */; };
 		AF486D702ABCB4E00014089D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = AF486D6F2ABCB4E00014089D /* countries.json */; };
 		AF486D722ABCB5590014089D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D712ABCB5590014089D /* Country.swift */; };
@@ -119,6 +121,8 @@
 		AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_3MainViewController.swift; sourceTree = "<group>"; };
 		AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1UploadViewController.swift; sourceTree = "<group>"; };
 		AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1RetroViewController.swift; sourceTree = "<group>"; };
+		AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousViewControllerExtension.swift; sourceTree = "<group>"; };
+		AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBarViewController.swift; sourceTree = "<group>"; };
 		AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentials2ViewController.swift; sourceTree = "<group>"; };
 		AF486D6F2ABCB4E00014089D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		AF486D712ABCB5590014089D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -297,6 +301,7 @@
 				AF486D7A2ABD00CA0014089D /* CollapseKeyboardExtension.swift */,
 				AF1534992AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift */,
 				AF486D7C2ABD00FD0014089D /* DynamicBorderRadius.swift */,
+				AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */,
 				AF944E652ABE035700D532DE /* TextFieldProcessingForViewController.swift */,
 				AF8276812ACE228C0013DF28 /* ScrollableExtension.swift */,
 			);
@@ -358,6 +363,7 @@
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
 				AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */,
 				AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */,
+				AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */,
 				AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */,
 				752931BB2AAF9A560074A323 /* ActividadesViewController.swift */,
 				75D08B512AC8E0EE005BAA9F /* ActividadTerminadaViewController.swift */,
@@ -534,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1D41CC2AC13BED009D026F /* Activity2_3MainViewController.swift in Sources */,
+				AF435EF72AD1308000B20D76 /* PreviousViewControllerExtension.swift in Sources */,
 				AF486D722ABCB5590014089D /* Country.swift in Sources */,
 				AF486D742ABCB9560014089D /* JsonReader.swift in Sources */,
 				753636EF2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift in Sources */,
@@ -567,6 +574,7 @@
 				AF6BC9492A9C217100BA5FB1 /* SignUpEssentialsViewController.swift in Sources */,
 				753636F32AC5EE760042F7C1 /* Activity4_1UploadViewController.swift in Sources */,
 				75D08B522AC8E0EE005BAA9F /* ActividadTerminadaViewController.swift in Sources */,
+				AF435EFB2AD1353B00B20D76 /* MainUITabBarViewController.swift in Sources */,
 				753636D92AC5E64A0042F7C1 /* Activity2_3UploadViewController.swift in Sources */,
 				75D08B542AC8F550005BAA9F /* Activity2_2EntryViewController.swift in Sources */,
 				AF486D782ABCFD3E0014089D /* HeightProgressBar.swift in Sources */,

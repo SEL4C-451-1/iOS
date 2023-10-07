@@ -61,9 +61,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
         generoPicker.delegate = self
         edadPicker.delegate = self
         paisPicker.delegate = self
-        
-        
-        
+
     }
     
     // Function that changes the state of the radial button.
