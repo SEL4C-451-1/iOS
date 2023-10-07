@@ -45,6 +45,8 @@
 		AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */; };
 		AF435EF72AD1308000B20D76 /* PreviousViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */; };
 		AF435EFB2AD1353B00B20D76 /* MainUITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */; };
+		AF435F002AD187C000B20D76 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EFF2AD187C000B20D76 /* MyProfileViewController.swift */; };
+		AF435F022AD189D700B20D76 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435F012AD189D700B20D76 /* PaddingLabel.swift */; };
 		AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */; };
 		AF486D702ABCB4E00014089D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = AF486D6F2ABCB4E00014089D /* countries.json */; };
 		AF486D722ABCB5590014089D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D712ABCB5590014089D /* Country.swift */; };
@@ -122,6 +124,8 @@
 		AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1RetroViewController.swift; sourceTree = "<group>"; };
 		AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousViewControllerExtension.swift; sourceTree = "<group>"; };
 		AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBarViewController.swift; sourceTree = "<group>"; };
+		AF435EFF2AD187C000B20D76 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		AF435F012AD189D700B20D76 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentials2ViewController.swift; sourceTree = "<group>"; };
 		AF486D6F2ABCB4E00014089D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		AF486D712ABCB5590014089D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 			children = (
 				AF199ACB2A9C39D8004EFCE5 /* RadioButton.swift */,
 				AF486D772ABCFD3E0014089D /* HeightProgressBar.swift */,
+				AF435F012AD189D700B20D76 /* PaddingLabel.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
 				AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */,
 				AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */,
+				AF435EFF2AD187C000B20D76 /* MyProfileViewController.swift */,
 				AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */,
 				AF199AC62A9C34CD004EFCE5 /* CuestionarioViewController.swift */,
 				752931BB2AAF9A560074A323 /* ActividadesViewController.swift */,
@@ -572,6 +578,7 @@
 				AF1D41CA2AC13BE5009D026F /* Activity2_2MainViewController.swift in Sources */,
 				AF486D762ABCD8130014089D /* User.swift in Sources */,
 				753636EB2AC5EB740042F7C1 /* Activity4_1MainViewController.swift in Sources */,
+				AF435F002AD187C000B20D76 /* MyProfileViewController.swift in Sources */,
 				AF1D41C82AC13BDD009D026F /* Activity2_1MainViewController.swift in Sources */,
 				AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */,
 				752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */,
@@ -579,6 +586,7 @@
 				751E85A52ACFD59600DDCF7A /* Activity5MainViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
+				AF435F022AD189D700B20D76 /* PaddingLabel.swift in Sources */,
 				AF6BC9472A9BECDE00BA5FB1 /* LogInViewController.swift in Sources */,
 				AF944E6A2ABE472600D532DE /* Activity.swift in Sources */,
 				AFA67F0F2A9D5FC000FE69DB /* Answer.swift in Sources */,

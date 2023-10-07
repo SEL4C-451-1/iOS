@@ -185,4 +185,40 @@ struct UserInfo: Codable {
         self.country = country
         self.discipline = discipline
     }
+    
+    init() {
+        self.full_name = ""
+        self.academic_degree = ""
+        self.institution = ""
+        self.gender = ""
+        self.age = -1
+        self.country = ""
+        self.discipline = ""
+    }
+    
+    func getInfo() async throws -> [String: Any] {
+        // Prepare URL
+        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")
+        guard let requestUrl = url else { fatalError() }
+
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token \(UserDefaults.standard.string(forKey: "token")!)", forHTTPHeaderField: "Authorization")
+        
+        // Perform HTTP Request
+        let (data, response) = try await URLSession.shared.data(for: request)
+    
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw UserError.itemNotFound
+        }
+        
+        guard let jsonResponse = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            throw UserError.itemNotFound
+        }
+        
+        return jsonResponse
+    }
 }

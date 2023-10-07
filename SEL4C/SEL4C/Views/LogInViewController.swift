@@ -51,7 +51,7 @@ class LogInViewController: UIViewController {
                         }else{
                             UserDefaults.standard.set(self.token, forKey: "token")
                             
-                            guard let actividades = storyboard?.instantiateViewController(withIdentifier: "MainTabBar") as? UITabBarController else {
+                            guard let actividades = storyboard?.instantiateViewController(withIdentifier: "MainUITabBarViewController") as? MainUITabBarViewController else {
                                 return
                             }
                             
