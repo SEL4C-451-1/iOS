@@ -31,7 +31,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
     @IBOutlet weak var generoPicker: UIPickerView!
     
     // Edad
-    let edadPickerData: [Int] = Array(1...120)
+    let edadPickerData: [Int] = Array(15...120)
     @IBOutlet weak var edadPicker: UIPickerView!
     
     // País

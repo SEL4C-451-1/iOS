@@ -28,7 +28,7 @@ struct User: Codable {
         self.institution = "Tecnológico de Monterrey"
         self.discipline = "Ingeniería y Ciencias"
         self.gender = "Masculino"
-        self.age = -1
+        self.age = 15
         self.country = "Afganistán"
     }
     
