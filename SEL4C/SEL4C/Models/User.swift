@@ -196,6 +196,16 @@ struct UserInfo: Codable {
         self.discipline = ""
     }
     
+    mutating func setvalues(_ values: [String: Any]){
+        self.full_name = values["full_name"]! as! String
+        self.academic_degree = values["academic_degree"]! as! String
+        self.institution = values["institution"]! as! String
+        self.gender = values["gender"]! as! String
+        self.age = values["age"]! as! Int
+        self.country = values["country"]! as! String
+        self.discipline = values["discipline"]! as! String
+    }
+    
     func getInfo() async throws -> [String: Any] {
         // Prepare URL
         let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")

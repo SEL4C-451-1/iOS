@@ -21,6 +21,25 @@ class MyProfileViewController: UIViewController {
     // MARK: User Info
     var userInfo = UserInfo()
     
+    override func viewDidAppear(_ animated: Bool) {
+        Task{
+            do{
+                let response: [String: Any] = try await userInfo.getInfo()
+                userInfo.setvalues(response)
+                
+                userNameLabel.text = userInfo.full_name
+                academicoLabel.text = userInfo.academic_degree
+                institucionLabel.text = userInfo.institution
+                generoLabel.text = userInfo.gender
+                edadLabel.text = String(userInfo.age)
+                paisLabel.text = userInfo.country
+                disciplinaLabel.text = userInfo.discipline
+            }catch{
+                showErrorAlert("Error al obtener datos de usuario.")
+            }
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,14 +57,15 @@ class MyProfileViewController: UIViewController {
         Task{
             do{
                 let response: [String: Any] = try await userInfo.getInfo()
+                userInfo.setvalues(response)
                 
-                userNameLabel.text = response["full_name"]! as! String
-                academicoLabel.text = response["academic_degree"]! as! String
-                institucionLabel.text = response["institution"]! as! String
-                generoLabel.text = response["gender"]! as! String
-                edadLabel.text = String(response["age"]! as! Int)
-                paisLabel.text = response["country"]! as! String
-                disciplinaLabel.text = response["discipline"]! as! String
+                userNameLabel.text = userInfo.full_name
+                academicoLabel.text = userInfo.academic_degree
+                institucionLabel.text = userInfo.institution
+                generoLabel.text = userInfo.gender
+                edadLabel.text = String(userInfo.age)
+                paisLabel.text = userInfo.country
+                disciplinaLabel.text = userInfo.discipline
             }catch{
                 showErrorAlert("Error al obtener datos de usuario.")
             }

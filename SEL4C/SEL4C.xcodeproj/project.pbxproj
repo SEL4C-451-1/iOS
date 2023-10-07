@@ -47,6 +47,7 @@
 		AF435EFB2AD1353B00B20D76 /* MainUITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */; };
 		AF435F002AD187C000B20D76 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EFF2AD187C000B20D76 /* MyProfileViewController.swift */; };
 		AF435F022AD189D700B20D76 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435F012AD189D700B20D76 /* PaddingLabel.swift */; };
+		AF435F042AD1998500B20D76 /* UpdateMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435F032AD1998500B20D76 /* UpdateMyProfileViewController.swift */; };
 		AF486D6C2ABBA4C40014089D /* SignUpEssentials2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */; };
 		AF486D702ABCB4E00014089D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = AF486D6F2ABCB4E00014089D /* countries.json */; };
 		AF486D722ABCB5590014089D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF486D712ABCB5590014089D /* Country.swift */; };
@@ -126,6 +127,7 @@
 		AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBarViewController.swift; sourceTree = "<group>"; };
 		AF435EFF2AD187C000B20D76 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		AF435F012AD189D700B20D76 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		AF435F032AD1998500B20D76 /* UpdateMyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyProfileViewController.swift; sourceTree = "<group>"; };
 		AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEssentials2ViewController.swift; sourceTree = "<group>"; };
 		AF486D6F2ABCB4E00014089D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		AF486D712ABCB5590014089D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				751E85A32ACFD58500DDCF7A /* Activity5views */,
 				AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */,
 				AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */,
+				AF435F032AD1998500B20D76 /* UpdateMyProfileViewController.swift */,
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
 				AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */,
 				AF486D6B2ABBA4C40014089D /* SignUpEssentials2ViewController.swift */,
@@ -610,6 +613,7 @@
 				AF1D41C62AC1397F009D026F /* Activity1_3MainViewController.swift in Sources */,
 				AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */,
 				AF15349A2AD0B44B0091EC1D /* ResetUserDefaultsExtension.swift in Sources */,
+				AF435F042AD1998500B20D76 /* UpdateMyProfileViewController.swift in Sources */,
 				AF486D7B2ABD00CA0014089D /* CollapseKeyboardExtension.swift in Sources */,
 				75D08B562AC90B81005BAA9F /* Activity2_2ProblemViewController.swift in Sources */,
 				751E85A72ACFD5B700DDCF7A /* Activity5UploadViewController.swift in Sources */,
