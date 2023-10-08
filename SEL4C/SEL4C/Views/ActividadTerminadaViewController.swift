@@ -1,10 +1,3 @@
-//
-//  ActividadTerminadaViewController.swift
-//  SEL4C
-//
-//  Created by Esther Ramírez on 30/09/23.
-//
-
 import UIKit
 
 class ActividadTerminadaViewController: UIViewController {
@@ -12,14 +5,23 @@ class ActividadTerminadaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Establecer el valor booleano en UserDefaults como true
+        if self.restorationIdentifier == "Terminada1" {
+            // Establecer el valor booleano en UserDefaults como true
+            UserDefaults.standard.set(true, forKey: "actividadTerminada1")
+        } else if self.restorationIdentifier == "Terminada2" {
+            // Establecer el valor booleano en UserDefaults como true
+            UserDefaults.standard.set(true, forKey: "actividadTerminada2")
+        } else if self.restorationIdentifier == "Terminada3" {
+            // Establecer el valor booleano en UserDefaults como true
+            UserDefaults.standard.set(true, forKey: "actividadTerminada3")
+        } else if self.restorationIdentifier == "Terminada4" {
+            // Establecer el valor booleano en UserDefaults como true
+            UserDefaults.standard.set(true, forKey: "actividadTerminada4")
+        } else if self.restorationIdentifier == "Terminada5" {
+            // Establecer el valor booleano en UserDefaults como true
+            UserDefaults.standard.set(true, forKey: "actividadTerminada5")
+        }
+        
     }
-    
-    @IBAction func siguiente(_ sender: Any) {
-        let actividadVC = storyboard?.instantiateViewController(withIdentifier: "ActividadesViewController") as? ActividadesViewController
-
-        present(actividadVC!, animated: true)
-    }
-    
-   
 }

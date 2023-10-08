@@ -15,7 +15,7 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="LogInSignUpViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uiK-V4-nul" userLabel="Main Stack View">
@@ -1984,7 +1984,7 @@
             <objects>
                 <viewController storyboardIdentifier="ActividadesViewController" id="p1d-Ie-2HI" customClass="ActividadesViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FLl-8B-Fgb">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFc-Nb-lBo">
@@ -2004,171 +2004,227 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-5Q-xhl">
-                                <rect key="frame" x="0.0" y="767" width="428" height="100"/>
-                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="kM9-OT-Xqw"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Reflexión">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="28" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KA-g7-JBh">
-                                <rect key="frame" x="0.0" y="667" width="428" height="100"/>
-                                <color key="backgroundColor" red="0.54509803921568623" green="0.69411764705882351" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="bno-qF-hpd"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Actividad de cierre">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="28" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owu-5Z-duF">
-                                <rect key="frame" x="271.33333333333331" y="209.99999999999997" width="106" height="105.66666666666666"/>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system" cornerStyle="large">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="70"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Un9-s2-L8x" kind="presentation" modalPresentationStyle="fullScreen" id="aew-TK-Xbd"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtg-JA-gJE">
-                                <rect key="frame" x="315.66666666666669" y="246" width="17.333333333333314" height="34"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="2">
-                                        <attributes>
-                                            <font key="NSFont" size="29" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-C3-ubw">
-                                <rect key="frame" x="271.33333333333331" y="368.33333333333331" width="106" height="105"/>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system" cornerStyle="large">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="70"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Ff2-JK-hPh" kind="presentation" modalPresentationStyle="fullScreen" id="gJ6-HX-IPd"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-Jw-au6">
-                                <rect key="frame" x="315.66666666666669" y="404" width="17.333333333333314" height="34"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="4">
-                                        <attributes>
-                                            <font key="NSFont" size="29" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR1-ID-tah">
-                                <rect key="frame" x="68" y="135.66666666666666" width="105" height="104.66666666666666"/>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system" cornerStyle="large">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="70"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="J9c-aI-3Y1" kind="modal" modalPresentationStyle="fullScreen" id="p33-qz-H8t"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWW-Ij-Xg2">
-                                <rect key="frame" x="112" y="171" width="17" height="34"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="1">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="29" name="AndaleMono"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G81-pe-7Aa">
-                                <rect key="frame" x="68" y="285" width="105" height="106"/>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system" cornerStyle="large">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="70"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="si8-L9-7kD" kind="presentation" modalPresentationStyle="fullScreen" id="J5l-O1-WAB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK2-0g-fUF">
-                                <rect key="frame" x="112" y="321" width="17" height="34"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="3">
-                                        <attributes>
-                                            <font key="NSFont" size="29" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="47o-XK-0WI">
+                                <rect key="frame" x="20" y="110" width="388" height="737"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uee-Zv-Mhw">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="108.66666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Icono circulo actividad" translatesAutoresizingMaskIntoConstraints="NO" id="wkf-0p-Hgy">
+                                                <rect key="frame" x="0.0" y="-2.3333333333333357" width="100" height="114"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="0eg-BT-1Sr"/>
+                                                </constraints>
+                                                <imageReference key="image" image="circle.dashed" catalog="system" symbolScale="large" variableValue="1"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6y3-ur-bXf">
+                                                <rect key="frame" x="120" y="0.0" width="268" height="108.66666666666667"/>
+                                                <color key="tintColor" red="0.97933279418583319" green="0.97807776492647269" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Actividad 1: Identificación">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="35" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonA1Tapped:" destination="p1d-Ie-2HI" eventType="touchUpInside" id="LrR-PK-mNq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.69411764710000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.8150093129" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eqI-8M-THt">
+                                        <rect key="frame" x="0.0" y="125.66666666666666" width="388" height="108.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bz6-2w-er7">
+                                                <rect key="frame" x="0.0" y="0.0" width="268" height="108.66666666666667"/>
+                                                <color key="tintColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Actividad 2: Investigación">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="35" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonA2Tapped:" destination="p1d-Ie-2HI" eventType="touchUpInside" id="D76-b5-zbd"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Icono circulo actividad" translatesAutoresizingMaskIntoConstraints="NO" id="DfN-5b-vsr">
+                                                <rect key="frame" x="288" y="-2.3333333333333357" width="100" height="114"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="gDS-F4-8FL"/>
+                                                </constraints>
+                                                <imageReference key="image" image="circle.dashed" catalog="system" symbolScale="large" variableValue="1"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.69411764710000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-O1-RH3">
+                                        <rect key="frame" x="0.0" y="251.33333333333329" width="388" height="108.66666666666666"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Icono circulo actividad" translatesAutoresizingMaskIntoConstraints="NO" id="hS1-kG-ec3">
+                                                <rect key="frame" x="0.0" y="-2.3333333333333357" width="100" height="114"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="yoB-oB-zvg"/>
+                                                </constraints>
+                                                <imageReference key="image" image="circle.dashed" catalog="system" symbolScale="large" variableValue="1"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ri1-y1-gMn">
+                                                <rect key="frame" x="120" y="0.0" width="268" height="108.66666666666667"/>
+                                                <color key="tintColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Actividad 3: Ideación">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="35" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonA3Tapped:" destination="p1d-Ie-2HI" eventType="touchUpInside" id="TJW-5N-KgP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.69411764710000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BuW-su-Za2">
+                                        <rect key="frame" x="0.0" y="377" width="388" height="108.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-eB-6id">
+                                                <rect key="frame" x="0.0" y="0.0" width="268" height="108.66666666666667"/>
+                                                <color key="tintColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Actividad 4: Socialización">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="35" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonA4Tapped:" destination="p1d-Ie-2HI" eventType="touchUpInside" id="Gnw-yI-ZoF"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Icono circulo actividad" translatesAutoresizingMaskIntoConstraints="NO" id="7Uz-zW-iKl">
+                                                <rect key="frame" x="288" y="-2.3333333333333357" width="100" height="114"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="KlW-cm-Sdw"/>
+                                                </constraints>
+                                                <imageReference key="image" image="circle.dashed" catalog="system" symbolScale="large" variableValue="1"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.69411764710000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yOm-9n-hSG">
+                                        <rect key="frame" x="0.0" y="502.66666666666669" width="388" height="108.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Icono circulo actividad" translatesAutoresizingMaskIntoConstraints="NO" id="9Hc-Fr-WuW">
+                                                <rect key="frame" x="0.0" y="-2.3333333333333357" width="100" height="114"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="TVn-gS-PmE"/>
+                                                </constraints>
+                                                <imageReference key="image" image="circle.dashed" catalog="system" symbolScale="large" variableValue="1"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUz-UN-3e8">
+                                                <rect key="frame" x="120" y="0.0" width="268" height="108.66666666666667"/>
+                                                <color key="tintColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Evaluación de cierre">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="35" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonECTapped:" destination="p1d-Ie-2HI" eventType="touchUpInside" id="9Ft-hC-PfN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.69411764710000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vwa-M8-gNn">
+                                        <rect key="frame" x="0.0" y="628.33333333333337" width="388" height="108.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6M-0Z-WHy">
+                                                <rect key="frame" x="0.0" y="0.0" width="268" height="108.66666666666667"/>
+                                                <color key="tintColor" red="0.97933279419999997" green="0.97807776489999998" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Entregable Final">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="35" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonEFTapped:" destination="p1d-Ie-2HI" eventType="touchUpInside" id="R1Y-3d-LoH"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Icono circulo actividad" translatesAutoresizingMaskIntoConstraints="NO" id="f1G-rU-ZoP">
+                                                <rect key="frame" x="288" y="-2.3333333333333357" width="100" height="114"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="omT-nQ-SKc"/>
+                                                </constraints>
+                                                <imageReference key="image" image="circle.dashed" catalog="system" symbolScale="large" variableValue="1"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.69411764710000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8mo-m7-UUS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="jEP-C3-ubw" firstAttribute="top" secondItem="owu-5Z-duF" secondAttribute="bottom" constant="52.666666666666742" id="3vD-zm-tcO"/>
+                            <constraint firstItem="8mo-m7-UUS" firstAttribute="trailing" secondItem="47o-XK-0WI" secondAttribute="trailing" constant="20" id="09L-5t-FLZ"/>
                             <constraint firstItem="rFc-Nb-lBo" firstAttribute="top" secondItem="8mo-m7-UUS" secondAttribute="top" id="5a1-Ba-BOW"/>
-                            <constraint firstItem="8mo-m7-UUS" firstAttribute="trailing" secondItem="0KA-g7-JBh" secondAttribute="trailing" id="AuH-io-5ta"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="centerY" secondItem="G81-pe-7Aa" secondAttribute="centerY" id="B3r-Q8-3EE"/>
-                            <constraint firstItem="8mo-m7-UUS" firstAttribute="bottom" secondItem="b8h-5Q-xhl" secondAttribute="bottom" constant="10" id="FVL-kJ-k9x"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="top" secondItem="lR1-ID-tah" secondAttribute="bottom" constant="80.666666666666686" id="GNd-N4-KOf"/>
-                            <constraint firstItem="Qtg-JA-gJE" firstAttribute="leading" secondItem="cRd-Jw-au6" secondAttribute="leading" id="GUK-3T-UIY"/>
-                            <constraint firstItem="0KA-g7-JBh" firstAttribute="leading" secondItem="FLl-8B-Fgb" secondAttribute="leading" id="GYT-53-s1E"/>
-                            <constraint firstItem="Qtg-JA-gJE" firstAttribute="centerY" secondItem="owu-5Z-duF" secondAttribute="centerY" id="HEV-Ex-bRX"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="top" secondItem="FLl-8B-Fgb" secondAttribute="top" constant="321" id="JyJ-y9-1bd"/>
-                            <constraint firstItem="Qtg-JA-gJE" firstAttribute="centerX" secondItem="owu-5Z-duF" secondAttribute="centerX" id="KuX-7h-2Sv"/>
-                            <constraint firstItem="owu-5Z-duF" firstAttribute="leading" secondItem="jEP-C3-ubw" secondAttribute="leading" id="LM3-Qx-ENy"/>
-                            <constraint firstItem="cRd-Jw-au6" firstAttribute="centerX" secondItem="jEP-C3-ubw" secondAttribute="centerX" id="N8I-AG-zZm"/>
+                            <constraint firstItem="47o-XK-0WI" firstAttribute="top" secondItem="rFc-Nb-lBo" secondAttribute="bottom" constant="10" id="TEv-y9-pWn"/>
                             <constraint firstItem="rFc-Nb-lBo" firstAttribute="leading" secondItem="8mo-m7-UUS" secondAttribute="leading" id="Tjl-YO-4Dc"/>
-                            <constraint firstItem="b8h-5Q-xhl" firstAttribute="leading" secondItem="8mo-m7-UUS" secondAttribute="leading" id="TzN-fO-tjf"/>
-                            <constraint firstItem="PWW-Ij-Xg2" firstAttribute="top" secondItem="rFc-Nb-lBo" secondAttribute="bottom" constant="71" id="UGR-gX-SIM"/>
+                            <constraint firstItem="8mo-m7-UUS" firstAttribute="bottom" secondItem="47o-XK-0WI" secondAttribute="bottom" constant="20" id="Vfe-SM-6pW"/>
                             <constraint firstItem="rFc-Nb-lBo" firstAttribute="trailing" secondItem="8mo-m7-UUS" secondAttribute="trailing" id="YDX-3f-CZg"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="trailing" secondItem="PWW-Ij-Xg2" secondAttribute="trailing" id="YhX-0i-y4L"/>
-                            <constraint firstItem="b8h-5Q-xhl" firstAttribute="trailing" secondItem="8mo-m7-UUS" secondAttribute="trailing" id="emt-xD-Gr6"/>
-                            <constraint firstItem="PWW-Ij-Xg2" firstAttribute="centerY" secondItem="lR1-ID-tah" secondAttribute="centerY" id="gES-G8-k4V"/>
-                            <constraint firstItem="Qtg-JA-gJE" firstAttribute="trailing" secondItem="cRd-Jw-au6" secondAttribute="trailing" id="gR5-3b-iRc"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="centerX" secondItem="lR1-ID-tah" secondAttribute="centerX" id="geK-BH-vb3"/>
-                            <constraint firstItem="8mo-m7-UUS" firstAttribute="trailing" secondItem="owu-5Z-duF" secondAttribute="trailing" constant="50.666666666666742" id="ml5-Sz-jhX"/>
-                            <constraint firstItem="G81-pe-7Aa" firstAttribute="top" secondItem="PWW-Ij-Xg2" secondAttribute="bottom" constant="80" id="nrT-LB-vZp"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="leading" secondItem="8mo-m7-UUS" secondAttribute="leading" constant="112" id="pPz-vA-g90"/>
-                            <constraint firstItem="b8h-5Q-xhl" firstAttribute="top" secondItem="0KA-g7-JBh" secondAttribute="bottom" id="pQh-8i-l5h"/>
-                            <constraint firstItem="8mo-m7-UUS" firstAttribute="trailing" secondItem="Qtg-JA-gJE" secondAttribute="trailing" constant="95" id="sf0-ju-ut3"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="leading" secondItem="PWW-Ij-Xg2" secondAttribute="leading" id="u3V-88-7Lb"/>
-                            <constraint firstItem="owu-5Z-duF" firstAttribute="top" secondItem="FLl-8B-Fgb" secondAttribute="top" constant="210" id="wT4-Ze-5do"/>
-                            <constraint firstItem="HK2-0g-fUF" firstAttribute="centerX" secondItem="G81-pe-7Aa" secondAttribute="centerX" id="wbv-yH-25W"/>
-                            <constraint firstItem="cRd-Jw-au6" firstAttribute="centerY" secondItem="jEP-C3-ubw" secondAttribute="centerY" id="x2v-5P-ibl"/>
+                            <constraint firstItem="47o-XK-0WI" firstAttribute="leading" secondItem="8mo-m7-UUS" secondAttribute="leading" constant="20" id="riG-zM-TSo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="V2Q-5C-GgA">
@@ -2176,17 +2232,37 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="Ie8-1r-OsC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonA1" destination="6y3-ur-bXf" id="pfB-QH-tnE"/>
+                        <outlet property="buttonA2" destination="Bz6-2w-er7" id="1xe-uZ-hfS"/>
+                        <outlet property="buttonA3" destination="Ri1-y1-gMn" id="Q9v-iR-tqq"/>
+                        <outlet property="buttonA4" destination="5YK-eB-6id" id="mao-Dd-N8y"/>
+                        <outlet property="buttonEC" destination="PUz-UN-3e8" id="i1Q-uh-9r0"/>
+                        <outlet property="buttonEF" destination="M6M-0Z-WHy" id="Azl-Fm-PN9"/>
+                        <outlet property="imgA1" destination="wkf-0p-Hgy" id="yIv-2K-21o"/>
+                        <outlet property="imgA2" destination="DfN-5b-vsr" id="J4i-Bp-kcJ"/>
+                        <outlet property="imgA3" destination="hS1-kG-ec3" id="XDB-H6-9KG"/>
+                        <outlet property="imgA4" destination="7Uz-zW-iKl" id="iCT-4A-UBj"/>
+                        <outlet property="imgEC" destination="9Hc-Fr-WuW" id="fxy-i7-i9h"/>
+                        <outlet property="imgEF" destination="f1G-rU-ZoP" id="zBP-rV-lhZ"/>
+                        <outlet property="stackView1" destination="uee-Zv-Mhw" id="AMd-a9-lVu"/>
+                        <outlet property="stackView2" destination="eqI-8M-THt" id="Suw-jM-joL"/>
+                        <outlet property="stackView3" destination="zwI-O1-RH3" id="DMk-14-NVP"/>
+                        <outlet property="stackView4" destination="BuW-su-Za2" id="QXh-5l-tl0"/>
+                        <outlet property="stackView5" destination="yOm-9n-hSG" id="znT-0O-wPO"/>
+                        <outlet property="stackView6" destination="vwa-M8-gNn" id="Eup-Op-lPk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sY-nh-GFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2864.6511627906975" y="-1060.3004291845493"/>
+            <point key="canvasLocation" x="2864.0186915887848" y="-1060.6911447084235"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="AMq-9X-Z9l">
             <objects>
                 <viewController storyboardIdentifier="MyProfileViewController" title="My Profile" id="Cdc-X0-Mc1" customClass="MyProfileViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAa-Wm-eUC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-yE-PSN">
@@ -2204,7 +2280,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l68-Y9-r7W">
-                                <rect key="frame" x="0.0" y="132" width="428" height="715"/>
+                                <rect key="frame" x="0.0" y="132" width="428" height="705"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JNs-IX-O4Y">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="1141"/>
@@ -2647,7 +2723,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <outlet property="tabBar" destination="0sC-fn-Mao" id="wYc-G0-bMd"/>
                         <segue destination="p1d-Ie-2HI" kind="relationship" relationship="viewControllers" id="bAL-r4-KFM"/>
                         <segue destination="Uj8-r0-FmH" kind="relationship" relationship="viewControllers" id="66c-fK-UfN"/>
                         <segue destination="Cdc-X0-Mc1" kind="relationship" relationship="viewControllers" id="z4j-2i-xEg"/>
@@ -2660,7 +2735,7 @@
         <!--Activity1.1Main-->
         <scene sceneID="SAp-QX-5Hb">
             <objects>
-                <viewController title="Activity1.1Main" id="J9c-aI-3Y1" customClass="Activity1_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Activity1_1MainViewController" title="Activity1.1Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J9c-aI-3Y1" customClass="Activity1_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q9p-bq-yXB">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3366,7 +3441,7 @@
         <!--Activity2.1Main-->
         <scene sceneID="Dhq-FH-oj9">
             <objects>
-                <viewController title="Activity2.1Main" id="Un9-s2-L8x" customClass="Activity2_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Activity2_1MainViewController" title="Activity2.1Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Un9-s2-L8x" customClass="Activity2_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OIK-yN-Ij6">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4952,7 +5027,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="22d-pz-Chx"/>
+                                                                    <segue destination="JM7-2a-ngU" kind="show" id="CXD-sR-pJQ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fS3-Bi-jJA" userLabel="Button Next">
@@ -4977,6 +5052,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="qfI-Uc-lRT"/>
+                                                                    <segue destination="RGx-zr-fsN" kind="show" id="j5z-ZI-05g"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -5023,13 +5099,13 @@
         <!--Activity3.1Main-->
         <scene sceneID="py2-pD-XRC">
             <objects>
-                <viewController title="Activity3.1Main" id="si8-L9-7kD" customClass="Activity3_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Activity3_1MainViewController" title="Activity3.1Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="si8-L9-7kD" customClass="Activity3_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f7c-op-yNM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxs-P7-WBZ">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vh-pi-F62" userLabel="ActividadLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
@@ -5053,7 +5129,7 @@
                                         <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoS-YP-7Wp">
-                                        <rect key="frame" x="0.0" y="104" width="428" height="822"/>
+                                        <rect key="frame" x="0.0" y="104" width="428" height="812"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jds-9b-s9M">
                                                 <rect key="frame" x="20" y="0.0" width="385.33333333333331" height="427.33333333333331"/>
@@ -5229,13 +5305,13 @@
         <!--Activity4.1Main-->
         <scene sceneID="LhC-xx-WgZ">
             <objects>
-                <viewController title="Activity4.1Main" id="Ff2-JK-hPh" customClass="Activity4_1MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Activity4_1MainViewController" title="Activity4.1Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ff2-JK-hPh" customClass="Activity4_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYc-aR-D4r">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-3d-RXK">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d5-LR-cQt" userLabel="ActividadLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
@@ -5259,7 +5335,7 @@
                                         <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="If5-uM-wiq">
-                                        <rect key="frame" x="0.0" y="104" width="428" height="822"/>
+                                        <rect key="frame" x="0.0" y="104" width="428" height="812"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-5A-IQj">
                                                 <rect key="frame" x="20" y="0.0" width="385.33333333333331" height="427.33333333333331"/>
@@ -5429,7 +5505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NE5-Hc-wsI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2530" y="2794"/>
+            <point key="canvasLocation" x="3083" y="2889"/>
         </scene>
         <!--Activity4.2Main-->
         <scene sceneID="6L6-ME-bRx">
@@ -5634,7 +5710,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Db4-hy-HVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6031" y="2706"/>
+            <point key="canvasLocation" x="6847" y="2707"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="o5i-z9-QfZ">
@@ -6189,7 +6265,7 @@
         <!--Actividad Terminada View Controller-->
         <scene sceneID="wIm-cC-QEv">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Ud-Dh-Bmv" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Terminada1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Ud-Dh-Bmv" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KwU-fV-Srg">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6457,7 +6533,7 @@
         <!--Actividad Terminada View Controller-->
         <scene sceneID="hHO-Xc-zTs">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="fu1-rX-k7v" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Terminada2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fu1-rX-k7v" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQP-MF-mur">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6472,7 +6548,7 @@
                                             <constraint firstAttribute="height" constant="100" id="NoM-rG-w9I"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Actividad 1">
+                                            <fragment content="Actividad 2">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
@@ -6585,7 +6661,7 @@
         <!--Actividad Terminada View Controller-->
         <scene sceneID="p6N-88-lqQ">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="nFa-Qv-Rl9" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Terminada3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nFa-Qv-Rl9" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yy3-Ex-Evx">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6600,7 +6676,7 @@
                                             <constraint firstAttribute="height" constant="100" id="fIf-EW-Jun"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Actividad 1">
+                                            <fragment content="Actividad 3">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
@@ -6713,7 +6789,7 @@
         <!--Actividad Terminada View Controller-->
         <scene sceneID="7ol-iw-V3O">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="di5-ow-uWM" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Terminada4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="di5-ow-uWM" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aTr-9Y-gHF">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6728,7 +6804,7 @@
                                             <constraint firstAttribute="height" constant="100" id="ys9-yX-gRf"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Actividad 1">
+                                            <fragment content="Actividad 4">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
@@ -6836,7 +6912,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEx-wC-Ik9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8742" y="2706"/>
+            <point key="canvasLocation" x="9557" y="2707"/>
         </scene>
         <!--Activity2.2Upload-->
         <scene sceneID="xTo-Bz-7Ut">
@@ -7543,7 +7619,7 @@
                                             <constraint firstAttribute="height" constant="100" id="hVc-U4-0Vg"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Actividad 2">
+                                            <fragment content="Actividad 3">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
@@ -7993,9 +8069,9 @@
                                             <constraint firstAttribute="height" constant="100" id="PYy-fF-IMX"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Actividad 2">
+                                            <fragment content="Actividad 3">
                                                 <attributes>
-                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -8201,7 +8277,7 @@
                                             <constraint firstAttribute="height" constant="100" id="PMB-Gl-nk5"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Actividad 2">
+                                            <fragment content="Actividad 3">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
@@ -8540,8 +8616,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="y13-Kf-D1D"/>
-                                                                    <segue destination="RQ5-he-Cz6" kind="show" id="lE1-68-Oza"/>
+                                                                    <segue destination="RQ5-he-Cz6" kind="show" id="V3t-Fn-uA5"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MPt-vw-KHQ" userLabel="Button Next">
@@ -8565,8 +8640,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="Fte-Fp-0wq"/>
-                                                                    <segue destination="nFa-Qv-Rl9" kind="show" id="Ydf-BC-FQq"/>
+                                                                    <segue destination="nFa-Qv-Rl9" kind="show" id="63B-I8-xah"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -8610,10 +8684,10 @@
             </objects>
             <point key="canvasLocation" x="7228" y="1871"/>
         </scene>
-        <!--Activity5Main-->
+        <!--Terminada5-->
         <scene sceneID="Lbm-qd-e8f">
             <objects>
-                <viewController title="Activity5Main" id="v57-Ow-a64" customClass="Activity3_1MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Activity5MainViewController" title="Terminada5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v57-Ow-a64" customClass="Activity5MainViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1C6-8N-ip3">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8628,7 +8702,7 @@
                                             <constraint firstAttribute="height" constant="100" id="hoZ-xu-FiX"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Reflexión">
+                                            <fragment content="Entrega Final">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
@@ -8806,11 +8880,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BFu-S4-jds"/>
-                    <connections>
-                        <outlet property="bulletsLabel" destination="W3l-yH-Xey" id="rda-70-hy7"/>
-                        <outlet property="entregaLabel" destination="6MF-uV-EmT" id="no2-0Q-Qsr"/>
-                        <outlet property="instruccionesLabel" destination="baj-F2-P35" id="12J-ou-ZCq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWM-XD-LlJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -8834,7 +8903,7 @@
                                             <constraint firstAttribute="height" constant="100" id="j1e-5i-WOR"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Actividad 3">
+                                            <fragment content="Entrega Final">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="28" name="AndaleMono"/>
@@ -8963,6 +9032,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="buttonNext:" destination="DxC-cL-wO1" eventType="touchUpInside" id="NI3-f3-kth"/>
+                                                                    <segue destination="pgu-qD-GXi" kind="show" id="Ybb-Wp-hhO"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -9194,7 +9264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7Y-pG-4iQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4592" y="2706"/>
+            <point key="canvasLocation" x="5407" y="2707"/>
         </scene>
         <!--Activity1.2Upload-->
         <scene sceneID="uWG-Er-iin">
@@ -9385,12 +9455,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDi-um-c1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7380" y="2706"/>
+            <point key="canvasLocation" x="8195" y="2707"/>
         </scene>
         <!--Activity4.1Main-->
         <scene sceneID="2QP-E6-90u">
             <objects>
-                <viewController title="Activity4.1Main" id="Dzz-0m-gxm" customClass="Activity4_1Main2ViewController" sceneMemberID="viewController">
+                <viewController title="Activity4.1Main" id="Dzz-0m-gxm" customClass="Activity4_1Main2ViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AtS-Tt-8QJ">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -9590,7 +9660,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iS8-Pn-nUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3502" y="2794"/>
+            <point key="canvasLocation" x="4249" y="2889"/>
         </scene>
         <!--Log Out-->
         <scene sceneID="SJl-cP-E1J">
@@ -9601,6 +9671,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AOj-Ir-7vx">
+                        <rect key="frame" x="0.0" y="-10" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -9611,6 +9682,133 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKj-Xs-tml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-54.418604651162788" y="-1060.3004291845493"/>
+        </scene>
+        <!--Actividad Terminada View Controller-->
+        <scene sceneID="IPC-cD-9zN">
+            <objects>
+                <viewController storyboardIdentifier="Terminada5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pgu-qD-GXi" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywY-b0-wdj">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-dp-cB3">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znp-1Y-gXx" userLabel="ActividadLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
+                                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="ohc-27-rqT"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Entrega Final">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="28" name="AndaleMono"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33300000429153442" translatesAutoresizingMaskIntoConstraints="NO" id="4ez-66-xkr">
+                                        <rect key="frame" x="0.0" y="100" width="428" height="4"/>
+                                        <color key="progressTintColor" red="0.57647058819999997" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IcC-pk-beu">
+                                        <rect key="frame" x="0.0" y="104" width="428" height="692"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tha-Uz-KXy">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="692"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="¡Felicidades! Completaste la actividad.;)">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="61" name="AndaleMono"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="EFc-Qk-OWs" userLabel="Form Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="796" width="428" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcB-b5-L7S" userLabel="Button Back">
+                                                <rect key="frame" x="20" y="40" width="179" height="40"/>
+                                                <color key="backgroundColor" red="0.574967742" green="0.68918591740000001" blue="0.81283026930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Atrás">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="backButton:" destination="pgu-qD-GXi" eventType="touchUpInside" id="a7W-US-iJj"/>
+                                                    <action selector="buttonBack:" destination="DxC-cL-wO1" eventType="touchUpInside" id="Uag-D7-Com"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYA-go-90M" userLabel="Button Next">
+                                                <rect key="frame" x="229" y="40" width="179" height="40"/>
+                                                <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Siguiente">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="27" name="AndaleMono"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="abP-6K-gW3" kind="show" id="t5U-Di-vHX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="oS0-eX-kyj"/>
+                                        </constraints>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="40" leading="20" bottom="40" trailing="20"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97645097970000005" green="0.9887157083" blue="0.96899312729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wGe-6H-6D7"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.11372549830000001" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bpM-dp-cB3" firstAttribute="leading" secondItem="wGe-6H-6D7" secondAttribute="leading" id="Iok-h1-XM2"/>
+                            <constraint firstItem="bpM-dp-cB3" firstAttribute="top" secondItem="wGe-6H-6D7" secondAttribute="top" id="MZQ-Tl-LrP"/>
+                            <constraint firstItem="wGe-6H-6D7" firstAttribute="trailing" secondItem="bpM-dp-cB3" secondAttribute="trailing" id="XKo-aZ-uVc"/>
+                            <constraint firstItem="bpM-dp-cB3" firstAttribute="bottom" secondItem="wGe-6H-6D7" secondAttribute="bottom" id="ZCv-Ic-xQA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FGp-9h-RQa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Tg-r1-VS3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="2925"/>
         </scene>
     </scenes>
     <designables>
@@ -9637,34 +9835,34 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="2r1-cV-Kbl"/>
-        <segue reference="aae-GP-pmT"/>
+        <segue reference="TQE-4n-xoX"/>
+        <segue reference="C4g-dA-q6S"/>
         <segue reference="US6-HZ-EtG"/>
         <segue reference="fsr-Yv-ZF8"/>
         <segue reference="WKp-e9-1Bt"/>
-        <segue reference="lE1-68-Oza"/>
+        <segue reference="3Rm-ZT-ZVx"/>
         <segue reference="Sze-Er-X9M"/>
         <segue reference="0YU-xb-w83"/>
-        <segue reference="gJ6-HX-IPd"/>
-        <segue reference="J5l-O1-WAB"/>
         <segue reference="8zs-oa-lLl"/>
         <segue reference="xr4-pm-TGf"/>
         <segue reference="9gh-uT-cf9"/>
         <segue reference="nG2-sB-OMU"/>
+        <segue reference="CXD-sR-pJQ"/>
         <segue reference="7ZF-Re-dhw"/>
         <segue reference="Chy-5b-BEX"/>
-        <segue reference="aew-TK-Xbd"/>
+        <segue reference="j5z-ZI-05g"/>
         <segue reference="FvT-nR-992"/>
         <segue reference="QtM-5y-Quv"/>
-        <segue reference="rEd-Bq-sf3"/>
-        <segue reference="6kv-uB-Nwq"/>
+        <segue reference="t5U-Di-vHX"/>
         <segue reference="VoD-li-K1u"/>
         <segue reference="xN3-2t-wsm"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Icono circulo actividad" width="512" height="512"/>
         <image name="arbol" width="322" height="419"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="brain.head.profile" catalog="system" width="120" height="128"/>
+        <image name="circle.dashed" catalog="system" width="128" height="123"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="circlebadge.fill" catalog="system" width="128" height="122"/>
         <image name="circles.hexagonpath.fill" catalog="system" width="128" height="115"/>
@@ -9687,6 +9885,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
