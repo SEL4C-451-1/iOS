@@ -38,9 +38,4 @@ class LogInSignUpViewController: UIViewController {
         buttonSignUp.setCornerRadius(35)
         
     }
-    
-    
-
-    
-    
 }

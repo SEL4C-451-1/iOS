@@ -18,6 +18,10 @@ class MyProfileViewController: UIViewController {
     @IBOutlet weak var paisLabel: UILabel!
     @IBOutlet weak var disciplinaLabel: UILabel!
     
+    // MARK: Buttons
+    @IBOutlet weak var editButton: UIButton!
+    
+    
     // MARK: User Info
     var userInfo = UserInfo()
     
@@ -34,12 +38,26 @@ class MyProfileViewController: UIViewController {
                 edadLabel.text = String(userInfo.age)
                 paisLabel.text = userInfo.country
                 disciplinaLabel.text = userInfo.discipline
+                editButton.isEnabled = true
             }catch{
                 showErrorAlert("Error al obtener datos de usuario.")
+                editButton.isEnabled = false
+                
             }
         }
+        
+        // Hide Tab Bar
+        tabBarController?.tabBar.isHidden = false
     }
     
+    // Prepare view for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let updateVC = segue.destination as? UpdateMyProfileViewController else {
+            return
+        }
+        
+        updateVC.userInfo = userInfo
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,8 +84,10 @@ class MyProfileViewController: UIViewController {
                 edadLabel.text = String(userInfo.age)
                 paisLabel.text = userInfo.country
                 disciplinaLabel.text = userInfo.discipline
+                editButton.isEnabled = true
             }catch{
                 showErrorAlert("Error al obtener datos de usuario.")
+                editButton.isEnabled = false
             }
         }
     }

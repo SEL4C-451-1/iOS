@@ -134,6 +134,7 @@ struct User: Codable {
 
         // Set HTTP Request Body
         request.httpBody = jsonData
+        
         // Perform HTTP Request
         let (data, response) = try await URLSession.shared.data(for: request)
     
@@ -230,5 +231,38 @@ struct UserInfo: Codable {
         }
         
         return jsonResponse
+    }
+    
+    func putInfo() async throws -> Void{
+        // Prepare URL
+        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")
+        guard let requestUrl = url else { fatalError() }
+
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "PUT"
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token \(UserDefaults.standard.string(forKey: "token")!)", forHTTPHeaderField: "Authorization")
+        
+        // HTTP Request Parameters which will be sent in HTTP Request Body
+        let jsonEncoder = JSONEncoder()
+        let jsonData = try? jsonEncoder.encode(self)
+        
+        // Set HTTP Request Body
+        request.httpBody = jsonData
+        
+        // Perform HTTP Request
+        let (data, response) = try await URLSession.shared.data(for: request)
+    
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw UserError.itemNotFound
+        }
+        
+        guard let jsonResponse = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+            throw UserError.itemNotFound
+        }
+        
+        print(jsonResponse)
     }
 }

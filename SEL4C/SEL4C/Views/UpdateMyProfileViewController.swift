@@ -38,9 +38,8 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
     @IBOutlet weak var paisPicker: UIPickerView!
     
     // MARK: User Initialization
-    var user: User = User(userName: "", email: "", password: "")
+    var userInfo: UserInfo = UserInfo()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,6 +50,24 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
         generoPicker.delegate = self
         edadPicker.delegate = self
         paisPicker.delegate = self
+        
+        // Set the previously selected picks
+        academicoPicker.selectRow(academicoPickerData.firstIndex(of: userInfo.academic_degree)!, inComponent: 0, animated: false)
+        institucionPicker.selectRow(institucionPickerData.firstIndex(of: userInfo.institution)!, inComponent: 0, animated: false)
+        disciplinaPicker.selectRow(disciplinaPickerData.firstIndex(of: userInfo.discipline)!, inComponent: 0, animated: false)
+        generoPicker.selectRow(generoPickerData.firstIndex(of: userInfo.gender)!, inComponent: 0, animated: false)
+        edadPicker.selectRow(edadPickerData.firstIndex(of: userInfo.age)!, inComponent: 0, animated: false)
+        paisPicker.selectRow(paisPickerData.firstIndex(of: userInfo.country)!, inComponent: 0, animated: false)
+        
+        // Border radius in PickerViews
+        academicoPicker.setCornerRadius(7.5)
+        institucionPicker.setCornerRadius(7.5)
+        disciplinaPicker.setCornerRadius(7.5)
+        academicoPicker.setCornerRadius(7.5)
+        generoPicker.setCornerRadius(7.5)
+        edadPicker.setCornerRadius(7.5)
+        paisPicker.setCornerRadius(7.5)
+        
     }
     
     // MARK: Picker View Functions
@@ -114,24 +131,40 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
     // Función que altera el user según su selección el los Picker View
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(pickerView == academicoPicker){
-            user.academicDegree = academicoPickerData[row]
+            userInfo.academic_degree = academicoPickerData[row]
             
         }else if(pickerView == institucionPicker){
-            user.institution = institucionPickerData[row]
+            userInfo.institution = institucionPickerData[row]
             
         }else if(pickerView == disciplinaPicker){
-            user.discipline = disciplinaPickerData[row]
+            userInfo.discipline = disciplinaPickerData[row]
             
         }else if(pickerView == generoPicker){
-            user.gender = generoPickerData[row]
+            userInfo.gender = generoPickerData[row]
             
         }else if(pickerView == edadPicker){
-            user.age = edadPickerData[row]
+            userInfo.age = edadPickerData[row]
             
         }else if(pickerView == paisPicker){
-            user.country = paisPickerData[row]
+            userInfo.country = paisPickerData[row]
             
         }
     }
     
+    @IBAction func cofirmChanges(_ sender: Any) {
+        Task {
+            do {
+                try await userInfo.putInfo()
+                
+                guard let profileVC = storyboard?.instantiateViewController(withIdentifier: "MainUITabBarViewController") as? MainUITabBarViewController else {
+                    return
+                }
+                
+                profileVC.modalPresentationStyle = .fullScreen
+                present(profileVC, animated: true)
+            }catch{
+                showErrorAlert("Error actualizando usuario.")
+            }
+        }
+    }
 }
