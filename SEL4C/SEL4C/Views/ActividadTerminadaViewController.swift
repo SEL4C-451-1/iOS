@@ -22,6 +22,5 @@ class ActividadTerminadaViewController: UIViewController {
             // Establecer el valor booleano en UserDefaults como true
             UserDefaults.standard.set(true, forKey: "actividadTerminada5")
         }
-        
     }
 }

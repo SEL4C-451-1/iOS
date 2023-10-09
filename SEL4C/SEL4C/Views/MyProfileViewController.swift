@@ -21,9 +21,12 @@ class MyProfileViewController: UIViewController {
     // MARK: Buttons
     @IBOutlet weak var editButton: UIButton!
     
-    
     // MARK: User Info
     var userInfo = UserInfo()
+    
+    // MARK: Answers API
+    var answerInfo = AnswerInfo()
+    var answer = Answer()
     
     override func viewDidAppear(_ animated: Bool) {
         Task{
@@ -91,4 +94,45 @@ class MyProfileViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func resultsInitial(_ sender: Any) {
+        Task{
+            do{
+                answer.parseResults(results: try await answerInfo.getAnswers(isInitial: true))
+                
+                guard let reviewVC = storyboard?.instantiateViewController(withIdentifier: "ReviewResultadosViewController") as? ReviewResultadosViewController else {
+                    return
+                }
+                
+                reviewVC.modalPresentationStyle = .fullScreen
+                reviewVC.answers = answer
+                present(reviewVC, animated: true)
+                
+                
+            }catch{
+                showErrorAlert("Error al obtener datos de usuario.")
+            }
+        }
+    }
+    
+    @IBAction func resultsFinal(_ sender: Any) {
+        Task{
+            do{
+                answer.parseResults(results: try await answerInfo.getAnswers(isInitial: false))
+                
+                guard let reviewVC = storyboard?.instantiateViewController(withIdentifier: "ReviewResultadosViewController") as? ReviewResultadosViewController else {
+                    return
+                }
+                
+                reviewVC.modalPresentationStyle = .fullScreen
+                reviewVC.answers = answer
+                present(reviewVC, animated: true)
+                
+                
+            }catch{
+                showErrorAlert("Error al obtener datos de usuario.")
+            }
+        }
+    }
+    
 }

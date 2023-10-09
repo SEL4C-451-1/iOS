@@ -93,6 +93,17 @@ struct Answer: Codable {
         
         return prsentAlert
     }
+    
+    mutating func parseResults(results: [String: Any]){
+        self.autocontrolGrade = (results["self_control_score"]! as? Float)!
+        self.liderazgolGrade = (results["leadership_score"]! as? Float)!
+        self.concienciaSocialGrade = (results["consciousness_and_social_value_score"]! as? Float)!
+        self.innovacionSocialFinancieraGrade = (results["social_innovation_and_financial_sustainability_score"]! as? Float)!
+        self.pensamientoSistemicoGrade = (results["systemic_thinking_score"]! as? Float)!
+        self.pensamientoCriticoGrade = (results["critical_thinking_score"]! as? Float)!
+        self.pensamientoCientificoGrade = (results["scientific_thinking_score"]! as? Float)!
+        self.pensamientoInnovadorGrade = (results["innovative_thinking_score"]! as? Float)!
+    }
 }
 
 struct AnswerInfo: Codable {
@@ -105,6 +116,17 @@ struct AnswerInfo: Codable {
     var critical_thinking_score: Int
     var innovative_thinking_score: Int
     
+    init() {
+        self.self_control_score = 0
+        self.leadership_score = 0
+        self.consciousness_and_social_value_score = 0
+        self.social_innovation_and_financial_sustainability_score = 0
+        self.systemic_thinking_score = 0
+        self.scientific_thinking_score = 0
+        self.critical_thinking_score = 0
+        self.innovative_thinking_score = 0
+    }
+    
     init(answer: Answer) {
         self.self_control_score = Int(answer.autocontrolGrade)
         self.leadership_score = Int(answer.liderazgolGrade)
@@ -114,6 +136,43 @@ struct AnswerInfo: Codable {
         self.scientific_thinking_score = Int(answer.pensamientoCientificoGrade)
         self.critical_thinking_score = Int(answer.pensamientoCriticoGrade)
         self.innovative_thinking_score = Int(answer.pensamientoInnovadorGrade)
+    }
+    
+    func getAnswers(isInitial: Bool) async throws -> [String: Any] {
+        // Prepare URL
+        let urlString: String
+        if(isInitial){
+            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/"
+        }else{
+            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/final/"
+        }
+        
+        let url = URL(string: urlString)
+        
+        guard let requestUrl = url else { fatalError() }
+
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token \(UserDefaults.standard.string(forKey: "token")!)", forHTTPHeaderField: "Authorization")
+
+        // Perform HTTP Request
+        let (data, response) = try await URLSession.shared.data(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw UserError.itemNotFound
+        }
+        
+        guard let jsonResponse = try JSONSerialization.jsonObject(with: data) as? [[String: Any]] else {
+            throw UserError.itemNotFound
+        }
+        if(jsonResponse.isEmpty){
+            throw UserError.itemNotFound
+        }
+        
+        return jsonResponse[0]
     }
 }
 

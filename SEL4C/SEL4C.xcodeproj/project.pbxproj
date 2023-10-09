@@ -43,6 +43,7 @@
 		AF1D41CC2AC13BED009D026F /* Activity2_3MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */; };
 		AF1D41CE2AC14EB8009D026F /* Activity1_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */; };
 		AF1D41D02AC167DC009D026F /* Activity1_1RetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */; };
+		AF2936CF2AD3EC5500944ACA /* ReviewResultadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2936CE2AD3EC5500944ACA /* ReviewResultadosViewController.swift */; };
 		AF435EF72AD1308000B20D76 /* PreviousViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */; };
 		AF435EFB2AD1353B00B20D76 /* MainUITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */; };
 		AF435F002AD187C000B20D76 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF435EFF2AD187C000B20D76 /* MyProfileViewController.swift */; };
@@ -123,6 +124,7 @@
 		AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_3MainViewController.swift; sourceTree = "<group>"; };
 		AF1D41CD2AC14EB8009D026F /* Activity1_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1UploadViewController.swift; sourceTree = "<group>"; };
 		AF1D41CF2AC167DC009D026F /* Activity1_1RetroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_1RetroViewController.swift; sourceTree = "<group>"; };
+		AF2936CE2AD3EC5500944ACA /* ReviewResultadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResultadosViewController.swift; sourceTree = "<group>"; };
 		AF435EF62AD1308000B20D76 /* PreviousViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousViewControllerExtension.swift; sourceTree = "<group>"; };
 		AF435EFA2AD1353B00B20D76 /* MainUITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBarViewController.swift; sourceTree = "<group>"; };
 		AF435EFF2AD187C000B20D76 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 				751E85A32ACFD58500DDCF7A /* Activity5views */,
 				AF6BC92D2A9BD89800BA5FB1 /* ResultadosViewController.swift */,
 				AF6BC9442A9BE4D800BA5FB1 /* LogInSignUpViewController.swift */,
+				AF2936CE2AD3EC5500944ACA /* ReviewResultadosViewController.swift */,
 				AF435F032AD1998500B20D76 /* UpdateMyProfileViewController.swift */,
 				AF6BC9462A9BECDE00BA5FB1 /* LogInViewController.swift */,
 				AF6BC9482A9C217100BA5FB1 /* SignUpEssentialsViewController.swift */,
@@ -587,6 +590,7 @@
 				752931BC2AAF9A560074A323 /* ActividadesViewController.swift in Sources */,
 				753636F12AC5EE660042F7C1 /* Activity3_2UploadViewController.swift in Sources */,
 				751E85A52ACFD59600DDCF7A /* Activity5MainViewController.swift in Sources */,
+				AF2936CF2AD3EC5500944ACA /* ReviewResultadosViewController.swift in Sources */,
 				AF6BC92A2A9BD89800BA5FB1 /* AppDelegate.swift in Sources */,
 				AF199AD42A9C807C004EFCE5 /* Question.swift in Sources */,
 				AF435F022AD189D700B20D76 /* PaddingLabel.swift in Sources */,
