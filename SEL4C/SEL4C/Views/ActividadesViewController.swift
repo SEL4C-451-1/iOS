@@ -27,10 +27,57 @@ class ActividadesViewController: UIViewController {
     @IBOutlet weak var stackView4: UIStackView!
     @IBOutlet weak var stackView5: UIStackView!
     @IBOutlet weak var stackView6: UIStackView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Task{
+            do {
+                print("[*] ENTER DO ")
+                let activity = try ActivityResponse(string_response: "")
+                try await activity.getStatus()
+            }catch{
+                
+                print("[*] ENTER CTACH ")
+                
+                if UserDefaults.standard.bool(forKey: "actividadTerminada1") {
+                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
+                    imgA1.image = UIImage(systemName: "circle.dashed.inset.filled")
+                    imgA1.tintColor = .green
+                }
+                
+                if UserDefaults.standard.bool(forKey: "actividadTerminada2") {
+                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
+                    imgA2.image = UIImage(systemName: "circle.dashed.inset.filled")
+                    imgA2.tintColor = .green
+                }
+                
+                if UserDefaults.standard.bool(forKey: "actividadTerminada3") {
+                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
+                    imgA3.image = UIImage(systemName: "circle.dashed.inset.filled")
+                    imgA3.tintColor = .green
+                }
+                
+                if UserDefaults.standard.bool(forKey: "actividadTerminada4") {
+                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
+                    imgA4.image = UIImage(systemName: "circle.dashed.inset.filled")
+                    imgA4.tintColor = .green
+                }
+                
+                if UserDefaults.standard.bool(forKey: "actividadTerminada5") {
+                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
+                    imgEF.image = UIImage(systemName: "circle.dashed.inset.filled")
+                    imgEF.tintColor = .green
+                }
+                
+                if UserDefaults.standard.bool(forKey: "evaluacionFinalTerminada") {
+                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
+                    imgEC.image = UIImage(systemName: "circle.dashed.inset.filled")
+                    imgEC.tintColor = .green
+                }
+            }
+        }
+        
         stackView1.layer.cornerRadius = 20 // Radio de redondeo deseado
         stackView1.clipsToBounds = true
         stackView2.layer.cornerRadius = 20 // Radio de redondeo deseado
@@ -63,38 +110,7 @@ class ActividadesViewController: UIViewController {
 
             buttonEF.titleLabel?.font = font
             buttonEF.setTitleColor(blackColor, for: .normal)
-
-        if UserDefaults.standard.bool(forKey: "actividadTerminada1") {
-                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
-                    imgA1.image = UIImage(systemName: "circle.dashed.inset.filled")
-                    imgA1.tintColor = .green
-        }
-        if UserDefaults.standard.bool(forKey: "actividadTerminada2") {
-                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
-                    imgA2.image = UIImage(systemName: "circle.dashed.inset.filled")
-                    imgA2.tintColor = .green
-        }
-        if UserDefaults.standard.bool(forKey: "actividadTerminada3") {
-                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
-                    imgA3.image = UIImage(systemName: "circle.dashed.inset.filled")
-                    imgA3.tintColor = .green
-        }
-        if UserDefaults.standard.bool(forKey: "actividadTerminada4") {
-                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
-                    imgA4.image = UIImage(systemName: "circle.dashed.inset.filled")
-                    imgA4.tintColor = .green
-        }
-        if UserDefaults.standard.bool(forKey: "actividadTerminada5") {
-                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
-                    imgEF.image = UIImage(systemName: "circle.dashed.inset.filled")
-                    imgEF.tintColor = .green
-        }
         
-        if UserDefaults.standard.bool(forKey: "evaluacionFinalTerminada") {
-                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
-                    imgEC.image = UIImage(systemName: "circle.dashed.inset.filled")
-                    imgEC.tintColor = .green
-        }
     }
     
     @IBAction func buttonA1Tapped(_ sender: UIButton) {

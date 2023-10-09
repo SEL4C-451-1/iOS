@@ -113,6 +113,15 @@ class ResultadosViewController: UIViewController {
                 
                 if(!isInitial){
                     UserDefaults.standard.set(true, forKey: "evaluacionFinalTerminada")
+                    
+                    Task {
+                        do {
+                            var activity: ActivityResponse = try ActivityResponse(string_response: "complete")
+                            try await activity.setStatus(activityNumber: "6")
+                        }catch{
+                            showErrorAlert("Error mandando estatus.")
+                        }
+                    }
                 }
                 
                 if(showAlert){

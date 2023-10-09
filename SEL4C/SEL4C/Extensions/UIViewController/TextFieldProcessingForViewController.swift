@@ -22,10 +22,26 @@ extension UIViewController {
         return !field.text!.isEmpty
     }
     
-    // Función que genera una alerta
+    // Función que genera una alerta de Error
     func showErrorAlert(_ message: String){
         let alertController = UIAlertController(
             title: "Error",
+            message: message,
+            preferredStyle: .alert
+        )
+        let ok = UIAlertAction(
+            title: "Salir.",
+            style: .default
+        )
+
+        alertController.addAction(ok)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    // Función que genera una alerta de Estatus
+    func showStatusAlert(_ message: String){
+        let alertController = UIAlertController(
+            title: "Status",
             message: message,
             preferredStyle: .alert
         )

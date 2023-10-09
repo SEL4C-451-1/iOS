@@ -233,7 +233,7 @@ struct UserInfo: Codable {
         return jsonResponse
     }
     
-    func putInfo() async throws -> Void{
+    func putInfo() async throws -> Void {
         // Prepare URL
         let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")
         guard let requestUrl = url else { fatalError() }

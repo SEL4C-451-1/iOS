@@ -6354,7 +6354,7 @@
             <objects>
                 <viewController storyboardIdentifier="Terminada2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fu1-rX-k7v" customClass="ActividadTerminadaViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQP-MF-mur">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w1u-Q3-zpu">
@@ -10432,7 +10432,7 @@
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arbol" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-E0-C8S">
                                                                 <rect key="frame" x="0.0" y="0.0" width="385.33333333333331" height="491.33333333333331"/>
                                                             </imageView>
-                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Ip-rt-mvN">
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Ip-rt-mvN">
                                                                 <rect key="frame" x="8" y="36" width="369.33333333333331" height="157"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KUu-db-LqK">
                                                                     <size key="itemSize" width="128" height="128"/>
