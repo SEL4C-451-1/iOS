@@ -23,6 +23,9 @@ class SignUpEssentialsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: Hide keyboard
+        self.hideKeyboardWhenTappedAround()
+        
         // MARK: Buttons with border radius
         buttonContinue.setCornerRadius(35)
         
