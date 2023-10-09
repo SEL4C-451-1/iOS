@@ -89,6 +89,12 @@ class ActividadesViewController: UIViewController {
                     imgEF.image = UIImage(systemName: "circle.dashed.inset.filled")
                     imgEF.tintColor = .green
         }
+        
+        if UserDefaults.standard.bool(forKey: "evaluacionFinalTerminada") {
+                    // Cambiar la imagen de imgA1 a "circle.dashed.inset.filled" en verde
+                    imgEC.image = UIImage(systemName: "circle.dashed.inset.filled")
+                    imgEC.tintColor = .green
+        }
     }
     
     @IBAction func buttonA1Tapped(_ sender: UIButton) {
@@ -145,6 +151,7 @@ class ActividadesViewController: UIViewController {
         // Verificar si la actividad 1 está terminada antes de avanzar
         if UserDefaults.standard.bool(forKey: "actividadTerminada4") {
             let VC = storyboard?.instantiateViewController(withIdentifier: "CuestionarioViewController") as? CuestionarioViewController
+            VC?.isInitial = false
             present(VC!, animated: true)
         } else {
             let alertController = UIAlertController(title: "Actividad no terminada", message: "Debes completar la actividad 4 antes de continuar.", preferredStyle: .alert)

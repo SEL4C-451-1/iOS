@@ -25,6 +25,7 @@ class CuestionarioViewController: UIViewController {
     // MARK: Answers & User Initialization
     var answers: Answer = Answer()
     var user: User = User(userName: "", email: "", password: "")
+    var isInitial = true
     
     var index: Int = 0
     
@@ -69,8 +70,7 @@ class CuestionarioViewController: UIViewController {
         }
         
         if answer != -1 {
-            
-            
+
             // Negate all the radios
             for radio in radios{
                 radio?.isSelected = false
@@ -87,6 +87,7 @@ class CuestionarioViewController: UIViewController {
                     return
                 }
                 
+                resultados.isInitial = isInitial
                 resultados.modalPresentationStyle = .fullScreen
                 resultados.user = user
                 resultados.answers = answers

@@ -62,11 +62,17 @@ struct Answer: Codable {
     }
     
     // Method that sends user information to DB.
-    func setAnswers() async throws -> Bool {
+    func setAnswers(isInitial: Bool) async throws -> Bool {
         var prsentAlert: Bool = false
         
         // Prepare URL
-        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/")
+        let urlString: String
+        if(isInitial){
+            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/"
+        }else{
+            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/final/"
+        }
+        let url = URL(string: urlString)
         guard let requestUrl = url else { fatalError() }
 
         // Prepare URL Request Object

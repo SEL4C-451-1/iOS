@@ -11,6 +11,7 @@ class ResultadosViewController: UIViewController {
     // MARK: Answers & User Initialization
     var answers: Answer = Answer()
     var user: User = User(userName: "", email: "", password: "")
+    var isInitial = true
     
     // MARK: Progress Bar
     @IBOutlet weak var autocontrolProgress: UIProgressView!
@@ -108,7 +109,12 @@ class ResultadosViewController: UIViewController {
         Task {
             do {
                 var showAlert = true
-                showAlert = try await answers.setAnswers()
+                showAlert = try await answers.setAnswers(isInitial: isInitial)
+                
+                if(!isInitial){
+                    UserDefaults.standard.set(true, forKey: "evaluacionFinalTerminada")
+                }
+                
                 if(showAlert){
                     showErrorAlert("Error al enviar cuestionario")
                 }else{
