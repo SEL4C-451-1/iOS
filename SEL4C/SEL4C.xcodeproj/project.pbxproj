@@ -25,6 +25,10 @@
 		753636F32AC5EE760042F7C1 /* Activity4_1UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F22AC5EE760042F7C1 /* Activity4_1UploadViewController.swift */; };
 		753636F52AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636F42AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift */; };
 		753636FB2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753636FA2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift */; };
+		7563F9792AD48FB7002F478F /* LeafCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563F9772AD48FB7002F478F /* LeafCollectionViewCell.swift */; };
+		7563F97A2AD48FB7002F478F /* LeafCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7563F9782AD48FB7002F478F /* LeafCollectionViewCell.xib */; };
+		7563F97D2AD49029002F478F /* RootCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563F97B2AD49029002F478F /* RootCollectionViewCell.swift */; };
+		7563F97E2AD49029002F478F /* RootCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7563F97C2AD49029002F478F /* RootCollectionViewCell.xib */; };
 		75D08B502AC8D76A005BAA9F /* Activity1_3ObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D08B4F2AC8D76A005BAA9F /* Activity1_3ObservationViewController.swift */; };
 		75D08B522AC8E0EE005BAA9F /* ActividadTerminadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D08B512AC8E0EE005BAA9F /* ActividadTerminadaViewController.swift */; };
 		75D08B542AC8F550005BAA9F /* Activity2_2EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D08B532AC8F550005BAA9F /* Activity2_2EntryViewController.swift */; };
@@ -106,6 +110,10 @@
 		753636F22AC5EE760042F7C1 /* Activity4_1UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_1UploadViewController.swift; sourceTree = "<group>"; };
 		753636F42AC5EE8A0042F7C1 /* Activity4_2UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4_2UploadViewController.swift; sourceTree = "<group>"; };
 		753636FA2AC6A7AF0042F7C1 /* Activity1_3EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_3EntryViewController.swift; sourceTree = "<group>"; };
+		7563F9772AD48FB7002F478F /* LeafCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafCollectionViewCell.swift; sourceTree = "<group>"; };
+		7563F9782AD48FB7002F478F /* LeafCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeafCollectionViewCell.xib; sourceTree = "<group>"; };
+		7563F97B2AD49029002F478F /* RootCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewCell.swift; sourceTree = "<group>"; };
+		7563F97C2AD49029002F478F /* RootCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootCollectionViewCell.xib; sourceTree = "<group>"; };
 		75D08B4F2AC8D76A005BAA9F /* Activity1_3ObservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1_3ObservationViewController.swift; sourceTree = "<group>"; };
 		75D08B512AC8E0EE005BAA9F /* ActividadTerminadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadTerminadaViewController.swift; sourceTree = "<group>"; };
 		75D08B532AC8F550005BAA9F /* Activity2_2EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2_2EntryViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +222,8 @@
 				AF1D41C72AC13BDD009D026F /* Activity2_1MainViewController.swift */,
 				AF1D41C92AC13BE5009D026F /* Activity2_2MainViewController.swift */,
 				AF1D41CB2AC13BED009D026F /* Activity2_3MainViewController.swift */,
+				7563F97B2AD49029002F478F /* RootCollectionViewCell.swift */,
+				7563F97C2AD49029002F478F /* RootCollectionViewCell.xib */,
 			);
 			path = Mains;
 			sourceTree = "<group>";
@@ -440,6 +450,8 @@
 				753636E02AC5E8810042F7C1 /* Mains */,
 				75D08B532AC8F550005BAA9F /* Activity2_2EntryViewController.swift */,
 				75D08B552AC90B81005BAA9F /* Activity2_2ProblemViewController.swift */,
+				7563F9772AD48FB7002F478F /* LeafCollectionViewCell.swift */,
+				7563F9782AD48FB7002F478F /* LeafCollectionViewCell.xib */,
 			);
 			path = Activity2Views;
 			sourceTree = "<group>";
@@ -548,8 +560,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7563F97E2AD49029002F478F /* RootCollectionViewCell.xib in Resources */,
 				AF6BC9362A9BD89900BA5FB1 /* LaunchScreen.storyboard in Resources */,
 				AF8D475A2ACDED9700C900C7 /* ods.json in Resources */,
+				7563F97A2AD48FB7002F478F /* LeafCollectionViewCell.xib in Resources */,
 				AF6BC9332A9BD89900BA5FB1 /* Assets.xcassets in Resources */,
 				AF944E682ABE46F000D532DE /* activities.json in Resources */,
 				AF6BC9312A9BD89800BA5FB1 /* Main.storyboard in Resources */,
@@ -576,6 +590,7 @@
 				AF435EF72AD1308000B20D76 /* PreviousViewControllerExtension.swift in Sources */,
 				AF486D722ABCB5590014089D /* Country.swift in Sources */,
 				AF486D742ABCB9560014089D /* JsonReader.swift in Sources */,
+				7563F97D2AD49029002F478F /* RootCollectionViewCell.swift in Sources */,
 				753636EF2AC5EE560042F7C1 /* Activity3_1UploadViewController.swift in Sources */,
 				753636D72AC5E3380042F7C1 /* Activity2_1UploadViewController.swift in Sources */,
 				AF6BC9452A9BE4D800BA5FB1 /* LogInSignUpViewController.swift in Sources */,
@@ -584,6 +599,7 @@
 				AF1D41CA2AC13BE5009D026F /* Activity2_2MainViewController.swift in Sources */,
 				AF486D762ABCD8130014089D /* User.swift in Sources */,
 				753636EB2AC5EB740042F7C1 /* Activity4_1MainViewController.swift in Sources */,
+				7563F9792AD48FB7002F478F /* LeafCollectionViewCell.swift in Sources */,
 				AF435F002AD187C000B20D76 /* MyProfileViewController.swift in Sources */,
 				AF1D41C82AC13BDD009D026F /* Activity2_1MainViewController.swift in Sources */,
 				AF7986B12ABE4B02000FAB96 /* Activity1_1MainViewController.swift in Sources */,
