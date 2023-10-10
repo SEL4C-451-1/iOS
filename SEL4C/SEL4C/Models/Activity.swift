@@ -42,6 +42,7 @@ struct ActivityResponse: Codable {
     }
     
     func setStatus(activityNumber: String) async throws -> Void {
+        print("[*] SET STATUS")
         // Prepare URL
         let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/response/activity/\(activityNumber)/upload-response/")
         guard let requestUrl = url else { fatalError() }
@@ -69,6 +70,7 @@ struct ActivityResponse: Codable {
     }
     
     func getStatus() async throws -> Void {
+        print("[*] GET STATUS")
         // Prepare URL
         let activities: [Int] = [1, 2, 3, 4, 5, 6, 7]
         let activitiesKeys: [String] = ["actividadTerminada1", "actividadTerminada2", "actividadTerminada3", "actividadTerminada4", "actividadTerminada5", "evaluacionFinalTerminada"]

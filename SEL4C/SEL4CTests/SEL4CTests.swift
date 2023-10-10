@@ -144,6 +144,64 @@ final class SEL4CTests: XCTestCase {
         XCTAssertTrue(answer.answerArray.isEmpty)
     }
     
+    func testCP_04_Activities_Valid() async {
+        // Instantiation of things needed
+        let user = User(userName: "Admin", email: "admin@example.com", password: "admin@example.com")
+        
+        // Token Keys
+        var tokenApi: String
+        
+        // Call API and get token
+        do{
+            tokenApi = try await user.getToken()
+            UserDefaults.standard.set(tokenApi, forKey: "token")
+            
+            // Mark Activity 1 as completed
+            do{
+                let activityResponse = try ActivityResponse(string_response: "complete")
+                try await activityResponse.setStatus(activityNumber: "1")
+                
+                // Check if the activity 1 was set as completed
+                do{
+                    try await activityResponse.getStatus()
+                }catch{
+                    XCTAssertTrue(UserDefaults.standard.bool(forKey: "actividadTerminada1"))
+                }
+            }
+        }catch{
+            tokenApi = ""
+        }
+    }
+    
+    func testCP_04_Activities_Invalid() async {
+        // Instantiation of things needed
+        let user = User(userName: "Admin", email: "admin@example.com", password: "admin@example.com")
+        
+        // Token Keys
+        var tokenApi: String
+        
+        // Call API and get token
+        do{
+            tokenApi = try await user.getToken()
+            UserDefaults.standard.set(tokenApi, forKey: "token")
+            
+            // Mark Activity 1 as completed
+            do{
+                let activityResponse = try ActivityResponse(string_response: "incomplete")
+                try await activityResponse.setStatus(activityNumber: "1")
+                
+                // Check if the activity 1 was set as completed
+                do{
+                    try await activityResponse.getStatus()
+                }catch{
+                    XCTAssertFalse(UserDefaults.standard.bool(forKey: "actividadTerminada1"))
+                }
+            }
+        }catch{
+            tokenApi = ""
+        }
+    }
+    
     func testCP_05_Logout_Valid() {
         // Initialize the UserDefault's token to a given value
         UserDefaults.standard.set("570aee6bdb5e2a26227b75f6082d3b18a07c7bdd", forKey: "token")
