@@ -24,6 +24,7 @@ class LogInViewController: UIViewController {
         
         // Button Log In Border Radius
         buttonLogIn.setCornerRadius(35)
+        self.hideKeyboardWhenTappedAround()
         
     }
     

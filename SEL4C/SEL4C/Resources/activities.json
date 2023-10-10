@@ -148,5 +148,27 @@
                 "deliverable": "Video tuyo reflexionando  en la retroalimentación."
             }
         ]
+    },
+    {
+        "activityName": "Entregable final",
+        "activityNumber": "5",
+        "subactivities": [
+            {
+                "subactivityName": "Actividad 5",
+                "instructions": {
+                    "text": "Como cierre de todo el proceso de identificación, investigación e ideación, debes ser capaz de poder compartir tu propuesta por medio de un pitch. Este pitch debe ser una presentación formal y durar entre 3 y 5 minutos. Debe tener una apertura (Pautas 1 y 2), desarrollo (Pautas 3 a 5) y cierre (Pautas 6 y 7)",
+                    "bullets": [
+                        "Pauta 1. Comparte datos de alto impacto relacionados con el problema. ¿A cuántas personas afecta en el mundo, en ambos países y en ambas ciudades?",
+                        "Pauta 2. Presentate y explica porque este problema te resulta importante",
+                        "Pauta 3. Habla de su propuesta de solución. ¿Cómo se llama? ¿Qué es lo que hace o propone?",
+                        "Pauta 4.  ¿Por qué tu propuesta es original y viable?",
+                        "Pauta 5. ¿A quién beneficia tu propuesta? ¿Qué impacto crees que pudiera tener para mejorar la vida de las personas?",
+                        "Pauta 6. Llamado a la Acción: Invita a las personas a que se sumen y señala como es que podrían sumarse.",
+                        "Pauta 7. Finalmente, agradece la atención prestada y despídete."
+                    ]
+                },
+                "deliverable": "Video del Pitch"
+            }
+        ]
     }
 ]
