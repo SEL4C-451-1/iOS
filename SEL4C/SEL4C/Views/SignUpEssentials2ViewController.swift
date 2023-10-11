@@ -13,6 +13,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
     @IBOutlet weak var acceptButton: RadioButton!
     @IBOutlet weak var buttonContinue: UIButton!
     
+    
     // MARK: Picker View
     // Grado académico
     let academicoPickerData: [String] = ["Pregrado", "Posgrado", "Educación Continua"]
@@ -194,4 +195,11 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
             showErrorAlert("Es necesario aceptar el aviso de privacidad.")
         }
     }
+    
+    @IBAction func buttonAvisoPrivacidad(_ sender: Any) {
+        if let url = URL(string: "https://tec.mx/es/aviso-de-privacidad-convocatorias-investigacion-ebct") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }
