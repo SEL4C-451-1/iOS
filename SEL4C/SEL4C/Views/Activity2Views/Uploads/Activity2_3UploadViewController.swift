@@ -6,8 +6,8 @@ class Activity2_3UploadViewController: UIViewController {
     @IBOutlet weak var consequencesCollectionView: UICollectionView!
     @IBOutlet weak var problemLabel: UILabel!
     
-    private var causes = ["cause1", "cause2"]
-    private var consequences = ["consequence1", "consequence2"]
+    private var causes: [String] = []
+    private var consequences: [String] = []
     
     private let cellWidth = UIScreen.main.bounds.width / 6
     

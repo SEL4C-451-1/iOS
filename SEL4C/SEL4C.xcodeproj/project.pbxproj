@@ -811,11 +811,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W73UCA9D55;
+				DEVELOPMENT_TEAM = AK54YPU54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SEL4C/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Uso de camara para fotos y videos";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uso de microfono para audio y video";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Se usa la camara para grabacion de video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Se usa el microfono para la grabacion de audio";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Se usara la galeria para guardar videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -827,7 +828,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C.t1;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -847,11 +848,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W73UCA9D55;
+				DEVELOPMENT_TEAM = AK54YPU54V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SEL4C/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Uso de camara para fotos y videos";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Uso de microfono para audio y video";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Se usa la camara para grabacion de video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Se usa el microfono para la grabacion de audio";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Se usara la galeria para guardar videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -863,7 +865,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C.t1;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.tec.SEL4C;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

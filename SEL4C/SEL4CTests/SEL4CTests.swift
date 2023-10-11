@@ -21,10 +21,10 @@ final class SEL4CTests: XCTestCase {
     func testCP_01_Login_Valid() async {
         // Instantiation of things needed
         let login = await LogInViewController()
-        let user = User(userName: "Admin", email: "admin@example.com", password: "admin@example.com")
+        let user = User(userName: "Admin", email: "admin@example.com", password: "password")
         
         // Token Keys
-        let tokenReal: String = "570aee6bdb5e2a26227b75f6082d3b18a07c7bdd"
+        let tokenReal: String = "8c26c3d5f37c940150ae7d4524a444eb252fba3f"
         var tokenApi: String
         
         // Validation of Non-Empty Fields and Valid Email
@@ -46,7 +46,7 @@ final class SEL4CTests: XCTestCase {
         let user = User(userName: "Admin", email: "@l.com", password: "password")
         
         // Token Keys
-        let tokenReal: String = "570aee6bdb5e2a26227b75f6082d3b18a07c7bdd"
+        let tokenReal: String = "8c26c3d5f37c940150ae7d4524a444eb252fba3f"
         var tokenApi: String
         
         // Validation of Non-Empty Fields and Valid Email
@@ -146,7 +146,7 @@ final class SEL4CTests: XCTestCase {
     
     func testCP_04_Activities_Valid() async {
         // Instantiation of things needed
-        let user = User(userName: "Admin", email: "admin@example.com", password: "admin@example.com")
+        let user = User(userName: "Admin", email: "admin@example.com", password: "password")
         
         // Token Keys
         var tokenApi: String
@@ -175,7 +175,7 @@ final class SEL4CTests: XCTestCase {
     
     func testCP_04_Activities_Invalid() async {
         // Instantiation of things needed
-        let user = User(userName: "Admin", email: "admin@example.com", password: "admin@example.com")
+        let user = User(userName: "Admin", email: "admin@example.com", password: "password")
         
         // Token Keys
         var tokenApi: String
@@ -204,7 +204,7 @@ final class SEL4CTests: XCTestCase {
     
     func testCP_05_Logout_Valid() {
         // Initialize the UserDefault's token to a given value
-        UserDefaults.standard.set("570aee6bdb5e2a26227b75f6082d3b18a07c7bdd", forKey: "token")
+        UserDefaults.standard.set("8c26c3d5f37c940150ae7d4524a444eb252fba3f", forKey: "token")
         
         // Log out by resetting the UserDefaults
         UserDefaults.standard.reset()
@@ -214,7 +214,7 @@ final class SEL4CTests: XCTestCase {
     
     func testCP_05_Logout_Invalid() {
         // Initialize the UserDefault's token to a given value
-        UserDefaults.standard.set("570aee6bdb5e2a26227b75f6082d3b18a07c7bdd", forKey: "token")
+        UserDefaults.standard.set("8c26c3d5f37c940150ae7d4524a444eb252fba3f", forKey: "token")
         
         // Assert without resetting the UserDefault
         XCTAssertNotNil(UserDefaults.standard.string(forKey: "token"))

@@ -68,9 +68,9 @@ struct Answer: Codable {
         // Prepare URL
         let urlString: String
         if(isInitial){
-            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/"
+            urlString = "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/"
         }else{
-            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/final/"
+            urlString = "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/scores/final/"
         }
         let url = URL(string: urlString)
         guard let requestUrl = url else { fatalError() }
@@ -148,9 +148,9 @@ struct AnswerInfo: Codable {
         // Prepare URL
         let urlString: String
         if(isInitial){
-            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/"
+            urlString = "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/scores/initial/"
         }else{
-            urlString = "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/scores/final/"
+            urlString = "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/scores/final/"
         }
         
         let url = URL(string: urlString)

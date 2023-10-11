@@ -50,7 +50,7 @@ struct User: Codable {
         var prsentAlert: Bool = true
         
         // Prepare URL
-        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/create/")
+        let url = URL(string: "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/create/")
         guard let requestUrl = url else { fatalError() }
 
         // Prepare URL Request Object
@@ -81,7 +81,7 @@ struct User: Codable {
     func getToken() async throws -> String {
         
         // Prepare URL
-        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/token/")
+        let url = URL(string: "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/token/")
         guard let requestUrl = url else { fatalError() }
 
         // Prepare URL Request Object
@@ -108,7 +108,7 @@ struct User: Codable {
         guard let jsonResponse = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
             throw UserError.itemNotFound
         }
-        
+
         return jsonResponse["token"]! as! String
     }
     
@@ -117,7 +117,7 @@ struct User: Codable {
         var prsentAlert: Bool = false
         
         // Prepare URL
-        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/add/")
+        let url = URL(string: "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/info/add/")
         guard let requestUrl = url else { fatalError() }
 
         // Prepare URL Request Object
@@ -209,7 +209,7 @@ struct UserInfo: Codable {
     
     func getInfo() async throws -> [String: Any] {
         // Prepare URL
-        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")
+        let url = URL(string: "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")
         guard let requestUrl = url else { fatalError() }
 
         // Prepare URL Request Object
@@ -235,7 +235,7 @@ struct UserInfo: Codable {
     
     func putInfo() async throws -> Void {
         // Prepare URL
-        let url = URL(string: "http://ec2-54-219-232-127.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")
+        let url = URL(string: "http://ec2-54-183-198-5.us-west-1.compute.amazonaws.com/sel4c/user/info/me/")
         guard let requestUrl = url else { fatalError() }
 
         // Prepare URL Request Object
