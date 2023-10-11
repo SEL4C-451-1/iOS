@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     // MARK: Text Field
     @IBOutlet weak var userNameLabel: UITextField!
@@ -42,6 +42,8 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
 
         // Delegation for Picker View
         academicoPicker.delegate = self
@@ -51,6 +53,9 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
         edadPicker.delegate = self
         paisPicker.delegate = self
         
+        // Delegation for Text Field
+        userNameLabel.delegate = self
+        
         // Set the previously selected picks
         academicoPicker.selectRow(academicoPickerData.firstIndex(of: userInfo.academic_degree)!, inComponent: 0, animated: false)
         institucionPicker.selectRow(institucionPickerData.firstIndex(of: userInfo.institution)!, inComponent: 0, animated: false)
@@ -58,6 +63,9 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
         generoPicker.selectRow(generoPickerData.firstIndex(of: userInfo.gender)!, inComponent: 0, animated: false)
         edadPicker.selectRow(edadPickerData.firstIndex(of: userInfo.age)!, inComponent: 0, animated: false)
         paisPicker.selectRow(paisPickerData.firstIndex(of: userInfo.country)!, inComponent: 0, animated: false)
+        
+        // Initialize UITextField's placeholder as the User Name
+        userNameLabel.placeholder = userInfo.full_name
         
         // Border radius in PickerViews
         academicoPicker.setCornerRadius(7.5)
@@ -149,6 +157,11 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
             userInfo.country = paisPickerData[row]
             
         }
+    }
+    
+    // Función que altera el user según su edición en userNameLabel
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        userInfo.full_name = userNameLabel.text!
     }
     
     @IBAction func cofirmChanges(_ sender: Any) {

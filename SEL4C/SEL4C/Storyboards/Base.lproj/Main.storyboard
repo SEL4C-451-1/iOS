@@ -16,7 +16,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="LogInSignUpViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uiK-V4-nul" userLabel="Main Stack View">
@@ -2263,7 +2263,7 @@
             <objects>
                 <viewController storyboardIdentifier="MyProfileViewController" title="My Profile" modalPresentationStyle="fullScreen" id="Cdc-X0-Mc1" customClass="MyProfileViewController" customModule="SEL4C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAa-Wm-eUC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-yE-PSN">
@@ -2281,7 +2281,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l68-Y9-r7W">
-                                <rect key="frame" x="0.0" y="132" width="428" height="705"/>
+                                <rect key="frame" x="0.0" y="132" width="428" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="JNs-IX-O4Y">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="1123"/>
@@ -9565,7 +9565,6 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AOj-Ir-7vx">
-                        <rect key="frame" x="0.0" y="-10" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -10804,9 +10803,9 @@
         <segue reference="DRV-Ap-9Ir"/>
         <segue reference="Nsq-0n-nDf"/>
         <segue reference="j5z-ZI-05g"/>
-        <segue reference="628-y9-RL6"/>
+        <segue reference="FvT-nR-992"/>
         <segue reference="kYj-g4-mEx"/>
-        <segue reference="VCQ-dP-vve"/>
+        <segue reference="6kv-uB-Nwq"/>
         <segue reference="VoD-li-K1u"/>
         <segue reference="H6O-BU-G8t"/>
     </inferredMetricsTieBreakers>
