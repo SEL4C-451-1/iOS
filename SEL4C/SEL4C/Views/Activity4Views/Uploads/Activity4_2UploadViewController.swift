@@ -16,7 +16,9 @@ class Activity4_2UploadViewController: UIViewController, UIImagePickerController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let savedVideoURLString = UserDefaults.standard.string(forKey: "A42videoURL"), let savedVideoURL = URL(string: savedVideoURLString) {
+                    videoURL = savedVideoURL
+                }
     }
     
     @IBAction func onRecordVideo(_ sender: Any) {
@@ -75,7 +77,6 @@ class Activity4_2UploadViewController: UIViewController, UIImagePickerController
                     try? VideoToPass.write(to: url, options: [])
                 }
 
-                // If you want display Video here 1
             }
         }
         // Handle a movie capture
@@ -84,6 +85,8 @@ class Activity4_2UploadViewController: UIViewController, UIImagePickerController
              self,
             #selector(video(_:didFinishSavingWithError:contextInfo:)),
              nil)
+        videoURL = url
+        UserDefaults.standard.set(videoURL?.absoluteString, forKey: "A42videoURL")
     }
     
     @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {

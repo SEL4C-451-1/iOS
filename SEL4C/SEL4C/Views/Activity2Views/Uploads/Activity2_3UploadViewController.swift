@@ -13,6 +13,19 @@ class Activity2_3UploadViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let savedCauses = UserDefaults.standard.stringArray(forKey: "causes") {
+                causes = savedCauses
+            }
+
+            // Cargar las consecuencias
+            if let savedConsequences = UserDefaults.standard.stringArray(forKey: "consequences") {
+                consequences = savedConsequences
+            }
+
+            // Cargar el problema
+            if let savedProblem = UserDefaults.standard.string(forKey: "problem") {
+                problemLabel.text = savedProblem
+            }
         
         causesCollectionView.backgroundColor = UIColor.clear
         consequencesCollectionView.backgroundColor = UIColor.clear
@@ -57,12 +70,14 @@ class Activity2_3UploadViewController: UIViewController {
         presentAddElementAlert(title: "Add Cause", placeholder: "Cause") { [weak self] newElement in
             self?.causes.append(newElement)
             self?.causesCollectionView.reloadData()
+            UserDefaults.standard.set(self?.causes, forKey: "causes")
         }
     }
     
     @IBAction func addProblem(_ sender: Any) {
         presentAddElementAlert(title: "Add Problem", placeholder: "Problem") { [weak self] newElement in
             self?.problemLabel.text = newElement
+            UserDefaults.standard.set(self?.problemLabel.text, forKey: "problem")
         }
     }
     
@@ -70,6 +85,7 @@ class Activity2_3UploadViewController: UIViewController {
         presentAddElementAlert(title: "Add Consequence", placeholder: "Consequence") { [weak self] newElement in
             self?.consequences.append(newElement)
             self?.consequencesCollectionView.reloadData()
+            UserDefaults.standard.set(self?.consequences, forKey: "consequences")
         }
     }
     
