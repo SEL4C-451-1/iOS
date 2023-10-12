@@ -67,7 +67,7 @@ class Activity2_3UploadViewController: UIViewController {
     }
     
     @IBAction func addCause(_ sender: Any) {
-        presentAddElementAlert(title: "Add Cause", placeholder: "Cause") { [weak self] newElement in
+        presentAddElementAlert(title: "Añade una causa", placeholder: "Causa") { [weak self] newElement in
             self?.causes.append(newElement)
             self?.causesCollectionView.reloadData()
             UserDefaults.standard.set(self?.causes, forKey: "causes")
@@ -75,14 +75,14 @@ class Activity2_3UploadViewController: UIViewController {
     }
     
     @IBAction func addProblem(_ sender: Any) {
-        presentAddElementAlert(title: "Add Problem", placeholder: "Problem") { [weak self] newElement in
+        presentAddElementAlert(title: "Añade tu problema", placeholder: "Problema") { [weak self] newElement in
             self?.problemLabel.text = newElement
             UserDefaults.standard.set(self?.problemLabel.text, forKey: "problem")
         }
     }
     
     @IBAction func addConsequence(_ sender: Any) {
-        presentAddElementAlert(title: "Add Consequence", placeholder: "Consequence") { [weak self] newElement in
+        presentAddElementAlert(title: "Añade una consecuencia", placeholder: "Consecuencia") { [weak self] newElement in
             self?.consequences.append(newElement)
             self?.consequencesCollectionView.reloadData()
             UserDefaults.standard.set(self?.consequences, forKey: "consequences")
@@ -90,19 +90,19 @@ class Activity2_3UploadViewController: UIViewController {
     }
     
     private func presentAddElementAlert(title: String, placeholder: String, completion: @escaping (String) -> Void) {
-        let alertController = UIAlertController(title: title, message: "Enter an element:", preferredStyle: .alert)
+        let alertController = UIAlertController(title: title, message: "Ingresa un elemento:", preferredStyle: .alert)
         
         alertController.addTextField { (textField) in
             textField.placeholder = placeholder
         }
         
-        let addAction = UIAlertAction(title: "Add", style: .default) { (_) in
+        let addAction = UIAlertAction(title: "Añadir", style: .default) { (_) in
             if let textField = alertController.textFields?.first, let newElement = textField.text, !newElement.isEmpty {
                 completion(newElement)
             }
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         
         alertController.addAction(addAction)
         alertController.addAction(cancelAction)
@@ -146,7 +146,7 @@ extension Activity2_3UploadViewController: UICollectionViewDelegate {
             itemToDisplay = consequences[indexPath.row]
         }
         
-        let alertController = UIAlertController(title: "Selected Item", message: itemToDisplay, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Tu selección", message: itemToDisplay, preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
