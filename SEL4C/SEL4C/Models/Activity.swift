@@ -71,7 +71,7 @@ struct ActivityResponse: Codable {
     func getStatus() async throws -> Void {
         print("[*] GET STATUS")
         // Prepare URL
-        let activities: [Int] = [1, 2, 3, 4, 5, 6]
+        let activities: [Int] = [1, 2, 3, 4, 5, 6, 7]
         let activitiesKeys: [String] = ["actividadTerminada1", "actividadTerminada2", "actividadTerminada3", "actividadTerminada4", "actividadTerminada5", "evaluacionFinalTerminada"]
         
         for activityNumber in activities {
