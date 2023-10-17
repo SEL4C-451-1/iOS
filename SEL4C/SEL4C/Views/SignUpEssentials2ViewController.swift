@@ -28,7 +28,7 @@ class SignUpEssentials2ViewController: UIViewController, UIPickerViewDataSource,
     @IBOutlet weak var disciplinaPicker: UIPickerView!
     
     // Género
-    let generoPickerData: [String] = ["Masculino", "Femenino", "No binario", "Prefiero no decir"]
+    let generoPickerData: [String] = ["Masculino", "Femenino", "No binarie", "Prefiero no decir"]
     @IBOutlet weak var generoPicker: UIPickerView!
     
     // Edad

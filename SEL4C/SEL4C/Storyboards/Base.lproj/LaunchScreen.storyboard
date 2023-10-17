@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -67,21 +68,37 @@
                                     <constraint firstAttribute="height" constant="150" id="Z9j-xw-GOd"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaU-L0-GQ2">
+                                <rect key="frame" x="50" y="525" width="328" height="53.666666666666629"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Social Entrepreneurship Learning 4 Complexity">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99747389554977417" green="0.99747389554977417" blue="0.99747389554977417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="23" name="AndaleMono"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.043663389980000002" green="0.1138352826" blue="0.24738973380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="iVF-gs-agh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0rb-3V-b9f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u4T-JO-OiN" secondAttribute="trailing" constant="49" id="ATm-ft-pFX"/>
+                            <constraint firstItem="FaU-L0-GQ2" firstAttribute="top" secondItem="iVF-gs-agh" secondAttribute="bottom" constant="20" id="CKK-pg-cAG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u4T-JO-OiN" secondAttribute="bottom" constant="59" id="My4-Xu-07H"/>
                             <constraint firstItem="u4T-JO-OiN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="NzQ-LA-D5w"/>
+                            <constraint firstItem="FaU-L0-GQ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="frQ-CE-hpQ"/>
                             <constraint firstItem="iVF-gs-agh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vLC-Oh-tGV"/>
+                            <constraint firstItem="FaU-L0-GQ2" firstAttribute="centerX" secondItem="iVF-gs-agh" secondAttribute="centerX" id="vr9-2N-dZT"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.627906976744185" y="373.39055793991417"/>
+            <point key="canvasLocation" x="50.467289719626166" y="373.21814254859612"/>
         </scene>
     </scenes>
     <resources>

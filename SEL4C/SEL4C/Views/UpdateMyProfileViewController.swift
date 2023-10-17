@@ -26,7 +26,7 @@ class UpdateMyProfileViewController: UIViewController, UIPickerViewDataSource, U
     @IBOutlet weak var disciplinaPicker: UIPickerView!
     
     // Género
-    let generoPickerData: [String] = ["Masculino", "Femenino", "No binario", "Prefiero no decir"]
+    let generoPickerData: [String] = ["Masculino", "Femenino", "No binarie", "Prefiero no decir"]
     @IBOutlet weak var generoPicker: UIPickerView!
     
     // Edad

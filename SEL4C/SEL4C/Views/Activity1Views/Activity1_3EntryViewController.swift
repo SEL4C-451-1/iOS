@@ -31,8 +31,9 @@ class Activity1_3EntryViewController: UIViewController, UINavigationControllerDe
     
     @IBAction func onSave(_ sender: Any) {
         print("Presionado el botón Guardar")
+        let count = UserDefaults.standard.integer(forKey: "A13count")
             if let title = titleField.text, let text = textField.text {
-                saveImageAndText(imageName: "test.png", text: text, title: title)
+                saveImageAndText(imageName: "ObservationImage_\(count + 1)_Path", text: text, title: title)
                 print("Guardando datos desde: \(self)")
             }
             
@@ -51,6 +52,7 @@ class Activity1_3EntryViewController: UIViewController, UINavigationControllerDe
             let fileManager = FileManager.default
             //Obtener el path de la imagen
             let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) [0] as NSString).appendingPathComponent(imageName)
+            print("[*] Path: \(imagePath)")
             //obtener la imagen que tomamos con la cámara
             let image = imageView.image!
             //Obtener los datos PNG de la imagen
@@ -58,11 +60,11 @@ class Activity1_3EntryViewController: UIViewController, UINavigationControllerDe
             fileManager.createFile(atPath: imagePath, contents: data, attributes: nil)
        
                     
-                    // Obtener el índice de observación actual
+            // Obtener el índice de observación actual
             let userDefaults = UserDefaults.standard
             let count = userDefaults.integer(forKey: "A13count")
                     
-                    // Incrementar el índice para la nueva observación
+            // Incrementar el índice para la nueva observación
             let newCount = count + 1
             
             // Guardar la imagen en documentos

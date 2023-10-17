@@ -27,9 +27,17 @@ class ActividadesViewController: UIViewController {
     @IBOutlet weak var stackView4: UIStackView!
     @IBOutlet weak var stackView5: UIStackView!
     @IBOutlet weak var stackView6: UIStackView!
+    
+    var timerCounter: Int = 0
+    var timer: Timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+
         
         Task{
             do {
@@ -193,6 +201,27 @@ class ActividadesViewController: UIViewController {
                     present(alertController, animated: true, completion: nil)
         }
     }
-
+    
+    
+    @objc func fireTimer() {
+        timerCounter += 1
+        
+        // Log out when user has 10 minutes in the app.
+        if timerCounter >= 10 * 60 {
+            // Stop timer
+            timer.invalidate()
+            
+            // Delete user defauts
+            UserDefaults.standard.reset()
+            
+            // Go to desired View Controller
+            guard let logInSignUpVC = storyboard?.instantiateViewController(withIdentifier: "LogInSignUpViewController") as? LogInSignUpViewController else {
+                return
+            }
+            
+            logInSignUpVC.modalPresentationStyle = .fullScreen
+            present(logInSignUpVC, animated: true)
+        }
+    }
 
 }
